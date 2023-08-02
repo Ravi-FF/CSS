@@ -1,0 +1,14 @@
+.External{
+    height: 40px;
+    background-color: brown;
+    color: black;
+    color: antiquewhite;
+    line-height: 40px;
+    font-size: 20px;
+}
+#main{
+    background-color: violet; 
+            color:black; 
+            height: 100px; 
+            line-height: 30px;  
+}
