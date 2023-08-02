@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector in css</title>
+    <style>
+        h2[class*=heading2]{
+            background-color: gold;
+            color: black;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+         }
+         div[class*="box"]{
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            font-size: 20px;
+            border: 2px solid black;
+            float: left;
+        }
+        .box-1{
+            background-color: cadetblue;
+        }
+        .box-2{
+            background-color: rgb(12, 207, 107);
+        }
+        .box-3{
+            background-color: rgb(236, 123, 23);
+        }
+        
+        .box-4{
+            background-color: rgb(215, 94, 213);
+        }
+        </style>
+</head>
+<body>
+        <h2 class="heading2">we can select particular Attribute by Attribute selector</h2>
+        <div class="box-1">Hello 1</div>
+        <div class="box-2">Hello 2</div>
+        <div class="box-3">Hello 3</div>
+        <div class="box-4">Hello 4</div>
+</body>
+</html>

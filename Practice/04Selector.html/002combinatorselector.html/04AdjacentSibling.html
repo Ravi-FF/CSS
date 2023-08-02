@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjecent sibling selector</title>
+    <style>
+        .main+h2{
+            background-color: blueviolet;
+            color: black;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        h2+p{
+            background-color: rgb(12, 220, 127);
+            color: black;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adjecent sibling selector(+)</h1>
+
+    <div class="main">
+        <h2>Cashcading style sheets</h2>
+        <h2>Cashcading style sheets</h2>
+        <h2>Cashcading style sheets</h2>
+        <h2>Cashcading style sheets</h2>
+        <h2>Cashcading style sheets</h2>
+    </div>
+    <h2>
+        <p>Thank you</p>
+    </h2>
+</body>
+</html>
