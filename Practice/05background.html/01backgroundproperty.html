@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Property in CSS</title>
+    <style>
+        .background{
+            color: rgb(241, 13, 13);
+            text-align: center;
+         
+        }
+    ol{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    div{
+        height: 600px;
+        border: 8px crimson dashed;
+        font-size: 20px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    .background-color{
+        background-color: aquamarine;
+    }
+    .background-image{
+        background-image: url(../images/images.jpeg);
+    }
+    .background-size{
+        background-image: url(../images/images.jpeg);
+        background-size: contain; 
+        background-size: cover;
+        background-size: 100px;
+    }
+    .background-clip{
+        background-image: url(../images/images.jpeg);
+        padding: 50px;
+        background-size:cover;
+        background-clip: padding-box;
+        background-clip: border-box;
+        background-clip: content-box;
+    
+     }
+     .background-origin{
+        background-image: url(../images/images.jpeg);
+        background-size: cover;
+        padding: 50px;
+        background-origin: border-box;
+        background-origin: padding-box;
+        background-origin: content-box;
+        background-repeat:no-repeat;
+     }
+     .background-attechment{
+        background-image: url(../images/Laptop.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-attachment: scroll;
+     }
+     .background-position{
+        background-image: url(../images/images.jpeg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-position: center center;
+        background-position: top right;
+        background-position: top left;
+        background-position: center right;
+        background-position: center left;
+        background-position: bottom left;
+        background-position: bottom right;
+        background-position: bottom center; 
+     }
+     .background-repate{
+        background-image: url(../images/Laptop.jpeg);
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: repeat;
+        background-repeat: no-repeat;
+     }
+     .shorthand-Property{
+        background:url(../images/Laptop.jpeg) no-repeat bottom; 
+     }
+    </style>
+</head>
+<body>
+    <span class="background">
+        <h1>Background propertys</h1></span>
+
+        <ol>
+            <li>background-colour</li>
+            <li>background-image</li>
+            <li>background-size</li>
+            <li>background-clip</li>
+            <li>background-origin</li>
+            <li>background-attechment</li>
+            <li>background-position</li>
+            <li>background-repate</li>
+        </ol>
+        </div>
+   <div class="background-color">background-color</div>
+   <div class="background-image">background-image</div>
+   <div class="background-size">background-size</div>
+   <div class="background-clip">background-clip</div>
+   <div class="background-origin">background-origin</div>
+   <div class="background-attechment">background-attechment</div>
+   <div class="background-position">background-position</div>
+   <div class="background-repate">background-repate</div>
+   <div class="shorthand-Property">shorthand Property</div>
+
+</body>
+
+</html>
