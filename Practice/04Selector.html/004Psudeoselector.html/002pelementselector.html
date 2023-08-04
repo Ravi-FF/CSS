@@ -11,6 +11,7 @@
             color: antiquewhite;
             font-size: 20px;
         }
+
         
         h1::first-line{
             color:black;
@@ -23,11 +24,24 @@
         h1::selection{
             color: hotpink;
         }
+        h2::before{
+            content:"Lorem";
+            background-color: aqua;
+            color: black;
+            height: 50px;
+        }
+        h2::after{
+            content: "Hello";
+            background-color: blueviolet;
+            color: burlywood;
+        }
     </style>
 </head>
 <body>
     <div>
-        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ea quas, culpa sed quidem impedit alias ratione obcaecati, enim aut vel cupiditate, esse id consequuntur blanditiis saepe. Consequuntur labore earum, totam, est nobis quam quis repellendus necessitatibus inventore deserunt saepe fugiat fugit dolo</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ea quas, culpa sed quidem impedit alias ratione obcaecati, enim aut vel cupiditate, esse id consequuntur blanditiis saepe. Consequuntur labore earum, totam, est nobis quam quis repellendus necessitatibus inventore deserunt saepe fugiat fugit doloremque placeat corrupti, minima accusamus omnis officiis dolorem obcaecati iusto ipsam similique eum? Et similique dolorum libero earum. Culpa consequuntur minus nihil, aut expedita sit quas incidunt, autem architecto a minima, voluptatum possimus doloribus vel tenetur debitis tempore aliquid quidem omnis ipsam nobis est? Earum nemo inventore rerum officiis facere commodi rem neque voluptates est? Voluptatibus, accusamus distinctio?</h1>
     </div>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, harum.</h2>
 </body>
 </html>
