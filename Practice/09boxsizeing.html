@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing</title>
+    <style>
+        .border-box{
+            height: 200px;
+            width: 200px;
+            padding: 40px;
+            border: 10px solid rgb(14, 13, 13) ;
+            box-sizing: border-box;
+            background-color: goldenrod;
+        }
+        .contain-box{
+            height: 200px;
+            width: 200px;
+            padding: 40px;
+            border: 10px solid rgb(20, 13, 13) ;   
+            box-sizing: content-box;
+            background-color: hotpink;
+        }
+        h4{
+            background-color: red;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 2px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h4>Note-borderbox hamari border and padding dono ko apne box me hi consider kr leta hai. uski total height and width me different nhi aata hai and contain-box value me border-box ka oposite hota hai</h4>
+
+    <h1>Box-sizing</h1>
+    <h2>We have a 2 box sizing value- 01. border-box 02. contain-box</h2>
+
+    <h1>Box-sizing : border-box</h1>
+    <div class="border-box">border-box</div>
+
+    <h1>Box-sizing : contain-box</h1>
+    <div class="contain-box">contain-box</div>
+</body>
+</html>
+
