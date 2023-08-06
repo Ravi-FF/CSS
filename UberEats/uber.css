@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'REM', sans-serif;
+}
+.main{
+    padding: 0 20px;
+    background-image:url(image/uberbg\(1\).png);
+    width: 100vw;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.uber{
+    
+    height: 80%;
+    font-size: 40px;
+    padding-left: 100px;
+}
+.uber img{
+    margin-top: 30px;
+    height: 40px;
+    cursor: pointer;
+}
+    
+.login{
+padding:10px;
+margin: 10px;
+font-size: 15px;
+border-radius: 25px;
+background-color: white;
+color: black;
+border: 2px solid white;
+cursor: pointer;
+
+}
+.singup{
+padding:10px;
+margin:10px;
+font-size: 15px;
+border-radius: 25px;
+background-color: rgb(15, 14, 14);
+color:white;
+border: 2px solid rgb(8, 7, 7);
+cursor: pointer;
+}
+.oder{
+font-size: 30px;
+margin-left: 50px;
+}
+.input{
+margin-top: 25px;
+padding-left: 10px;
+height:50px;
+width: 50%;
+font-size: 15px;
+
+}
+.select{
+margin-top: 25px;
+padding-left: 10px;
+height:50px;
+width: 15%;
+text-align: center;
+font-size: 15px;
+cursor: pointer;
+}
+.button{
+margin-top: 25px;
+padding-left: 10px;
+height:50px;
+width: 10%;
+text-align: center;
+font-size: 15px;
+background-color: black;
+color: white;
+border-radius: 5px;
+border: 2px solid black;
+cursor: pointer;
+}
+.p{
+margin-top:10px ;
+font-size: 15px;
+word-spacing: 5px;
+}
+.p a{
+    color: black;
+}
+.tr{
+padding-right: 50px;    
+}
+.td1{
+text-align: right;
+}
+
+.bg{
+    height: 80px;
+}
+.img1,.img2,.img3{
+    padding: 0px 20px;
+    width: 100%
+}
+.feed1{
+    height: 45px;
+    font-size: 25px;
+    padding: 0px 20px;
+}
+.add1{
+    text-decoration: underline;
+    padding: 0px 20px;
+}
+.me1{
+    font-weight: bold;
+    height: 70px;
+    font-size: 40px;
+    padding: 0px 20px;
+
+}
+.me3{
+   text-align: right;
+   padding-right: 20px;
+   text-decoration: underline;
+}
+.map{
+    margin: 50px 0;
+    padding: 0px 20px;
+    height: 60px;
+    margin-bottom: 80px;
+}
+.me01{
+    width: 30%;
+    font-weight: bold;
+    height: 70px;
+    font-size: 30px;
+    padding: 0px 20px;
+}
+.hello{
+    padding: 0px 20px;
+    height: 50px;
+    cursor: pointer;
+}
+.mapp{
+    margin: 50px 0;
+    padding: 0px 20px;
+    height: 60px;
+    margin-bottom: 80px;
+}
+.svg{
+    cursor: pointer; 
+    padding: 0px 20px;
+}
+.mapp:hover{
+    cursor: pointer;
+    text-decoration:underline ;
+}
+
+.footer{
+    display: flex;
+    justify-content: right;
+}
+
+.footer p{
+    padding-right: 50px;
+}
+
+.footer p:hover{
+    cursor: pointer;
+    text-decoration:underline ;
+}   
+
+.end{
+ display: flex;
+justify-content: right;
+}
+
+.end p{
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+.end p:hover{
+    cursor: pointer;
+    text-decoration:underline ;
+}  
