@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border property in css</title>
+    <style>
+        *{
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .border-solid{
+            margin-top: 50px;
+            border: 10px solid black;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;
+        }
+        .border-dashed{
+            margin-top: 50px;
+            border: 10px dashed black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;
+        }
+        .border-dotted{
+            margin-top: 50px;
+            border: 10px dotted black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;
+        }
+
+        .border-double{
+            margin-top: 50px;
+            border: 10px double black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;
+        }
+        .border-radius{
+            margin-top: 50px;
+            border-radius: 30%;
+            background-clip: padding-box;
+            color:rgb(10, 0, 0);
+            background-image: url(../images/Laptop.jpeg);
+            height: 200px;
+            width: 200px;
+        }
+        .border-colour{
+           margin-top: 50px;
+           border: 10px solid;
+            border-color: blueviolet;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px; 
+        }
+        .border-left{
+            margin-top: 50px;
+            border-left: 10px solid black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px; 
+        }
+        .border-right{
+             margin-top: 50px;
+            border-right: 10px solid black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px; 
+        }
+        .border-bottom{
+          margin-top: 50px;
+            border-bottom: 10px solid black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+        }
+        .border-top{
+         margin-top: 50px;
+            border-top: 10px solid black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;   
+        }
+        .border-inset{
+            margin-top: 50px;
+            border: 10px inset black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+        }
+        .border-outset{
+            margin-top: 50px;
+            border: 10px outset black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+        }
+
+        .border-image{
+            margin-top: 50px;
+            border: 20px solid black;
+            border-image: url(../images/images.jpeg) 1;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+        }
+
+        .border-style{
+            margin-top: 50px;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+            border: 20px black;
+            border-style: solid;
+            border-style:inherit;
+            border-style:ridge;
+            border-style: groove;
+        }
+
+        .border-outset{
+            margin-top: 50px;
+            border: 10px outset black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+        }
+
+        .border-outset{
+            margin-top: 50px;
+            border: 10px outset black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+        }
+
+        .border-end-end-radius{
+            margin-top: 50px;
+            border: 10px solid black;
+            /* border-start-start-radius: 50px 50px; */
+            /* border-start-end-radius: 50px 50px; */
+            /* border-end-end-radius: 50px 50px; */
+            /* border-top-right-radius: 50px 50px; */
+            /* border-bottom-right-radius: 50px 50px; */
+            /* border-bottom-left-radius: 50px 50px; */
+            border-top-left-radius: 50px 50px; 
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+        }
+
+        .border-outset{
+            margin-top: 50px;
+            border: 10px outset black;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;  
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Border propertys in CSS
+    <div class="border-solid">
+        <h5>border-solid</h5>
+    </div><hr>
+    
+    <div class="border-dashed">
+        <h5>border-dashed</h5>
+    </div><hr>
+
+    <div class="border-dotted">
+        <h5>border-dotted</h5>
+    </div><hr>
+
+    <div class="border-double">
+        <h5>border-double</h5>
+    </div><hr>
+
+    <div class="border-radius">
+        <h5>border-radius</h5>
+    </div><hr>
+        
+    <div class="border-colour">
+        <h5>border-colour</h5>
+    </div><hr>
+
+    <div class="border-left">
+        <h5>border-left</h5>
+    </div><hr>
+
+    <div class="border-right">
+        <h5>border-right</h5>
+    </div><hr>
+
+    <div class="border-bottom">
+        <h5>border-bottom</h5>
+    </div><hr>
+
+    <div class="border-top">
+        <h5>border-top</h5>
+    </div><hr>
+
+    <div class="border-inset">
+        <h5>border-inset</h5>
+    </div><hr>
+    
+    <div class="border-outset">
+        <h5>border-outset</h5>
+    </div><hr>
+
+    <div class="border-image">
+        <h5>border-image</h5>
+    </div><hr>
+
+    <div class="border-style">
+        <h5>border-style</h5>
+    </div><hr>
+
+    <div class="border-end-end-radius">
+        <h5>border-end-end-radius</h5>
+    </div>
+
+
+
+
+
+</body>
+</html>
