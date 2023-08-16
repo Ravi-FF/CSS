@@ -35,6 +35,7 @@
             background-color: crimson;
             height: 200px;
             width: 200px;
+            border-left-color: aqua;
         }
 
         .border-double{
@@ -58,7 +59,11 @@
         .border-colour{
            margin-top: 50px;
            border: 10px solid;
-            border-color: blueviolet;
+           border-left-color: blue;
+           border-right-color: brown;
+           border-bottom-color: forestgreen;
+           /* border-top-color: darkgoldenrod; */
+            /* border-color: blueviolet; */
             background-clip: padding-box;
             color:white;
             background-color: crimson;
@@ -123,7 +128,7 @@
         .border-image{
             margin-top: 50px;
             border: 20px solid black;
-            border-image: url(../images/images.jpeg) 1;
+            border-image: url(../images/images.jpeg) 2;
             color:white;
             background-color: crimson;
             height: 200px;
@@ -139,8 +144,8 @@
             border: 20px black;
             border-style: solid;
             border-style:inherit;
-            border-style:ridge;
             border-style: groove;
+            border-style:ridge;
         }
 
         .border-outset{
@@ -153,15 +158,6 @@
             width: 200px;  
         }
 
-        .border-outset{
-            margin-top: 50px;
-            border: 10px outset black;
-            background-clip: padding-box;
-            color:white;
-            background-color: crimson;
-            height: 200px;
-            width: 200px;  
-        }
 
         .border-end-end-radius{
             margin-top: 50px;
@@ -193,7 +189,7 @@
         .border-width{
             margin-top: 50px;
             border: solid black;
-            border-width: 1rem;
+            border-width: 2rem;
             background-clip: padding-box;
             color:white;
             background-color: crimson;

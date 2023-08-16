@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        .inline{
+            /* height: 200px; */
+            /* width: 400px; */
+            /* margin: 40px; */  
+
+            /* we can not set margin-top ,margin-left, height and width propertys in Display - inline */
+
+            padding: 10px;
+            border: 2px solid black;
+            display: inline;
+        }
+        .inline2{
+            border: 2px solid black;
+            background-color: khaki;
+            display: inline;
+        }
+        .inline-block{
+            display: inline-block;
+            height: 100px;
+            width: 500px;
+            border: 2px solid red;
+        }
+        .inline-block1{
+            display: inline-block;
+            height: 100px;
+            width: 500px;
+            border: 2px solid red;
+        }
+        .inline-block3{
+            display: inline-block;
+            height: 100px;
+            width: 500px;
+            border: 2px solid red;
+        }
+        .inline-none{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Property in CSS</h1>
+    <!-- we have four Display Propertys in css-->
+    <ol>
+        <li>Display-inline</li>
+        <li>Display-block</li> <!--Display defult value is-Display-block-->
+        <li>Display:inline-block</li>
+        <li>Dispaly-none</li>
+    </ol>
+
+    <!-- Display-inline -->
+    <h1>Display-inline</h1>
+    <div class="inline">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A praesentium ducimus ullam soluta veniam dolorum necessitatibus dolores magni sint aut.
+    </div>
+    <div class="inline2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis iste ut ipsum et, natus provident aliquam quae nisi esse maxime. Id pariatur ratione possimus aperiam dicta. Odit, quia impedit?
+    </div>
+
+ <!-- Display:inline-block-->
+ <h1>Display-inline-block</h1>
+ <div class="inline-block">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, soluta molestias illum est sunt quod sint sit, nihil impedit voluptate, nostrum quasi dolor distinctio laudantium.
+ </div>
+ <div class="inline-block1">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, soluta molestias illum est sunt quod sint sit, nihil impedit voluptate, nostrum quasi dolor distinctio laudantium.
+ </div>
+ <div class="inline-block3">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, soluta molestias illum est sunt quod sint sit, nihil impedit voluptate, nostrum quasi dolor distinctio laudantium.
+ </div>
+
+ <!-- Dispaly-none -->
+ <h1>Display-inline-none</h1>
+ <!-- display none krne se hamara element web page se hat jata h and uski jagha bhi vaha pr nhi rehti h vhi visibility hidden property krne se hamra element hide ho jata hai uski jagha hamari web page pr rehti hai. -->
+ <div class="inline-none">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti nemo fugiat rem magni, quidem quibusdam modi quo nostrum sequi facilis dolorum 
+ </div>
+</body>
+</html>
