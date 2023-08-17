@@ -15,69 +15,85 @@
     .gallery{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        grid-auto-columns: max-content(100px, 100px);
+        grid-template-rows: 1fr 1fr;
+        column-gap:5px;
+        text-align: center;
+        grid-auto-columns: max-content(100px);
         border: 2px solid black;
     }
     .img-1{
-        grid-column: 1/2;
+        grid-area: 2/2;
+        background-color: lawngreen;
         
         border: 1px solid black;
     }
     .img-2{
         border: 1px solid black;
-        grid-column: 2/3;
+        grid-column: 2/3 auto;
+        background-color: mediumslateblue;
     }
     .img-3{
         border: 1px solid black;
-        grid-column:1/2 ;
+        grid-column-start:3 ;
+        background-color: darkcyan;
     }
     .img-4{
         border: 1px solid black;
-        grid-column:2/3;
+        grid-column-start:3;
+        background-color: salmon;
     }
     .img-5{
         border: 1px solid black;
-        grid-column: 1/3;
+        grid-column-start:1;
+        background-color: indigo;
     }
     .img-6{
         border: 1px solid black;
-        grid-column:1/2;
+        grid-column-start:2;
+        background-color:yellow;
     }
     .img-7{
         border: 1px solid black;
         grid-column: 3/2;
+        background-color:hotpink;
     }
 </style>
 <body>
     <h1>Display Grid</h1>
     <div class="gallery">
         <div class="img-1">
-            <img src="./img/coffee.png" alt="">
+            box-1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt perspiciatis, adipisci tempore, temporibus repellendus laborum sit delectus voluptatum iste laudantium consequatur autem doloremque recusandae repudiandae provident? Tempora modi eligendi iure.
+            <!-- <img src="./img/coffee.png" alt=""> -->
         </div>
         <div class="img-2">
-            <img src="./img/coffee2.png" alt="">
+            box-2
+            <!-- <img src="./img/coffee2.png" alt=""> -->
         </div>
 
         <div class="img-3">
-            <img src="./img/profile cup.png" alt="">
+            box-3
+            <!-- <img src="./img/profile cup.png" alt=""> -->
         </div>
 
         <div class="img-4">
-            <img src="./img/profile cup.png" alt="">
+            box-4
+            <!-- <img src="./img/profile cup.png" alt=""> -->
         </div>
 
 
         <div class="img-5">
-            <img src="./img/store1.png" alt="">
+            box-5
+            <!-- <img src="./img/store1.png" alt=""> -->
         </div>
 
         <div class="img-6">
-            <img src="./img/store3.png" alt="">
+            box-6
+            <!-- <img src="./img/store3.png" alt=""> -->
         </div>
 
         <div class="img-7">
-            <img src="./img/store2.png" alt="">
+            box-7
+            <!-- <img src="./img/store2.png" alt=""> -->
         </div>
         
 
