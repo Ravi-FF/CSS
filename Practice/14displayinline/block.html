@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Property</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
         .inline{
             /* height: 200px; */
             /* width: 400px; */
-            /* margin: 40px; */  
-
-            /* we can not set margin-top ,margin-left, height and width propertys in Display - inline */
-
-            padding: 10px;
+            margin: 40px 50px;  
+            /* padding: 10px; */
             border: 2px solid black;
             display: inline;
         }
@@ -25,37 +28,49 @@
             display: inline-block;
             height: 100px;
             width: 500px;
-            border: 2px solid red;
+            margin: 50px;
+            border: 2px solid black;
         }
         .inline-block1{
             display: inline-block;
+            margin: 50px;
             height: 100px;
             width: 500px;
-            border: 2px solid red;
+            border: 2px solid black;
         }
         .inline-block3{
             display: inline-block;
+            margin: 50px;
             height: 100px;
             width: 500px;
-            border: 2px solid red;
+            border: 2px solid black;
         }
         .inline-none{
             display: none;
         }
-    </style>
+        h2{
+            text-align:center;
+            padding: 10px 0;
+            background-color: #ff0000;
+            color:white;
+        }
+        </style>
 </head>
 <body>
     <h1>Display Property in CSS</h1>
     <!-- we have four Display Propertys in css-->
     <ol>
         <li>Display-inline</li>
-        <li>Display-block</li> <!--Display defult value is-Display-block-->
+        <li>Display-block</li> <h2>Display defult value is-Display-block</h2>
         <li>Display:inline-block</li>
         <li>Dispaly-none</li>
     </ol>
-
+    
     <!-- Display-inline -->
     <h1>Display-inline</h1>
+
+    <h2>we can not set margin-top ,margin-bottom, height and width propertys in Display - inline</h2> 
+
     <div class="inline">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A praesentium ducimus ullam soluta veniam dolorum necessitatibus dolores magni sint aut.
     </div>
@@ -65,6 +80,7 @@
 
  <!-- Display:inline-block-->
  <h1>Display-inline-block</h1>
+ <h2>we can set height width margin property in Display-block</h2>
  <div class="inline-block">
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, soluta molestias illum est sunt quod sint sit, nihil impedit voluptate, nostrum quasi dolor distinctio laudantium.
  </div>
@@ -76,8 +92,8 @@
  </div>
 
  <!-- Dispaly-none -->
- <h1>Display-inline-none</h1>
- <!-- display none krne se hamara element web page se hat jata h and uski jagha bhi vaha pr nhi rehti h vhi visibility hidden property krne se hamra element hide ho jata hai uski jagha hamari web page pr rehti hai. -->
+ <h1>Display-none</h1>
+ <h2>display none krne se hamara element web page se hat jata h and uski jagha bhi vaha pr nhi rehti h vhi visibility hidden property krne se hamra element hide ho jata hai uski jagha hamari web page pr rehti hai.</h2>
  <div class="inline-none">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti nemo fugiat rem magni, quidem quibusdam modi quo nostrum sequi facilis dolorum 
  </div>
