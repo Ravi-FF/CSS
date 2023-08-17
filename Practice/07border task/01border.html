@@ -128,11 +128,12 @@
         .border-image{
             margin-top: 50px;
             border: 20px solid black;
-            border-image: url(../images/images.jpeg) 2;
+            border-image: url(../images/images.jpeg)2;
             color:white;
             background-color: crimson;
             height: 200px;
             width: 200px;  
+            /* border-image-width: 100px; */
         }
 
         .border-style{
@@ -196,10 +197,29 @@
             height: 200px;
             width: 200px; 
         }
-
-        .border-collapse{
-            display: flex;
-            justify-content: center;
+        .border-inline{
+            margin-top: 50px;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px; 
+            border-inline: 10px solid;
+            border-inline-color: red;
+            border-inline-end: 10px solid yellow;
+            writing-mode: vertical-rl;
+            writing-mode: horizontal-tb;
+        }
+        .border-block{
+            margin-top: 50px;
+            background-clip: padding-box;
+            color:white;
+            background-color: crimson;
+            height: 200px;
+            width: 200px; 
+            border: 10px;
+            border-block: 10px solid black;
+            writing-mode:vertical-lr;
         }
     </style>
 </head>
@@ -267,6 +287,14 @@
 
     <div class="border-width">
         <h5>border-width</h5>
+    </div><hr>
+
+    <div class="border-inline">
+        <h5>border-inline</h5>
+    </div><hr>
+
+    <div class="border-block">
+        <h5>border-block</h5>
     </div><hr>
 
 </body>
