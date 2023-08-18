@@ -6,42 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psudeo Element Selector</title>
     <style>
-        h1{
-            background-color: brown;
-            color: antiquewhite;
+
+        .element{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            height: 500px;
+            border: 3px solid black;
             font-size: 20px;
         }
+        a::before{
+            padding:10px 80px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: hotpink;
+            content: "Text";
+            transition: 1s;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover::before{
+            content: "Thank you";
+            border: 2px solid black;
+            background-color: crimson;
+            color:white;
+            cursor: pointer;
+        }
+        .before-after::before{
+            content:"Mr";
+            color:red;
+            font-size: 20px;
+        }
+        .before-after::after{
+            content:"suthar";
+            color:red;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        .selection::selection{
+            background-color: firebrick;
+            color: palevioletred;
+        }
+        .first-letter::first-letter{ /* we can use last-latter*/
+            color: brown;
+            font-size: 50px;
+        }
+        .first-line::first-line{
+            background-color: yellowgreen;
+        }
 
-        
-        h1::first-line{
-            color:black;
-            background-color: rgb(74, 101, 101);
-        }
-        h1::first-letter{
-            font-size: 100px;
-            color: aqua;
-        }
-        h1::selection{
-            color: hotpink;
-        }
-        h2::before{
-            content:"Lorem";
-            background-color: aqua;
-            color: black;
-            height: 50px;
-        }
-        h2::after{
-            content: "Hello";
-            background-color: blueviolet;
-            color: burlywood;
-        }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ea quas, culpa sed quidem impedit alias ratione obcaecati, enim aut vel cupiditate, esse id consequuntur blanditiis saepe. Consequuntur labore earum, totam, est nobis quam quis repellendus necessitatibus inventore deserunt saepe fugiat fugit doloremque placeat corrupti, minima accusamus omnis officiis dolorem obcaecati iusto ipsam similique eum? Et similique dolorum libero earum. Culpa consequuntur minus nihil, aut expedita sit quas incidunt, autem architecto a minima, voluptatum possimus doloribus vel tenetur debitis tempore aliquid quidem omnis ipsam nobis est? Earum nemo inventore rerum officiis facere commodi rem neque voluptates est? Voluptatibus, accusamus distinctio?</h1>
-    </div>
+    <h1>psuedo element is a used to  style specified part of  an element</h1>
+    <div class="element">
+            <ol>
+                <li>:: before</li>
+                <li>:: after</li>
+                <li>:: first-line</li>
+                <li>:: last-line</li>
+                <li>:: selection</li>
+            </ol>
 
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, harum.</h2>
+            <div class="before-after">
+                ravi
+            </div>
+            <div class="selection">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, obcaecati.
+            </div>
+            <div class="first-letter">
+                <h1>Sonic</h1>
+            </div>
+            <div class="first-line">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at odit quo nulla, debitis cum modi, libero aliquid voluptate facere, molestias veniam blanditiis rem laudantium? Labore obcaecati architecto quia illo.
+            </div>
+            <div class="change">
+                <a href="https://www.google.com/"></a>
+            </div>
+    </div>
 </body>
 </html>

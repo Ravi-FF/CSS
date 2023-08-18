@@ -6,100 +6,93 @@
     <title>Psudeo Class Salector</title>
 </head>
 <style>
-    #main{
-        height: 700px;
-        width: 100%;
-        background-color: khaki;
+    .container{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
-    .box-1{
-        width: 200px;
-        height: 200px;
-        background-color: brown;
+    .hover{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
         text-align: center;
-        border: 3px solid black;
-        margin-right: 30px;
-        transition: 0sec;
+        line-height: 100px;
     }
-    .box-2{
-        width: 200px;
-        height: 200px;
-        background-color: rgb(18, 198, 226);
-        text-align: center;
-        border: 3px solid black;
-        margin-right: 30px;
-
+    .hover:hover{
+        background-color: gray;
+        font-size: 15px;
+        cursor: pointer;
     }
-    .box-3{
-        width: 200px;
-        height: 200px;
-        background-color: rgb(19, 227, 50);
-        text-align: center;
-        border: 3px solid black;
-        margin-right: 30px;
-
+    ul li:nth-child(2n+1){
+        background-color: gold;
+        width: 100%;
     }
-    .box-4{
-        width: 200px;
-        height: 200px;
-        background-color: rgb(197, 230, 10);
-        text-align: center;
-        border: 3px solid black;
-        margin-right: 30px;
-
+    .first-child ol li:first-child{
+        color: red;
+        background-color: darkorange;
+    }
+    .first-child ol li:last-child{
+        color: red;
+        background-color: darkorange;
+    }
+    .anchor a:active{ /*visited,active ,link*/
+        color:chartreuse;
     }
 
-    .box-1:hover{
-        cursor: pointer;
-        width: 210px;
-        height: 210px;
-        background-color: rgb(163, 70, 77);
-        text-align: center;
-        border: 3px solid rgb(41, 33, 69);
-        margin-right: 30px;
-        border-radius: 50%;
-        transition: 2sec;
-    }
-    .box-2:hover{
-        cursor: pointer;
-        width: 210px;
-        height: 210px;
-        background-color: rgb(122, 122, 18);
-        text-align: center;
-        border: 3px solid red;
-        margin-right: 30px;
-        border-radius: 50%;
-    }
-    .box-3:hover{
-        cursor: pointer;
-        width: 210px;
-        height: 210px;
-        background-color: rgb(8, 52, 128);
-        text-align: center;
-        border: 3px solid red;
-        margin-right: 30px;
-        border-radius: 50%;
-    }
-    .box-4:hover{
-        cursor: pointer;
-        width: 210px;
-        height: 210px;
-        background-color: rgb(84, 104, 219);
-        text-align: center;
-        border: 3px solid red;
-        margin-right: 30px;
-        border-radius: 50%;
-    }
+        
 </style>
 <body>
-    <div id="main">
-        <div class="box-1">Hello 1</div>
-        <div class="box-2">Hello 2</div>
-        <div class="box-3">Hello 3</div>
-        <div class="box-4">Hello 4</div>
+    <h1>Psuedo class Selector in css</h1>
+    <h2>Psuedo class: psuedo class is used to define a special state of an Element</h2>
+    <!-- we have a many types of pusedo class but most important Psudeo is: -->
+    <ol>
+        <li>:hover</li>
+        <li>:nth-child</li>
+        <li>:nth-last-child</li>
+        <li>:link</li>
+        <li>:visited</li>
+        <li>:active</li>
+        <li>:first-child</li>
+        <li>:last-child</li>
+    </ol>
+<div class="container">
+    <div class="hover">
+        Hover
     </div>
- 
+    <div class="nth-child">
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ul>
+
+        <ul>
+            <li>Item-6</li>
+            <li>Item-7</li>
+            <li>Item-8</li>
+            <li>Item-9</li>
+            <li>Item-10</li>
+        </ul>
+    </div>
+
+    <div class="first-child">
+        <h4>First-child/<br>
+        last-child</h4>
+        <ol>
+            <li>sonicmaster</li>
+            <li>sonicmaster</li>
+            <li>sonicmaster</li>
+        </ol>
+    </div>
+
+    <div class="anchor">
+        <a href="#">
+            hello
+        </a>
+    </div>
+</div>
+   
 </body>
 </html>

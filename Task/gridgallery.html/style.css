@@ -35,8 +35,6 @@
     background-position: top;
     transition: all 1s ease-in-out;
     color: white;
-    background-color:#222;
-    background-blend-mode:hard-light;
     cursor: pointer;
 }
 .gallery{
@@ -73,5 +71,7 @@
 .animals:hover{
     font-size: 28px;
     background-color: #999;
+    color: black;
+    font-weight: 600;
     background-position:center;
 }
