@@ -142,21 +142,13 @@ cursor: pointer;
     color:white;
 }
 .discount{
-    background-color: #ffd7ad;
-    height: 102vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    z-index: 1;
     width: 100%;
     padding-left: 50px;
     text-transform: uppercase;
-}
-
-.hand{
-    position:absolute;
-    right: 50px;
-    z-index: -1;
+    background: url(./Images/peice.png) no-repeat center/cover;
 }
 
 .discount h1{
