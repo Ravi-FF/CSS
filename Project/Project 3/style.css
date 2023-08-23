@@ -8,6 +8,10 @@
     height: 100vh;
     width: 100%;
 }
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
 .section-first{
     padding:30px 50px;
 }
@@ -32,14 +36,17 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #3d2514;
-    font-weight: 700;
     font-family: "Bebas Neue";
     text-decoration: none;
+}
+.second-nav ul li a:hover{
+    font-size: 19px;
+    opacity: 0.8;
+    transition: 0.1s;
 }
 .express p{
     line-height: 71px;
     color: #3d2514;
-    font-weight: 700;
     font-family: "Montserrat";
     text-align: right;
     font-size: 17px;
@@ -58,7 +65,6 @@
 .first-left h1{
     font-size: 120px;
     color: #3d2514;
-    font-weight: 900;
     font-family: "Alfa Slab One";
     filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
     text-transform: uppercase;
@@ -66,7 +72,6 @@
 .first-left  h2{
     font-size: 45px;
     color: #3d2514;
-    font-weight: 900;
     font-family: "Alfa Slab One";
     filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
     text-transform: uppercase;
@@ -168,7 +173,6 @@
 .burger-main h3{
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
 }
@@ -191,7 +195,6 @@
     height: 48px;
     border: none;
     background-color: #ffc045;
-    font-weight: 700;
     font-family: "Bebas Neue";
     text-transform: uppercase;
     cursor: pointer;
@@ -199,7 +202,6 @@
 .content h1{
     text-transform: uppercase;
     color: #3d2514;
-    font-weight: 700;
     font-family: "Alfa Slab One";
     font-size: 50px;
     margin:30px 0 25px 0;
@@ -230,7 +232,6 @@
     line-height: 38px;
     text-transform: uppercase;
     color: #3d2514;
-    font-weight: 700;
     font-family: "Bebas Neue";
 }
 .first-img p{
@@ -277,7 +278,6 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #3d3d3d;
-    font-weight: 700;
     font-family: "Bebas Neue";
 }
 .discover h2{
@@ -285,7 +285,6 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #3d2514;
-    font-weight: 900;
     font-family: "Alfa Slab One";
 }
 .discover p{
@@ -295,7 +294,6 @@
     font-size: 21px;
     line-height: 33px;
     color: #3d3d3d;
-    font-weight: 400;
     font-family: "Montserrat";
 }
 form{
@@ -347,7 +345,6 @@ form button{
     line-height: 46px;
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: 400;
     font-family: "Alfa Slab One";
     height: 50px;
     border: none;
@@ -360,7 +357,6 @@ form button{
     line-height: 46px;
     text-transform: uppercase;
     color: #3d2514;
-    font-weight: 800;
     font-family: "Bebas Neue";
     text-align: center;
     margin-top: 50px;
@@ -370,7 +366,6 @@ form button{
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #3d2514;
-    font-weight: 900;
     font-family: "Alfa Slab One";
     text-align: center;
 }
@@ -394,14 +389,12 @@ form button{
     font-size: 17px;
     line-height: 25px;
     color: #ffffff;
-    font-weight: 400;
     font-family: "Montserrat";
     width: 520px;
 }
 .right-footer p{
     line-height: 38px;
     color: #ffffff;
-    font-weight: 700;
     font-family: "Bebas Neue";
     font-size: 21px;
 }
@@ -414,7 +407,6 @@ form button{
 }
 .p{
     color: #ffffff;
-    font-weight: 400;
     font-family: "Bebas Neue";
     font-size: 17px;
 }
