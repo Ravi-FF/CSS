@@ -3,9 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.font-M{
+    font-family: "Montserrat";
+}
+.font-O{
+    font-family: "Open Sans";
+}
+
+/*------------------------------- First-section----------------------------------------- */
+
 #first-section{
     background: url(./Image/Header\ Background.png) no-repeat center/cover;
-    /* height: 100vh; */
 }
 header{
     height: 80px;
@@ -24,7 +33,6 @@ nav ul li a{
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Open Sans";
     text-decoration: none;
 }
 .search{
@@ -39,11 +47,10 @@ nav ul li a{
     border-radius: 21px;
     background-color: #ffffff;
     width: 218px;
-    font-family: "Open Sans";
+    text-align: center;
+    font-weight: bold;
+    border: none;
     font-size: 20px;
-text-align: center;
-font-weight: bold;
-border: none;
 }
 button:hover{
     opacity: 0.9;
@@ -56,30 +63,29 @@ button:hover{
 }
 .first-left h1{
     font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    filter: drop-shadow(0px 5px 2.5px rgba(84,82,79,0.22));
+    margin:30px 0 80px 0;
     font-size: 99px;
-color: #ffffff;
-filter: drop-shadow(0px 5px 2.5px rgba(84,82,79,0.22));
-margin:30px 0 80px 0;
 }
 .first-left h2{
     font-size: 25px;
     letter-spacing: 5px;
     color: #ffffff;
     font-style: italic;
-    font-family: "Open Sans";
     margin: 50px 0;
 }
 .first-left p{
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-style: italic;
+    margin: 20px 0;
     width: 500px;
-/* height: 130px; */
-font-size: 21px;
-letter-spacing: 1px;
-color: #ffffff;
-/* font-weight: 400; */
-font-style: italic;
-font-family: "Open Sans";
-margin: 20px 0;
 }
+
+/*------------------------------- Second-section----------------------------------------- */
+
 #second-section{
     display: flex;
     flex-direction: column;
@@ -90,67 +96,57 @@ margin: 20px 0;
 .lorem h1{
     font-size: 90px;
     color: #222328;
+    text-align: center;
+    margin: 20px 0;
     font-family: 'Dancing Script', cursive;
-text-align: center;
-margin: 20px 0;
 }
 .lorem p{
-    /* width: 600px; */
-/* height: 210px; */
-font-size: 25px;
-color: #2f3135;
-font-weight: 400;
-font-family: "Open Sans";
-text-align: center;
+    font-size: 25px;
+    color: #2f3135;
+    font-weight: 400;
+    text-align: center;
 }
+    
 .image-3{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     gap: 80px;
-    /* margin: 60px 0; */
-    /* border: 2px solid black; */
 }
 
 .image-one h1{
     font-size: 29px;
     color: #343434;
-    /* font-weight: 800; */
-    font-family: "Open Sans";
     padding-left: 50px;
 }
 .image-one p{
-    /* width: 365px; */
     font-size: 23px;
     padding-left: 50px;
-
     color: #343434;
-    /* font-weight: 400; */
-    font-family: "Open Sans";
 }
+
 .btn-2 button{
-    /* text-align: center; */
     margin-bottom: 80px ;
+    height: 50px;
+    border-radius: 38px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    background-color: #343434;
     width: 250px;
-height: 50px;
-border-radius: 38px;
-font-size: 18px;
-letter-spacing: 3px;
-/* line-height: 21px; */
-text-transform: uppercase;
-color: #ffffff;
-font-weight: 700;
-border: none;
-font-family: "Open Sans";
-background-color: #343434;
 }
+
+/*------------------------------- Third-section----------------------------------------- */
+
 .third h1{
-color: #ffffff; 
-padding-top:20px;
+    padding-top:20px;
+    color: #ffffff; 
 }
 #third-section{
-background-color: #27292c;
-padding-bottom: 80px;
+    padding-bottom: 80px;
+    background-color: #27292c;
 }
 .third-center{
     display: flex;
@@ -161,22 +157,18 @@ padding-bottom: 80px;
     line-height: 26px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Montserrat";
     font-size: 16px;
 }
 .third-left,.third-right{
     width: 30%;
 }
 .btn-3 button{
-    /* width:250px; */
     width: 250px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px auto;
-    /* height: 58px; */
-    /* padding-bottom: 50px; */
     border: none;
     border-radius: 22px;
     background-color: #fdfdfd;
@@ -185,55 +177,53 @@ padding-bottom: 80px;
     font-family: "Montserrat";
     font-size: 26px;
 }
+
+/*------------------------------- Fourth-section----------------------------------------- */
+
 .fourth-section{
     display: flex;
     justify-content: center;
     gap: 50px;
-    /* align-items: center; */
     padding-top: 50px;
 }
 .plate-content h1{
+    color: #27292c;
+    font-weight: 700;
+    margin-top: 80px;
     font-size: 58px;
-color: #27292c;
-font-weight: 700;
-margin-top: 80px;
-font-family: "Open Sans";
 }
 .plate-content p{
+    font-size: 29px;
+    margin: 50px 0;
+    color: #27292c;
+    font-weight: 400;
     width: 640px;
-/* height: 175px; */
-font-size: 29px;
-margin: 50px 0;
-color: #27292c;
-font-weight: 400;
-font-family: "Open Sans"
 }
 .btn-4{
     background-color: #27292c;
     color: #ffffff;
 }
+/*------------------------------- Fifth-section----------------------------------------- */
+
 .fifth-section{
     flex-direction: row-reverse;
 }
+
+/*------------------------------- sixth-section----------------------------------------- */
+
 #sixth-section{
     background: url(./Image/Header\ Background.png) no-repeat center/cover;
     height: 150vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* align-items: center; */
 }
 .six p{
- /* width: 714px; */
- margin-right: 0px;
-/* height: 74px; */
-font-size: 25px;
-line-height: 33px;
-color: #f8f6f1;
-font-weight: 400;
-font-family: "Montserrat";
-text-align: center;
-/* padding-bottom: 50px; */
+    line-height: 33px;
+    color: #f8f6f1;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
 }
 .six p::after{
     content:"" ;
@@ -249,18 +239,16 @@ text-align: center;
     display: flex;
     justify-content: end;
 }
+
+/*------------------------------- sevanth-section----------------------------------------- */
+
 #sevanth-section{
     height: 100vh;
     padding: 0px 90px;
 }
 .lorem-three{
-    /* flex-direction: row; */
     display: flex;
     justify-content: space-between;
-    /* width: 95%; */
-    /* width: 500px; */
-    /* margin-top: 90px; */
-
     height: 400px;
     gap: 20px;
     align-items: center;
@@ -269,34 +257,34 @@ text-align: center;
     margin: 20px 0;
     font-size: 50px;
     text-align: center;
-/* line-height: 33px; */
-color: #393939;
-font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
+    color: #393939;
 }
 .lorem-three p{
-    /* width:250px; */
-    /* width: 100%; */
     font-size: 19px;
-line-height: 25px;
-color: #333d42;
-font-weight: 400;
-font-family: "Open Sans";
+    line-height: 30px;
+    color: #333d42;
+    font-weight: 400;
+    
 }
 .sevanth-content{
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    height: 161px;
+    font-size: 25px;
+    color: #3f3f3f;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-align: center;
     width: 817px;
-height: 161px;
-font-size: 25px;
-color: #3f3f3f;
-font-weight: 600;
-font-family: "Open Sans";
-text-align: center;
 }
 .sevanth-content p{
     margin: 60px 0;
 }
+
+/*------------------------------- Eight-section----------------------------------------- */
+
 #eight-section{
     display: flex;
     justify-content: center;
@@ -307,51 +295,53 @@ text-align: center;
     background-color: #27292c;
 }
 .eight h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
     font-size: 75px;
-color: #ffffff;
-font-weight: 700;
-font-family: "Open Sans";
-text-align: center;
 }
 .eight p{
-  width: 1000px;
-  margin: 60px 0;
-font-size: 30px;
-color: #ffffff;
-font-weight: 400;
-font-family: "Open Sans";
-text-align: center;
+    margin: 60px 0;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    width: 1000px;
 }
 .email-btn{
-width: 222px;
-height: 60px;
-font-size: 25px;
-text-transform: uppercase;
-color: #ffffff;
-font-weight: 700;
-font-family: "Open Sans";
-text-align: center;
-border-radius: 32px;
-border: none;
-border: 2px solid white;
-background-color: #54524f;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    border-radius: 32px;
+    border: none;
+    height: 59px;
+    background-color: #54524f;
+    width: 222px;
+    font-size: 20px;
 }
 input[type*="email"]{
-width: 659px;
-height: 55px;
-background-color: #ffffff;
-border-radius: 32px;
-padding: 10px 30px;
-font-size: 20px;
-border: none;
+    height: 54px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    width: 659px;
 }
+
+/*------------------------------- last/footer-section----------------------------------------- */
+
 #last-section{
-    height: 100vh;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
+    height: 100vh;
 }
 .footer,.last-right{
     display: flex;
@@ -360,30 +350,29 @@ border: none;
     gap: 60px;
 }
 .footer h4{
-    font-size: 32px;
-color: #343434;
-/* font-weight: 400; */
-font-family: "Montserrat";
+    color: #343434;
+    font-size: 30px;
 }
 .last-left p{
-    width: 380px;
-/* height: 244px; */
-margin: 30px 0;
-font-size: 24px;
-color: #343434;
-font-weight: 400;
-font-family: "Montserrat";
+    margin: 30px 0;
+    font-size: 20px;
+    line-height: 35px;
+    color: #343434;
+    font-weight: 400;
+    width: 400px;
 }
 .last-right ul{
     list-style: none;
 }
 .last-right ul li a{
+    font-size: 20px;
+    line-height: 42px;
+    color: #343434;
+    font-weight: 400;
     text-decoration: none;
-    font-size: 24px;
-line-height: 42px;
-color: #343434;
-font-weight: 400;
-font-family: "Montserrat";
+}
+.last-right ul li a:hover{
+    text-decoration:underline;
 }
 .icon i{
     font-size: 30px;
@@ -391,6 +380,4 @@ font-family: "Montserrat";
 }
 .icon i:hover{
     cursor: pointer;
-    /* font-size: 31px; */
-
 }
