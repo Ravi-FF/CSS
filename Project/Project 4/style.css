@@ -225,16 +225,7 @@ button:hover{
     text-align: center;
     font-size: 25px;
 }
-.six p::after{
-    content:"" ;
-    width: 200px;
-    color: #ffffff;
-    background-color: #fdfdfd;
-    height:8px;
-    margin:0 auto;
-    display: block;
-    margin-top: 20px;
-}
+
 .pizza-image{
     display: flex;
     justify-content: end;
