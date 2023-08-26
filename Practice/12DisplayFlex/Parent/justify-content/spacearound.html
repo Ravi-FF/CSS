@@ -8,13 +8,14 @@
         .conatiner{
             display: flex;
             justify-content:space-around;
+            background-color: lightslategray;
             align-items: center;
             height: 600px;
             width: 90%;
             border: 3px solid black;
             margin: 0 auto;
         }
-        #box{
+        .box{
             border: 2px solid black;
             margin: 5px;
             text-align: center;
@@ -38,21 +39,21 @@
             color: black;
             font-size: 20px;
         }
-        .box-1{background-color: aqua;}
-        .box-2{background-color: red;}
-        .box-3{background-color: green;}
-        .box-4{background-color: tomato;}
-        .box-5{background-color: orangered;}
+        #box-1{background-color: aqua;}
+        #box-2{background-color: red;}
+        #box-3{background-color: green;}
+        #box-4{background-color: tomato;}
+        #box-5{background-color: orangered;}
     </style>
 </head>
 <body>
     <h1>Justify-Content:space-around</h1>
     <div class="conatiner">
-        <div class="box-1" id="box">Box-1</div>
-        <div class="box-2" id="box">Box-2</div>
-        <div class="box-3" id="box">Box-3</div>
-        <div class="box-4" id="box">Box-4</div>
-        <div class="box-5" id="box">Box-5</div>
+        <div id="box-1" class="box">Box-1</div>
+        <div id="box-2" class="box">Box-2</div>
+        <div id="box-3" class="box">Box-3</div>
+        <div id="box-4" class="box">Box-4</div>
+        <div id="box-5" class="box">Box-5</div>
     </div>
 </body>
 </html>
