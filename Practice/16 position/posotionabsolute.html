@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position absolute in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            height: 300px;
+            border: 2px solid black;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: lightpink;
+            position: relative;
+        }
+        h1,h2{
+            text-align: center;
+            background-color: crimson;
+            padding: 15px 0;
+            margin: 20px 0;
+            color: azure;
+        }
+        h3{
+            text-align: center;
+            color: red;
+        }
+        div[class*=box]{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .box-1{background-color: gray;}
+        .box-2{
+            background-color: lightgreen;
+            position: absolute;
+            top: 250px;
+            left: 50px;
+        }
+        .box-3{background-color: lightblue;}
+        .box-4{background-color:violet;}
+        .box-5{
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Position-absolute</h1>
+    <h2>Jese hi hm kisi bhi element ko position absolute dete hai to vo apni position se khisak jata hai lekin us element ki jagha vaha pr nhi bani rehti hai us element ki jagha vaha se ht jati h uski jaha dursa relative element le leta hi</h2>
+    <h3>jb tk hm kesi bhi element ko Position-relative nhi dete h to Position-absolute body ke relative me aap ko exject krta hai jese hm kesi bhi element ko Position-relative de dete h to Position-absolute Position-relative ke according work krta hai</h3>
+    <div class="container">
+            <div class="box-1">box-1</div>
+            <div class="box-2">box-2</div>
+            <div class="box-3">box-3</div>
+            <div class="box-4">box-4</div>
+            <div class="box-5">box-5</div>
+    </div>
+
+</body>
+</html>
+
+
