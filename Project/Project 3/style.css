@@ -86,37 +86,36 @@ button:hover{
 }
 .first-right{
     position: relative;
+    border: 2px solid b;
     display: flex;
     justify-content: end;
     align-items:center;
     height: 610px;
     margin-right: 50px;
     width: 50.5%;
-
 }
-.photo{
+.first-right img{
     position: absolute;
+}
+
+.photo{
     bottom:60px;
     right: 9%;
     z-index: 5;
 }
 .french{
-    position: absolute;
     left:9%;
     bottom: 26%;
     z-index: 3;
 }
 .glass{
-    position: absolute;
     z-index: 2;
 }
 .Shadow{
-    position: absolute;
     left: 60%;
     bottom: 4%;
 }
 .burger-shadow{
-    position: absolute;
     bottom: 3%;
     right: 4%;
 }
