@@ -2,22 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header{
-    width: 100%;
     background-color: #b13941;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 nav{
     width: 80%;
+    margin: 0 auto;
 }
 ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding:8px 0 10px 0;
+    padding:8px 0;
 }
 ul li{
     list-style: none;
@@ -27,96 +25,79 @@ li a{
     font-size: 18px;
     color: white;
 }
-.section1{
+#section-1{
     background: rgba(0, 0, 0, 0.5) url(./images/bg.png) no-repeat center/cover;
     background-blend-mode: darken;
-    height:88vh;
+    height:100vh;
+    color: #feedda;
+    text-align: center;
+
 }
 .h1{
     padding:80px 0;
-    font-size: 30px;
-    font-family: "Yeseva One";
-    color: #feedda;
-    text-align: center;
+    font-size: 50px;
 }
 .pre{
     font-size:25px;
     padding:0 100px 0 100px;
-    font-family: "PT Serif";
-    color: #fefefe;
-    text-align: center;
 }
 .btn{
     padding-top:60px;
     font-size: 21px;
-    color: #feedda;
     line-height: 33px;
-    text-align: center;
 }
 .btn button{
     background-color: #b13941;
     padding: 10px 40px;
     line-height: 33px;
     font-size: 21px;
-    font-family: "PT Serif";
     color: #feedda;
-    cursor: pointer;
-    text-align: center;
+}
+button{
     border: none;
 }
  button:hover{
-    border-radius: 15px;
-    border: 2px solid white;
+    opacity: 0.9;
+    cursor: pointer;
 }
-.half-section{
+#section-2{
     display: flex;
     padding: 45px 10px;
     align-items: center;
     justify-content: center;
     background-color: #b13941;
     gap: 80px;
-}
-.gift {
-    gap: 50px;
-    width: 53%;
-    font-weight: 400;
-    font-size: 37px;
-    font-family: "Yeseva One";
     color: #feedda;
+}
+
+
+.gift {
+    width: 50%;
+}
+.gift h1{
+    font-size: 50px;
 }
 .gift p{
     font-size: 18px;
-    width: 100%;
-    color: #feedda;
-    font-family: "PT Serif";
-    margin: 30px 0 10px;
+    margin: 30px 0 20px;
 }
 .gift button{
     padding: 8px 12px;
-    cursor: pointer;
     color: #b13941;
     font-size: 18px;
-    text-align: center;
-    font-family: "PT Serif";
 }
-.section3{
-    height: 100vh;
+.section-3{
     background-color: #f8eed3;
     justify-content: center;
     display: flex;
+    gap: 60px;
 }
-.cup{
-    width:50%;
-}
-.cup img{
-    height: 100vh;
-}
+
 .best{
     display: flex;
     width: 70%;
     justify-content: center;
     flex-direction: column;
-    font-family: "Yeseva One";
     color: #000000;
 }
 .best h1{
@@ -124,83 +105,66 @@ li a{
 }
 .best p{
     font-size: 21px;
-    margin: 50px 0 40px 0;
+    margin: 50px 0;
+    line-height: 30px;
     color: #575757;
-    font-family: "PT Serif";
     width: 576px;
 }
 .best span{
     font-size: 21px;
     cursor: pointer;
     color: #b13941;
-    font-family: "PT Serif";
     text-decoration: underline;
 }
 .menu{
-    height:100vh;
     background-color: #b13941;
-    width: 100%;
 }
 .store{
-    height: 105vh;
     background-color: #f8eed3;
 }
-.m1{
-    text-align: center;
-    width: 100%;
-} 
-.m2{
-    text-align: center;
-    width: 100%;
-}
-.m2 h1{
-    letter-spacing: 1px;
-    font-size: 58px;
-    color: #b13941;
-    text-align: center;
-    font-family: "Yeseva One";
-    padding-top: 10px;
-}
-.m1 h1{
-    font-size: 58px;
-    padding: 30px 0;
-    color: #f8eed3;
-    letter-spacing: 1px;
-}
-.m2 p{
-    color: #b13941;
-    display: inline-block;
-    width: 882px;
-    font-family: "PT Serif";
-    font-size: 21px;
-}
-.m1 p{
-    display: inline-block;
-    width: 882px;
-    font-family: "PT Serif";
-    color: #f8eed3;
-    font-size: 21px;
-}
-.section-first{
-    margin-top: 60px;
+.section-4{
     display: flex;
     align-items: center;
-    width: 100%;
-    padding-left:30px;
+    padding:30px 0 90px 30px ;
     overflow: hidden;
 }
 .secstore{
-    margin:60px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 .sec1{
     width:37%;
     display: flex;
     margin-left: 35px;
-    background-color: #575757;
 }
+.content button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #b13941;
+    font-size: 12px;
+    color: #feedda;
+}
+.menu-text{
+    text-align: center;
+    width: 100%;
+    color: #f8eed3;
+} 
+
+.menu-text p{
+    display: inline-block;
+    margin: 40px 0;
+    width: 882px;
+    font-size: 21px;
+}
+.menu-text h1{
+    font-size: 58px;
+    padding-top: 10px;
+}
+.store-text{
+    color: #b13941;
+}
+
 .content{
     width: 499px;
     height: 312px;
@@ -211,28 +175,27 @@ li a{
     font-size: 12px;
     line-height: 16px;
     color: #575757;
-    font-family: "PT Serif";
 }
 .content h1{
     font-size: 33px;
     color: #010101;
     line-height: 70px;
-    font-family: "Yeseva One";
 }
-.content button{
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #b13941;
-    font-size: 14px;
-    color: #feedda;
-    font-family: "PT Serif";
-    cursor: pointer;
+.sec2 h1{
+    font-size: 18px;
+    position: absolute;
+    bottom: 40%;
+    border: 6px double black;
+    padding: 10px 30px;
+    background-color: khaki;
+    color: #b13941;
+    left: 26%;
 }
 .sec2{
-    height: 500px;
+    position: relative;
     text-align: center  ;
     background-color: #ffffff;
-    margin: 0 30px;
+    margin: 50px 30px;
 }
 .sec2-content{
     width: 351px;
@@ -241,24 +204,19 @@ li a{
     align-items: center;
     flex-direction: column;
     padding-top:40px;
-    text-align: center;
 }
 .sec2-content p{
-    height: 85px;
     font-size: 17px;
     color: #555555;
     width: 294px;
-    font-family: "PT Serif";
 }
 .sec2-content button{
     height: 41px;
-    margin-top: 30px;
+    margin: 30px 0;
     background-color: #b13941;
     width: 136px;
     color: #f8eed3;
-    font-family: "EB Garamond";
-    font-size: 21px;
-    cursor: pointer;
+    font-size: 15px;
 }
 .profile{
     display: flex;
@@ -286,7 +244,6 @@ li a{
 .cpro h1{
     letter-spacing: 1px;
     font-size: 58px;
-    font-family: "Yeseva One";
     color: #f8eed3;
 }
 .cpro p{
@@ -295,7 +252,6 @@ li a{
     font-size: 21px;
     height: 101px;
     color: #f8eed3;
-    font-family: "PT Serif";
     line-height: 33px;
 }
 .map{
@@ -313,7 +269,6 @@ li a{
     letter-spacing: 1px;
     font-size: 58px;
     padding: 50px 0;
-    font-family: "Yeseva One";
     color: #b13941;
 }
 .contect-us input{
@@ -338,7 +293,6 @@ input[placeholder='Messages']{
     height: 54px;
     background-color: #b13941;
     color: #f8eed3;
-    font-family: "PT Serif";
     width: 207px;
     cursor: pointer;
 }
@@ -352,7 +306,6 @@ input[placeholder='Messages']{
 .your{
     height: 198px;
     line-height: 30px;
-    font-family: "EB Garamond";
     color: #f8eed3;
 }
 .your p{
@@ -363,7 +316,6 @@ input[placeholder='Messages']{
 .your h2{
     font-size: 25px;
     color: #f8eed3;
-    font-family: "EB Garamond";
 }
 .footer ul{
     height: 198px;
@@ -371,7 +323,6 @@ input[placeholder='Messages']{
     letter-spacing: 0px;
     line-height: 28px;
     color: #f8eed3;
-    font-family: "EB Garamond";
     display: block;
 }
 .footer ul li:hover{
@@ -382,5 +333,4 @@ input[placeholder='Messages']{
     font-size: 17px;
     line-height: 29px;
     color: #ffffff;
-    font-family: "PT Serif"; 
 }
