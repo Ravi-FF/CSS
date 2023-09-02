@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first project</title>
+    <!-- css link here  -->
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome link here  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- headers section started Here -->
     <header>
         <nav>
             <ul>
+                <span class="menu"><i class="fa-solid fa-bars"></i></span>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Menu">Menu</a></li>
@@ -96,7 +100,7 @@
 
 
     <!-- store section started Here -->
-    <div class="store" id="Store">
+    <section class="store" id="Store">
         <div class="store-text menu-text">
             <h1>Store</h1>
             <p>Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
@@ -104,8 +108,8 @@
         <div class="secstore">
             <div class="sec2">
                 <img src="./images/store1.png" alt="">
-                <h1>Store Now</h1>
                 <div class="sec2-content hello">
+                    <h1>Store Now</h1>
                     <p>A lacus vestibulum sed. Amet purus gravida quis blandit turpis. Enim facilisis gravida neque convallis.</p>
                     <button>Visit Now</button>
                 </div>
@@ -113,38 +117,45 @@
 
             <div class="sec2">
                 <img src="./images/store2.png" alt="">
-                <h1>Store Now</h1>
-
+                
                 <div class="sec2-content">
+                    <h1>Store Now</h1>
                     <p>A lacus vestibulum sed. Amet purus gravida quis blandit turpis. Enim facilisis gravida neque convallis.</p>
                     <button>Visit Now</button>
                 </div>
             </div>
             <div class="sec2">
-                <h1>Store Now</h1>
-
+                
                 <img src="./images/store3.png" alt="">
                 <div class="sec2-content">
+                    <h1>Store Now</h1>
                     <p>A lacus vestibulum sed. Amet purus gravida quis blandit turpis. Enim facilisis gravida neque convallis.</p>
                     <button>Visit Now</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- company profile section started Here -->
-    <div class="profile" id="Profile">
-        <div class="kuchbhi">
-        <div class="company"></div>
+    <section class="profile-section" id="Profile">
+     <div class="profile">
+         <div class="company"><i class="fa-solid fa-play"></i>
+         </div>
             <div class="cpro">
                 <h1>Company Profile</h1>
                 <p>Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
+                <div class="social-icon">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     
     <!-- contect us section -->
-    <div class="map" id="content us">
+    <section class="map" id="content us">
         <img src="./images/map.png" alt="">
         <div class="contect-us">
             <h1>Contect us</h1>
@@ -152,19 +163,22 @@
             <input type="text" placeholder="Your Name"  value="">
             <input type="text"placeholder="Gender" value="">
             <input type="text"placeholder="Messages" value="">
-            <button>Send Message</button>
+            <div class="btn"><button>Send Message</button></div>
         </form>
         </div>
-    </div>
+    </section>
 
     <!-- footer section started here -->
-    <div class="footer">
+    <footer>
         <img src="./images/brandfooter.png" alt="">
         <div class="your">
-            <h2>Your Company</h2>
-            <p>Halimun Street 25 Jakarta, Indonesia 12850</p>
-            <h4>www.yourdomain.com</h4>
         </div>
+        <ul class="your">
+            <li><p>Your Company</p></li>
+            <li><p>Halimun Street 25 Jakarta,<br>
+            Indonesia,<br>12850</p></li>
+            <li><p>www.yourdomain.com</p></li>
+        </ul>
         <ul>
             <h4>Sitemap</h4>
             <li><a href="#Home">Home</a></li>
@@ -200,7 +214,7 @@
             <p>Copyright ©  2020 Freepik <br>
                 Company S.L. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
     </body>
 </html>
      

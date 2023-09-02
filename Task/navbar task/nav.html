@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive nevbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color:lightcyan;
+    }
+    nav{
+        width: 90%;
+        margin: 20px auto;
+        border: 2px solid black;
+        border-radius:20px;
+        background-color:gray;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    img{
+        width: 100px;
+        border-radius: 50%;
+    }
+    nav ul li{
+        display: inline;
+    }
+    span{
+        display: none;
+        text-decoration: none;
+    }
+    nav ul li a{
+        text-decoration: none;
+        margin-left: 80px;
+        font-size: 20px;
+        color: white;
+    }
+    iframe{
+        width: 100%;
+        border: none;
+        height: 600px;
+    }
+    @media(max-width:768px){
+        nav ul li{
+            display: none;
+        }
+        span{
+            display: block;
+            font-size: 30px;
+        }
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <img src="./logo.png" alt="logo">
+            <ul>
+                <span><a href="./IFRAME.HTML" target="bar"><i class="fa-solid fa-bars"></i></a></span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <iframe name="bar"></iframe>
+    </header>
+</body>
+</html>

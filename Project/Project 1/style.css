@@ -25,6 +25,12 @@ li a{
     font-size: 18px;
     color: white;
 }
+.menu{
+    display: none;
+    color: white;
+
+    font-size: 30px;
+}
 #section-1{
     background: rgba(0, 0, 0, 0.5) url(./images/bg.png) no-repeat center/cover;
     background-blend-mode: darken;
@@ -57,7 +63,11 @@ button{
     border: none;
 }
  button:hover{
-    opacity: 0.9;
+    opacity: 0.8;
+    cursor: pointer;
+}
+i:hover{
+    opacity: 0.8;
     cursor: pointer;
 }
 #section-2{
@@ -181,23 +191,18 @@ button{
     color: #010101;
     line-height: 70px;
 }
-.sec2 h1{
-    font-size: 18px;
-    position: absolute;
-    bottom: 40%;
-    border: 6px double black;
-    padding: 10px 30px;
-    background-color: khaki;
-    color: #b13941;
-    left: 26%;
-}
 .sec2{
-    position: relative;
     text-align: center  ;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 50px 30px;
+    border: 3px solid  #b13941;;
 }
 .sec2-content{
+    position: relative;
     width: 351px;
     display: flex;
     justify-content: center;
@@ -205,25 +210,33 @@ button{
     flex-direction: column;
     padding-top:40px;
 }
+.sec2 h1{
+    font-size: 18px;
+    position: absolute;
+    top: -30px;
+    border: 6px double black;
+    padding: 10px 30px;
+    background-color: khaki;
+    color: #b13941;
+    left: 26%;
+}
 .sec2-content p{
     font-size: 17px;
     color: #555555;
     width: 294px;
 }
 .sec2-content button{
-    height: 41px;
+    padding: 10px 25px;
     margin: 30px 0;
     background-color: #b13941;
-    width: 136px;
     color: #f8eed3;
     font-size: 15px;
 }
-.profile{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.profile-section{
     background-color: #b13941;
-    height:100vh;
+    padding: 90px 60px;
+    color: #f8eed3;
+
 }
 .company{
     height: 459px;
@@ -231,37 +244,48 @@ button{
     background: rgba(0, 0, 0, 0.5)url(./images/profile\ cup.png) no-repeat center/cover;
     background-blend-mode: darken;
 }
-.kuchbhi{
+.fa-play{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 99px;
+}
+.profile{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 80px;
-    margin: 0 60px;
+    gap: 50px;
 }
 .cpro{
-    margin-left: 80px;
+    padding: 30px;
+}
+.cpro:hover{
+    box-shadow: 0 0 8px 5px white;
+    cursor: pointer;
 }
 .cpro h1{
-    letter-spacing: 1px;
     font-size: 58px;
-    color: #f8eed3;
 }
 .cpro p{
-    margin: 40px 0;
+    margin: 30px 0;
     width: 500px;
     font-size: 21px;
-    height: 101px;
-    color: #f8eed3;
     line-height: 33px;
+}
+.social-icon i{
+    font-size: 25px;
+    margin-right: 30px;
+    border: 2px solid white;
+    padding:  8px;
 }
 .map{
     display: flex;
     justify-content: space-between;
-    height: 100vh;
     overflow: hidden;
 }
 .contect-us{
-    width: 53%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -271,9 +295,10 @@ button{
     padding: 50px 0;
     color: #b13941;
 }
-.contect-us input{
+ input{
     margin: 10px 0;
     width: 651px;
+    padding: 50px;
     padding: 0 10px;
     background-color: #efefef;
     border: 1.5px solid #b0b0b0;
@@ -282,55 +307,157 @@ button{
 }
 input[placeholder='Messages']{
     width: 650px;
-    background-color: #efefef;
-    border: 1.5px solid #b0b0b0;
     height: 202px;
     text-align: center;
 }
 .contect-us button{
     margin: 40px 0;
     font-size: 25px;
-    height: 54px;
     background-color: #b13941;
+    padding: 10px 15px;
     color: #f8eed3;
-    width: 207px;
-    cursor: pointer;
 }
-.footer{
+footer{
     display: flex;
     align-items: center;
     justify-content:space-around;
-    height: 50vh;
+    /* height: 50vh; */
+    padding: 80px 0;
     background-color: #b13941;
+    color: #ffffff;
+
 }
-.your{
-    height: 198px;
-    line-height: 30px;
-    color: #f8eed3;
-}
-.your p{
-    font-size:19px;
-    margin: 30px 0;
-    width:150px;
-}
-.your h2{
+.your li:nth-child(1), .your li:nth-child(2n+1){
     font-size: 25px;
-    color: #f8eed3;
+    font-weight: bold;
 }
-.footer ul{
+.your li:nth-child(2n+0){
+    font-size: 20px;
+    padding: 33px 0;
+}
+footer ul{
     height: 198px;
     font-size: 25px;
-    letter-spacing: 0px;
     line-height: 28px;
-    color: #f8eed3;
     display: block;
 }
-.footer ul li:hover{
+footer ul li:hover{
     cursor: pointer;
+    text-decoration: underline;
+}
+footer ul li a{
+    font-size: 15px;
 }
 .last{
     cursor: pointer;
     font-size: 17px;
     line-height: 29px;
-    color: #ffffff;
+}
+@media(min-width:768px) and ( max-width:1400px){
+    .pre{
+        padding: 80px 40px;
+        line-height: 45px;
+        font-size: 28px;
+    }
+
+    .section-3{
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+    .menu-text P{
+        width: 100%;
+    }
+    .section-3 img{
+        width: 60%;
+    }
+    .best{
+        text-align: center;
+        width: 100%;
+    }
+    .best h1{
+        font-size: 50px;
+        padding-top: 10px;
+
+    }
+    .best p{
+        width: 100%;
+    }
+    .section-4{
+        display: block;
+        padding: 0;
+    }
+    .sec1{
+        width: 100%;
+        margin: 0;
+        margin: 30px 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .secstore{
+        display: block;
+        padding-bottom: 8px;
+    }
+    .sec2{
+        padding: 50px;
+    }
+    
+    .sec2-content{
+        border: 2px solid black;
+    }
+    .profile{
+        display: block;
+    }
+    .company{
+        width: 100%;
+    }
+    .cpro{
+        width: 100%;
+        text-align: center;
+    }
+    .cpro p{
+        margin: 40px 0;
+        width: 100%;
+    }
+    .map{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .contect-us{
+        width: 100%;
+    }
+    .btn button{
+        text-align: center;
+    }
+    .btn{
+        padding: 0;
+    }
+    footer{
+        padding: 50px 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    footer ul{
+        display: inline-block;
+        margin: 50px 20px;
+        gap: 50px;
+    }
+}
+@media(max-width:767px){
+    nav ul li{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    nav ul li:nth-child(5){
+        display: block;
+        text-align: right;
+        width: 100%;
+    }
 }
