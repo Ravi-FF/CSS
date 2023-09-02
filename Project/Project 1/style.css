@@ -321,7 +321,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content:space-around;
-    /* height: 50vh; */
     padding: 80px 0;
     background-color: #b13941;
     color: #ffffff;
@@ -448,7 +447,7 @@ footer ul li a{
         gap: 50px;
     }
 }
-@media(max-width:767px){
+@media(min-width:568px) and (max-width:768px){
     nav ul li{
         display: none;
     }
@@ -459,5 +458,123 @@ footer ul li a{
         display: block;
         text-align: right;
         width: 100%;
+    }
+    #section-2{
+        display: block;
+        text-align: center;
+    }
+
+    .gift{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .section-3{
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+    .section-3 img{
+        width: 70%;
+    }
+    .best{
+        text-align: center;
+        width: 100%;
+    }
+    .best h1{
+        font-size: 50px;
+        padding-top: 10px;
+
+    }
+    .best p{
+        width: 100%;
+    }
+    .section-4{
+        display: block;
+        padding: 0;
+    }
+    .menu{
+        padding: 0 40px;
+    }
+    .content{
+        padding: 10px;
+    }
+    .content h1{
+        font-size: 25px;
+    }
+    .content p{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .menu-text p{
+        display: inline;
+        line-height: 20px;
+    }
+    .sec1{
+        width: 100%;
+        margin: 0;
+        margin: 30px 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .secstore{
+        display: block;
+        padding-bottom: 8px;
+    }
+    .store-text p{
+        line-height: 33px;
+    }
+    .sec2-content{
+        border: 2px solid black;
+    }
+    .sec2{
+        padding: 20px 0;
+    }
+    .profile{
+        display: block;
+    }
+    .company{
+        width: 100%;
+    }
+    .cpro{
+        width: 100%;
+        text-align: center;
+    }
+    .cpro p{
+        margin: 40px 0;
+        width: 100%;
+    }
+    .cpro h1{
+        font-size: 40px;
+    }
+    .map{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .contect-us{
+        width: 100%;
+    }
+    input, input[placeholder="Messages"]{
+        width: 500px;
+    }
+    .btn button{
+        text-align: center;
+    }
+    .btn{
+        padding: 0;
+    }
+    footer{
+        padding: 50px 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    footer ul{
+        display: inline-block;
+        margin: 50px 20px;
+        gap: 50px;
     }
 }
