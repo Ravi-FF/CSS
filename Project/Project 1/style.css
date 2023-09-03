@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* overflow: hidden; */
 }
 header{
     background-color: #b13941;
@@ -72,6 +73,7 @@ i:hover{
 }
 #section-2{
     display: flex;
+    flex-wrap: wrap;
     padding: 45px 10px;
     align-items: center;
     justify-content: center;
@@ -142,6 +144,7 @@ i:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .sec1{
     width:37%;
@@ -383,7 +386,6 @@ footer ul li a{
         width: 100%;
     }
     .section-4{
-        display: block;
         padding: 0;
     }
     .sec1{
@@ -395,7 +397,6 @@ footer ul li a{
         justify-content: center;
     }
     .secstore{
-        display: block;
         padding-bottom: 8px;
     }
     .sec2{
@@ -404,9 +405,6 @@ footer ul li a{
     
     .sec2-content{
         border: 2px solid black;
-    }
-    .profile{
-        display: block;
     }
     .company{
         width: 100%;
@@ -460,7 +458,6 @@ footer ul li a{
         width: 100%;
     }
     #section-2{
-        display: block;
         text-align: center;
     }
 
