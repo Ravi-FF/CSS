@@ -27,7 +27,7 @@ li a{
     color: white;
 }
 .menu{
-    display: none;
+    flex-wrap: wrap;
     color: white;
 
     font-size: 30px;
@@ -258,6 +258,7 @@ i:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     gap: 50px;
 }
 .cpro{
@@ -285,6 +286,7 @@ i:hover{
 .map{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 .contect-us{
@@ -356,6 +358,7 @@ footer ul li a{
     line-height: 29px;
 }
 @media(min-width:768px) and ( max-width:1400px){
+   
     .pre{
         padding: 80px 40px;
         line-height: 45px;
@@ -386,6 +389,7 @@ footer ul li a{
         width: 100%;
     }
     .section-4{
+        display: block;
         padding: 0;
     }
     .sec1{
@@ -446,11 +450,20 @@ footer ul li a{
     }
 }
 @media(min-width:568px) and (max-width:768px){
+    
+    #section-1 h1{
+        padding: 0 10px;
+        font-size: 50px;
+    }
+    .pre{
+        padding: 0;
+        line-height: 40px;
+    }
+    .btn{
+        margin-top: 50px;
+    }
     nav ul li{
         display: none;
-    }
-    .menu{
-        display: block;
     }
     nav ul li:nth-child(5){
         display: block;
@@ -466,7 +479,6 @@ footer ul li a{
         margin: 20px 0;
     }
     .section-3{
-        display: block;
         text-align: center;
         padding: 30px;
     }
@@ -490,6 +502,7 @@ footer ul li a{
         padding: 0;
     }
     .menu{
+        display: block;
         padding: 0 40px;
     }
     .content{
@@ -527,9 +540,6 @@ footer ul li a{
     .sec2{
         padding: 20px 0;
     }
-    .profile{
-        display: block;
-    }
     .company{
         width: 100%;
     }
@@ -545,12 +555,10 @@ footer ul li a{
         font-size: 40px;
     }
     .map{
-        display: block;
-        width: 100%;
-        text-align: center;
         margin-top: 30px;
     }
     .contect-us{
+        text-align: center;
         width: 100%;
     }
     input, input[placeholder="Messages"]{
