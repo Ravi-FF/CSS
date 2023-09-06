@@ -1,321 +1,750 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto";
+    font-family: 'Montserrat', sans-serif;
 }
-#first-section{
+
+header {
     background: url(./Images/background.png) no-repeat center/cover;
     height: 100vh;
 }
-header{
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.bars {
+    display: none;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+}
+
+nav {
     background-color: #4a1831;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+
 }
-nav{
-    width: 45%;
-}
-nav ul{
-    display: flex;
+
+nav ul {
+    padding: 20px 40px;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
- nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffd7ad;
-    font-family: "Montserrat";
-    font-size: 25px;
+    font-size: 18px;
 }
-.logo-text{
-    margin:40px 40px 0 40px;
+
+.logo-text {
+    padding: 40px;
     color: #ffd7ad;
 }
-.logo-text h1{
-    font-size: 100px;
+
+.logo-text h1 {
+    font-size: 90px;
 }
-.logo-text p{
-    font-size: 25px;
-    width:500px;
+
+.logo-text p {
+    font-size: 20px;
+    width: 500px;
 }
-.logo-text button{
-    cursor: pointer;
+
+.logo-text button {
     margin: 50px 0;
-    width: 322px;
-    border-radius: 33px;
     background-color: #ffd7ad;
-    font-size: 25px;
-    text-transform: uppercase;
+    font-size: 20px;
     color: #4a1831;
-    font-weight: 700;
-    height: 65px;
 }
-.logo-text button:hover{
-    background-color: #4a1831 ;
-    color: #ffd7ad;
-    transition: 1s;
-    box-shadow: 0px 0px 5px 5px  white;
+
+button {
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    border: none;
+    font-weight: 1000;
 }
-.second-section{
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.second-section {
     background-color: #ffd7ad;
-    height: 796px;
     text-align: center;
 }
-.text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.text h1{
+
+.text h1 {
     font-size: 64px;
     color: #4a1831;
     font-weight: 700;
-    margin: 40px 0;
+    padding: 30px 0;
 }
-.text p{
+
+.text p {
     color: #4a1831;
     font-size: 25px;
 }
-.text button{
-    margin: 53px 0 90px 0;
-    font-size: 25px;
-    text-transform: uppercase;
+
+.text button {
+    margin: 50px 0;
+    font-size: 20px;
     color: #ffd7ad;
-    font-weight: 700;
-    text-align: center;
-    width: 322px;
-    height: 65px;
-    border-radius: 33px;
     background-color: #4a1831;
-    cursor: pointer;
-    border: none;
 }
-.text button:hover{
-    box-shadow: 0px 0px 5px 5px  #4a1831;
-    transition: 1s;
-    cursor: pointer;
-    background-color: #1f6865;
-    color:white;
-}
-.image img{
+
+.image img {
     width: 100%;
 }
 
-.about{
+.about {
     background-color: #ffd7ad;
-    height: 100vh;
-    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    text-align: center;
     justify-content: space-around;
-    align-items: center;
-}
-.about h1{
     color: #4a1831;
-    font-size: 75px;
+}
 
+.about h1 {
+    font-size: 75px;
 }
-.about p{
-    color: #4a1831;
+
+.about p {
     margin: 30px 0 40px 0;
-    font-size: 30px;
+    font-size: 25px;
 }
-.about button{
-    text-transform: uppercase;
+
+.about button {
     color: #ffd7ad;
-    width: 322px;
-    height: 65px;
-    border-radius: 32px;
     background-color: #4a1831;
     font-size: 25px;
-    border: none;
 }
-.about button:hover{
-    box-shadow: 0px 0px 5px 5px white;
-    transition: 1s;
-    background-color: #1f6865;
-cursor: pointer;
-    color:white;
-}
-.discount{
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
+
+.discount {
+    justify-content: flex-end;
     width: 100%;
     padding-left: 50px;
     text-transform: uppercase;
-    background: url(./Images/peice.png) no-repeat center/cover;
+    position: relative;
 }
 
-.discount h1{
-    font-size: 167px;
+.discount-text {
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.discount h1 {
+    font-size: 170px;
     color: #e63956;
-    
+
 }
-.discount h2{
+
+.discount h2 {
     color: #55112e;
-    font-size: 50px;
+    font-size: 60px;
 }
-.discount h3{
-    font-size: 105px;
+
+.discount h3 {
+    font-size: 120px;
     color: #6cc5ac;
 }
-.offer-section{
-    display: flex;
+
+.offer-section {
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-around;
-    height: 100vh;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 0;
     background-color: #4a1831;
 }
-.offer-text h5{
-    font-size: 75px;
+
+.offer-text h1 {
+    font-size: 70px;
     color: #ffd7ad;
 }
-.offer-text p{
-    font-size: 30px;
+
+.offer-text p {
+    font-size: 25px;
     color: #ffd7ad;
     margin: 30px 0 60px 0;
 }
-.offer-text button{
-    width: 322px;
-    border-radius: 32px;
+
+.offer-text button {
     background-color: #ffd7ad;
-    font-size: 25px;
-    text-transform: uppercase;
     color: #4a1831;
-    font-weight: 700;
-    text-align: center;
-    border: none;
-    height: 65px;
+    font-size: 20px;
 }
-.offer-text button:hover{
-    box-shadow: 0px 0px 5px 5px white;
-    transition: 1s;
-    cursor: pointer;
-    background-color: #1f6865;
-    color:white;
-}
-.six-section{
-    height: 100vh;
-    background: rgba(0,0, 0, 0.5) url(./Images/six\ section.png) no-repeat center/cover;
+
+.six-section {
+    background: rgba(0, 0, 0, 0.5) url(./Images/six\ section.png) no-repeat center/cover;
     background-blend-mode: darken;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 50px 0;
+    color: #ffd7ad;
     text-align: center;
 }
-.six-section p{
-    width: 1050px;
-    font-size: 42px;
-    color: #ffd7ad;
-    margin: 30px 0 40px 0;
+
+.six-section p {
+    font-size: 35px;
+    margin: 50px 0;
 }
-.six-section h4{
-    color: #ffd7ad;
-    font-size: 45px;
+
+.six-section h4 {
+    font-size: 50px;
 }
-.seventh-section{
-    height: 100vh;
+
+.seventh-section {
     background-color: #ffd7ad;
-    display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    flex-direction: column;
+    padding: 80px;
 }
-.seventh-section h1{
+
+.seventh-section h1 {
     color: #4a1831;
     font-size: 75px;
 }
-.seventh-section p{
+
+.seventh-section p {
     margin: 80px 0;
-    width: 1000px;
     color: #4a1831;
     font-size: 30px;
 }
-input[type=email]{
-    font-size: 25px;
+
+input {
+    font-size: 18px;
     color: #000000;
     width: 659px;
-    height: 59px;
     background-color: #ffffff;
     opacity: 0.502;
     padding: 20px;
     border-radius: 50px;
     border: none;
-}
-.email{
     position: relative;
-    
 }
-.email button{
+
+.email button {
     position: absolute;
-    left: 546px;
-    bottom: -2px;
-    font-size: 25px;
+    right: 430px;
+    font-size: 18px;
     color: #ffffff;
-    width: 222px;
-    height: 65px;
     border-radius: 33px;
-    border: 2px solid white;
     background-color: #4a1831;
     text-transform: uppercase;
 }
-.email button:hover{
-    box-shadow: 0px 0px 5px 5px gray;
-    background-color:crimson;
-    color: #000000;
-    transition: 1s;
-    cursor: pointer;
-}
-.footer{
-    display: flex;
+
+footer {
     justify-content: space-around;
-    align-items: center;
     background-color: #4a1831;
     height: 80vh;
     color: #ffd7ad;
     font-size: 24px;
 }
-.left-footer{
-    width: 500px;
+
+.left-footer {
+    width: 30%;
 }
-.left-footer h1{
+
+.left-footer h1 {
     cursor: pointer;
 }
-.left-footer p{
+
+.left-footer p {
     margin: 30px 0;
 }
-.icon{
-    display: flex;
-    width: 200px;
+
+.icon i {
     cursor: pointer;
     font-size: 30px;
-    justify-content: space-between;
+    margin-right: 30px;
 }
-.icon i:hover{
+
+.icon i:hover {
     font-size: 35px;
 }
-.right-footer{
+
+.right-footer {
     width: 55%;
     display: flex;
     justify-content: space-between;
 }
-.right-footer ul{
+
+.right-footer ul {
     list-style: none;
 }
+
 .right-footer li a {
     line-height: 42px;
     text-decoration: none;
     color: #ffd7ad;
     font-size: 24px;
 }
- ul li a:hover{
+
+ul li a:hover {
     text-decoration: underline;
+}
+
+@media(max-width:400px) {
+    .logo-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        flex-direction: column;
+        position: relative;
+        top: 200px;
+        padding: 0 40px;
+    }
+
+    ul li a {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .logo-text h1 {
+        font-size: 40px;
+    }
+
+    .logo-text p {
+        width: 100%;
+        line-height: 35px;
+        font-size: 20px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .text {
+        padding: 0 40px;
+    }
+
+    .text h1 {
+        font-size: 25px;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about {
+
+        padding: 20px;
+    }
+
+    .about h1 {
+        padding-top: 30px;
+        font-size: 38px;
+    }
+
+    .discount {
+        padding: 0;
+    }
+
+    .discount img {
+        width: 100%;
+    }
+
+    .discount h1 {
+        font-size: 40px;
+    }
+
+    .discount h2 {
+        font-size: 20px;
+    }
+
+    .discount h3 {
+        font-size: 30px;
+    }
+
+    .discount-text {
+        left: 30px;
+    }
+
+    .offer-section {
+        padding: 40px;
+    }
+
+    .offer-img img {
+        width: 90%;
+    }
+
+    .offer-text h1 {
+        font-size: 30px;
+    }
+
+    .six-section p {
+        font-size: 20px;
+    }
+
+    .seventh-section h1 {
+        font-size: 28px;
+        padding-top: 50px;
+    }
+
+    .seventh-section {
+        padding: 0;
+    }
+
+    .seventh-section p {
+        font-size: 20px;
+    }
+
+    .email button {
+        position: static;
+        margin: 30px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-footer h1 {
+        font-size: 30px;
+    }
+
+    .left-footer {
+        width: 100%;
+    }
+
+    .left-footer p {
+        font-size: 20px;
+    }
+
+    .left-footer p {
+        width: 100%;
+    }
+
+    .right-footer li a {
+        font-size: 20px;
+    }
+
+    .seventh-section input {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+
+@media (min-width:350px) and (max-width:576px) {
+    .logo-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 250px;
+        padding: 0 40px;
+    }
+
+    .logo-text p {
+        width: 100%;
+        line-height: 35px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .text {
+        padding: 0 40px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    .about {
+
+        padding: 40px;
+    }
+
+    .about img {
+        width: 90%;
+    }
+
+    .about h1 {
+        padding-top: 30px;
+        font-size: 60px;
+    }
+
+    .discount {
+        padding: 0;
+    }
+
+    .discount img {
+        width: 100%;
+    }
+
+    .discount h1 {
+        font-size: 60px;
+    }
+
+    .discount h2 {
+        font-size: 30px;
+    }
+
+    .discount h3 {
+        font-size: 50px;
+    }
+
+    .discount-text {
+        left: 30px;
+    }
+
+    .offer-section {
+        padding: 40px;
+    }
+
+    .offer-img img {
+        width: 90%;
+    }
+
+    .offer-text h1 {
+        font-size: 60px;
+    }
+
+    .six-section {
+        padding: 40px;
+    }
+
+    .six-section p {
+        font-size: 30px;
+    }
+
+    .seventh-section h1 {
+        font-size: 50px;
+    }
+
+    .seventh-section input {
+        width: 67%;
+        padding: 10px;
+    }
+
+    .email button {
+        position: static;
+        padding: 10px;
+        font-size: 15px;
+        bottom: -50px;
+        right: 40%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-footer h1 {
+        font-size: 30px;
+    }
+
+    .left-footer {
+        width: 100%;
+    }
+
+    .left-footer p {
+        font-size: 20px;
+    }
+
+    .left-footer p {
+        width: 100%;
+    }
+
+    .right-footer li a {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .logo-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 250px;
+        padding: 0 40px;
+    }
+
+    .logo-text p {
+        width: 100%;
+        line-height: 35px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .text {
+        padding: 0 40px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    .about h1 {
+        padding-top: 30px;
+        font-size: 60px;
+    }
+
+    .discount {
+        padding: 0;
+    }
+
+    .discount img {
+        width: 100%;
+    }
+
+    .discount h1 {
+        font-size: 80px;
+    }
+
+    .discount h2 {
+        font-size: 50px;
+    }
+
+    .discount h3 {
+        font-size: 70px;
+    }
+
+    .discount-text {
+        left: 30px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .email button {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .left-footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right-footer {
+        text-align: start;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .logo-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 250px;
+        padding: 0 40px;
+    }
+
+    .logo-text p {
+        width: 100%;
+        line-height: 35px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .text {
+        padding: 0 40px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    .about h1 {
+        padding-top: 30px;
+        font-size: 60px;
+    }
+
+    .discount {
+        padding: 0;
+    }
+
+    .discount img {
+        width: 100%;
+    }
+
+    .discount h1 {
+        font-size: 100px;
+    }
+
+    .discount h2 {
+        font-size: 80px;
+    }
+
+    .discount h3 {
+        font-size: 90px;
+    }
+
+    .discount-text {
+        left: 30px;
+    }
+
+    .email button {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .left-footer {
+        width: 80%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right-footer {
+        text-align: start;
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1400px) {
+    .logo-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 250px;
+        padding: 0 40px;
+    }
+
+    .logo-text p {
+        width: 100%;
+        line-height: 35px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .text {
+        padding: 0 40px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    .email button {
+        right: 250px;
+    }
 }

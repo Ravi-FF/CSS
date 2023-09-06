@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive nevbar</title>
+    <title>Responsive Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
@@ -11,67 +11,119 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
-    body{
-        background-color:lightcyan;
-    }
-    nav{
-        width: 90%;
-        margin: 20px auto;
-        border: 2px solid black;
-        border-radius:20px;
-        background-color:gray;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 20px;
-        align-items: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    img{
-        width: 100px;
+    header{
+        background: rgba(0, 0, 0, 0.7) url(./dell-yNvVnPcurD8-unsplash.jpg);
+        background-size: cover;
+        /* background-blend-mode: darken; */
+        height: 100vh;
+        padding: 10px 30px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .right-nav ul li{
+        display: inline-block;
+        margin-left: 80px;
+    }
+    .right-nav ul li a{
+        text-decoration: none;
+        font-size: 18px;
+        /* color: white; */
+        color: red;
+        text-transform: uppercase;
+    }
+    .left-nav img{
+        width: 30%;
         border-radius: 50%;
     }
-    nav ul li{
-        display: inline;
-    }
-    span{
+    #checkbox{
         display: none;
-        text-decoration: none;
     }
-    nav ul li a{
-        text-decoration: none;
-        margin-left: 80px;
-        font-size: 20px;
-        color: white;
+    label{
+        display: none;
     }
-    iframe{
-        width: 100%;
-        border: none;
-        height: 600px;
+    label i{
+        font-size: 18px;
+        color: black;
     }
-    @media(max-width:768px){
-        nav ul li{
+    @media (max-width:992px) {
+        nav{
+            position: relative;
+        }
+        label{
+            display: block;
+            text-align: right;
+            position: relative;
+            width: 100%;
+        }
+        #checkbox{
+            position: absolute;
+            right: 0;
+        }
+        nav ul{
+            position: absolute;
+            /* z-index: 100; */
+            top: 100px;
+            left: 0;
+            /* display: inline; */
+            text-align: center;
+            width: 100%;
+        }
+        ul{
+            background-color: black;
+        }
+        .right-nav ul li{
+            display: block;
+            margin-bottom: 40px ;
+            margin-left: 0;
+            /* padding: 50px; */
+        }
+        .fa-xmark{
             display: none;
         }
-        span{
+        #checkbox{
+            display: none;
+
+        }
+        #checkbox:checked~label .fa-bars{
+            display: none;
+        }
+        #checkbox:checked~label .fa-xmark{
             display: block;
-            font-size: 30px;
+        }
+        #checkbox:checked~.right-nav ul {
+            display: none;
+            
+             /* background-color: gold; */
         }
     }
+
 </style>
 <body>
     <header>
         <nav>
-            <img src="./logo.png" alt="logo">
-            <ul>
-                <span><a href="./IFRAME.HTML" target="bar"><i class="fa-solid fa-bars"></i></a></span>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+            <div class="left-nav">
+                <img src="./logo.png" alt="">
+            </div>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark "></i>
+            </label>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">content us</a></li>
+                </ul>
+            </div>
         </nav>
-        <iframe name="bar"></iframe>
     </header>
 </body>
 </html>
