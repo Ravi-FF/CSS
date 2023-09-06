@@ -16,7 +16,7 @@
     header{
         background: rgba(0, 0, 0, 0.7) url(./dell-yNvVnPcurD8-unsplash.jpg);
         background-size: cover;
-        /* background-blend-mode: darken; */
+        background-blend-mode: darken;
         height: 100vh;
         padding: 10px 30px;
     }
@@ -28,13 +28,12 @@
     }
     .right-nav ul li{
         display: inline-block;
-        margin-left: 80px;
+        margin-right: 80px;
     }
     .right-nav ul li a{
         text-decoration: none;
         font-size: 18px;
-        /* color: white; */
-        color: red;
+        color: white;
         text-transform: uppercase;
     }
     .left-nav img{
@@ -49,7 +48,13 @@
     }
     label i{
         font-size: 18px;
-        color: black;
+        color: white;
+    }
+    .social-icon i{
+        color: white;
+        font-size: 25px;
+        margin-left:20px ;
+        cursor: pointer;
     }
     @media (max-width:992px) {
         nav{
@@ -67,23 +72,26 @@
         }
         nav ul{
             position: absolute;
-            /* z-index: 100; */
             top: 100px;
             left: 0;
-            /* display: inline; */
             text-align: center;
             width: 100%;
         }
-        ul{
-            background-color: black;
+        .social-icon {
+            position: absolute;
+            top: 350px;
+            text-align: center;
+            width: 100%;
+        }
+        .social-icon i{
+            margin-right: 20px;
         }
         .right-nav ul li{
             display: block;
             margin-bottom: 40px ;
-            margin-left: 0;
-            /* padding: 50px; */
+            margin-right: 0;
         }
-        .fa-xmark{
+        .fa-bars{
             display: none;
         }
         #checkbox{
@@ -91,15 +99,16 @@
 
         }
         #checkbox:checked~label .fa-bars{
-            display: none;
-        }
-        #checkbox:checked~label .fa-xmark{
             display: block;
         }
-        #checkbox:checked~.right-nav ul {
+        #checkbox:checked~label .fa-xmark{
             display: none;
-            
-             /* background-color: gold; */
+        }
+        #checkbox:checked~.right-nav ul  {
+            display: none;
+        }
+        #checkbox:checked ~ .social-icon i{
+            display: none;
         }
     }
 
@@ -122,6 +131,12 @@
                     <li><a href="#">about</a></li>
                     <li><a href="#">content us</a></li>
                 </ul>
+            </div>
+            <div class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-phone"></i>
             </div>
         </nav>
     </header>

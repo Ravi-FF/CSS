@@ -291,151 +291,7 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-@media(max-width:400px) {
-    .logo-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        flex-direction: column;
-        position: relative;
-        top: 200px;
-        padding: 0 40px;
-    }
-
-    ul li a {
-        display: none;
-    }
-
-    .bars {
-        display: block;
-    }
-
-    .logo-text h1 {
-        font-size: 40px;
-    }
-
-    .logo-text p {
-        width: 100%;
-        line-height: 35px;
-        font-size: 20px;
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .text {
-        padding: 0 40px;
-    }
-
-    .text h1 {
-        font-size: 25px;
-    }
-
-    .about-img img {
-        width: 100%;
-    }
-
-    .about {
-
-        padding: 20px;
-    }
-
-    .about h1 {
-        padding-top: 30px;
-        font-size: 38px;
-    }
-
-    .discount {
-        padding: 0;
-    }
-
-    .discount img {
-        width: 100%;
-    }
-
-    .discount h1 {
-        font-size: 40px;
-    }
-
-    .discount h2 {
-        font-size: 20px;
-    }
-
-    .discount h3 {
-        font-size: 30px;
-    }
-
-    .discount-text {
-        left: 30px;
-    }
-
-    .offer-section {
-        padding: 40px;
-    }
-
-    .offer-img img {
-        width: 90%;
-    }
-
-    .offer-text h1 {
-        font-size: 30px;
-    }
-
-    .six-section p {
-        font-size: 20px;
-    }
-
-    .seventh-section h1 {
-        font-size: 28px;
-        padding-top: 50px;
-    }
-
-    .seventh-section {
-        padding: 0;
-    }
-
-    .seventh-section p {
-        font-size: 20px;
-    }
-
-    .email button {
-        position: static;
-        margin: 30px 0;
-    }
-
-    footer {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .left-footer h1 {
-        font-size: 30px;
-    }
-
-    .left-footer {
-        width: 100%;
-    }
-
-    .left-footer p {
-        font-size: 20px;
-    }
-
-    .left-footer p {
-        width: 100%;
-    }
-
-    .right-footer li a {
-        font-size: 20px;
-    }
-
-    .seventh-section input {
-        width: 80%;
-        padding: 10px;
-    }
-}
-
-
-@media (min-width:350px) and (max-width:576px) {
+@media (max-width:576px) {
     .logo-text {
         display: flex;
         align-items: center;
@@ -445,14 +301,22 @@ ul li a:hover {
         top: 250px;
         padding: 0 40px;
     }
-
+    .bars{
+        display: block;
+    }
+    nav ul li{
+        display: none;
+    }
     .logo-text p {
         width: 100%;
         line-height: 35px;
         font-size: 25px;
         text-align: center;
     }
-
+    button{
+        padding: 20px;
+        font-size: 10px;
+    }
     .text {
         padding: 0 40px;
     }
@@ -520,25 +384,25 @@ ul li a:hover {
     }
 
     .seventh-section h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .seventh-section input {
-        width: 67%;
+        width: 90%;
         padding: 10px;
     }
 
     .email button {
         position: static;
         padding: 10px;
+        margin-top: 50px;
         font-size: 15px;
-        bottom: -50px;
-        right: 40%;
     }
 
     footer {
         flex-direction: column;
         padding: 20px;
+        text-align: center;
     }
 
     .left-footer h1 {
@@ -550,19 +414,22 @@ ul li a:hover {
     }
 
     .left-footer p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .left-footer p {
         width: 100%;
     }
-
-    .right-footer li a {
-        font-size: 20px;
+    .right-footer{
+        display: block;
+        text-align: center;
+    }
+    .right-footer li a{
+        font-size: 18px;
     }
 }
 
-@media (min-width:576px) and (max-width:768px) {
+@media (min-width:577px) and (max-width:768px) {
     .logo-text {
         display: flex;
         align-items: center;
@@ -639,6 +506,13 @@ ul li a:hover {
     .right-footer {
         text-align: start;
         width: 100%;
+    }
+    .right-footer{
+        display: block;
+        text-align: center;
+    }
+    .right-footer li a{
+        font-size: 18px;
     }
 }
 
@@ -721,19 +595,18 @@ ul li a:hover {
 @media (min-width:992px) and (max-width:1400px) {
     .logo-text {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         width: 100%;
         position: relative;
-        top: 250px;
+        top: 200px;
         padding: 0 40px;
     }
 
     .logo-text p {
-        width: 100%;
+        text-align: left;
         line-height: 35px;
         font-size: 25px;
-        text-align: center;
     }
 
     .text {
