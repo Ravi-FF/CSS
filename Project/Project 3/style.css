@@ -120,9 +120,9 @@ button:hover {
     z-index: 2;
 }
 
-.Shadow {
-    left: 60%;
-    bottom: 4%;
+.shadow {
+    right: -3%;
+    bottom: 20px;
 }
 
 .burger-shadow {
@@ -130,19 +130,11 @@ button:hover {
     right: 4%;
 }
 
-.box {
-    height: 125px;
-    width: 125px;
-    position: absolute;
-    z-index: 6;
-    right: 400px;
-    border-radius: 50%;
-    background-color: #bf2222;
-    bottom: 60px;
-    border: 2px dashed white;
-    font-size: 25px;
-    color: #ffffff;
-    justify-content: center;
+.discount {
+    width: 13%;
+    z-index: 50;
+    right: 28%;
+    bottom: 50px;
 }
 
 .burger-main {
@@ -202,6 +194,7 @@ button:hover {
 .content {
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .content button {
@@ -282,13 +275,14 @@ button:hover {
     flex-basis: 50%;
     text-transform: uppercase;
 }
-    
+
 
 .image {
     text-align: center;
     flex-basis: 50%;
 }
-.image img{
+
+.image img {
     width: 100%;
 }
 
@@ -326,7 +320,28 @@ form {
 }
 
 .contect {
+    position: relative;
     padding: 60px 0;
+    overflow: hidden;
+}
+
+.contect img {
+    position: absolute;
+}
+
+.lemon {
+    top: -100px;
+    left: -100px;
+}
+
+.plate {
+    bottom: -230px;
+    right: -250px;
+}
+
+.bottle {
+    top: 150px;
+    left: 150px;
 }
 
 input {
@@ -338,6 +353,7 @@ input {
     width: 400px;
     outline-color: #bf2222;
 }
+
 form button {
     width: 400px;
     border-radius: 5px;
@@ -420,12 +436,11 @@ footer {
     margin: 0 10px;
 }
 
-@media(max-width:600px) {
-    header{
-        /* padding: 0 ; */
+@media(max-width:768px) {
+    header {
         width: 100%;
-        /* overflow: hidden; */
     }
+
     nav {
         width: 100%;
         text-align: center;
@@ -471,37 +486,43 @@ footer {
         font-size: 30px;
     }
 
-    .teen-burgur{
+    .teen-burgur {
         justify-content: center;
     }
+
     .first-right {
         margin-right: 0;
         width: 100%;
         height: 300px;
     }
+
     .first-right img {
         width: 30%;
         bottom: 20px;
     }
 
+    .first-img {
+        flex-basis: 70%;
+    }
+
     .first-right .glass {
         width: 20%;
     }
-    
-    .box {
-        height: 70px;
-        width: 70px;
-        font-size: 10px;
-        right: 110px;
+
+    .first-right .discount {
         bottom: 0;
+        right: 120px;
+        width: 15%;
     }
 
     .french {
         right: 100px;
     }
-    .photo{
+
+    .photo {
         right: 20px;
     }
+
     .burger-one {
         grid-column: 1/4;
         grid-row: auto;
@@ -582,6 +603,10 @@ footer {
 
     .form h1 {
         font-size: 30px;
+    }
+
+    .contect img {
+        display: none;
     }
 
     footer {

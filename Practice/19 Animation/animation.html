@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in css</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+            position: relative;
+            border-radius: 50%;
+            animation-name: change;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+        .car{
+            animation-name: car-drive;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        .big{
+            height: 500px;
+            width: 500px;
+            border: 2px solid  black;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+        .small{
+            animation-name: small;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            background-color: teal;
+        }
+        @keyframes small{
+            form{
+                margin-top: 0px;
+            }
+            to{
+                margin-top: 400px;
+            }
+        }
+        @keyframes change{
+            0%,100%{
+                background-color: green;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background-color: red;
+                left: 400px;
+                top: 0;
+            }
+            50%{
+                background-color: yellow;
+                top: 400px;
+                left: 400px;
+            }
+            75%{
+                background-color: navy;
+                top: 400px;
+                left: 0;
+            }
+        }
+        @keyframes car-drive{
+            0%{
+                right: -500px;
+            }
+            100%{
+                right: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./png car.png" alt="car" class="car">
+    </div>
+ 
+ <div class="big">
+    <div class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis ipsa praesentium, numquam, labo</div>
+ </div>
+</body>
+</html>
