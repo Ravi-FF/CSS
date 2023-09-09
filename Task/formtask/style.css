@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    background-color: lightgoldenrodyellow;
+    height: 100vh;
+    justify-content: center;
+}
+.form{
+    border: 2px solid black;
+    width: 30%;
+    box-shadow: 0 0 5px 5px gray;
+    background-color: lightgray;
+}
+.img{
+    background: url(./lion.webp) no-repeat center/cover;
+    height: 250px;
+    width: 100%;
+}
+.top, .buttom{
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+form{
+    width: 80%;
+    flex-direction: column;
+    margin: 30px auto;
+
+}
+span i{
+    border: 1px solid gray;
+    padding: 10px;
+    color: gray;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px white;
+}
+span i:hover{
+    font-size: 21px;
+}
+input[type=password],input[type=text],button{
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid gray;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+ button{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+button:hover{
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+@media only screen and (max-width: 992px){
+    .form{
+        width: 80%;
+    }
+}
