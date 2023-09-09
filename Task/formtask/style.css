@@ -14,7 +14,6 @@
     justify-content: center;
 }
 .form{
-    border: 2px solid black;
     width: 30%;
     box-shadow: 0 0 5px 5px gray;
     background-color: lightgray;
@@ -22,7 +21,6 @@
 .img{
     background: url(./lion.webp) no-repeat center/cover;
     height: 250px;
-    width: 100%;
 }
 .top, .buttom{
     justify-content: space-between;
@@ -34,6 +32,7 @@ form{
     width: 80%;
     flex-direction: column;
     margin: 30px auto;
+    position: relative;
 
 }
 span i{
@@ -58,7 +57,15 @@ input[type=password],input[type=text],button{
     border-radius: 10px;
     outline: none;
 }
-
+input[type=password]{
+}
+.fa-eye{
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    cursor: pointer;
+    color: gray;
+}
  button{
     cursor: pointer;
     background-color: green;
