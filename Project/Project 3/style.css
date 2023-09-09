@@ -436,11 +436,7 @@ footer {
     margin: 0 10px;
 }
 
-@media(max-width:768px) {
-    header {
-        width: 100%;
-    }
-
+@media  only screen and (max-width:768px) {
     nav {
         width: 100%;
         text-align: center;
@@ -645,5 +641,34 @@ footer {
 
     .icon i {
         font-size: 15px;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:992px){
+    .second-nav ul{
+        justify-content: center;
+    }
+    .first-center{
+        flex-wrap: nowrap;
+    }
+    .first-right img{
+        width: 30%;
+    }
+    .first-right{
+        margin-right: 0;
+    }
+    .first-right .glass{
+        width: 20%;
+    }
+    .first-right .french{
+        right: 230px;
+
+    }
+    .first-right .discount{
+        width: 18%;
+    }
+    .first-right .discount{
+        right: 230px;
+        bottom: 20px;
+
     }
 }

@@ -413,7 +413,7 @@ input[type*="email"] {
     cursor: pointer;
 }
 
-@media(max-width:768px) {
+@media only screen and (max-width:768px) {
     nav ul {
         gap: 5px;
     }
@@ -505,6 +505,7 @@ input[type*="email"] {
     .fourth-section img {
         width: 80%;
     }
+
     .plate-content p {
         width: 100%;
         font-size: 20px;
@@ -575,7 +576,7 @@ input[type*="email"] {
     }
 }
 
-@media(min-width:769px) and (max-width:1400px) {
+@media only screen and (min-width:769px) and (max-width:1400px) {
     nav ul {
         gap: 40px;
     }
@@ -583,6 +584,8 @@ input[type*="email"] {
     .first-center {
         justify-content: center;
         text-align: center;
+        flex-direction: column-reverse;
+
     }
 
     .image-one {

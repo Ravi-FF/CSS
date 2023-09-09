@@ -417,119 +417,175 @@ footer ul li a {
     font-size: 17px;
     line-height: 29px;
 }
+@media only screen and (max-width:568px) {
+    nav ul li a {
+        display: none;
+    }
 
-@media(min-width:768px) and (max-width:1400px) {
+    .bars {
+        display: block;
+    }
+
+    #section-1 h1 {
+        font-size: 45px;
+    }
+
+    #section-1 p {
+        line-height: 40px;
+    }
 
     .pre {
-        padding: 80px 40px;
-        line-height: 45px;
-        font-size: 28px;
+        padding: 0;
+    }
+
+    nav ul li:nth-child(5) {
+        display: block;
+        text-align: right;
+        width: 100%;
+    }
+
+    .gift {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gift h1 {
+        font-size: 30px;
     }
 
     .section-3 {
         display: block;
         text-align: center;
-        padding: 30px;
-    }
-
-    .menu-text P {
-        width: 100%;
+        padding: 50px 30px;
     }
 
     .section-3 img {
-        width: 60%;
+        width: 100%;
     }
 
     .best {
-        text-align: center;
         width: 100%;
     }
 
     .best h1 {
         font-size: 50px;
-        padding-top: 10px;
-
     }
 
     .best p {
+        font-size: 20px;
         width: 100%;
+    }
+
+    .menu-text p {
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .menu {
+        padding: 30px;
     }
 
     .section-4 {
         display: block;
-        padding: 0;
+        padding: 20px;
+
     }
 
     .sec1 {
         width: 100%;
-        margin: 0;
-        margin: 30px 0;
+        display: block;
         text-align: center;
-        align-items: center;
-        justify-content: center;
+        margin: 20px 0;
     }
 
-    .secstore {
-        padding-bottom: 8px;
+    .sec1 img {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .store {
+        padding: 0 20px;
     }
 
     .sec2 {
-        padding: 50px;
-    }
-
-    .sec2-content {
-        border: 2px solid black;
-    }
-
-    .company {
         width: 100%;
     }
 
-    .cpro {
+    .sec2 img {
+        width: 100%;
+    }
+
+    .sec2 p {
+        width: 50%;
+    }
+
+    .profile-section {
         width: 100%;
         text-align: center;
+        padding: 30px;
+    }
+
+    .fa-solid {
+        width: 100%;
     }
 
     .cpro p {
-        margin: 40px 0;
         width: 100%;
     }
 
-    .map {
-        display: block;
+    .cpro h1 {
+        font-size: 30px;
+    }
+
+    .social-icon i {
+        font-size: 25px;
+        margin-right: 10px;
+        border: 2px solid white;
+        padding: 8px;
+    }
+
+    .map img {
         width: 100%;
-        text-align: center;
-        margin-top: 30px;
     }
 
     .contect-us {
         width: 100%;
-    }
-
-    .btn button {
         text-align: center;
     }
 
-    .btn {
-        padding: 0;
+    .contect-us h1 {
+        font-size: 40px;
+    }
+
+    input {
+        width: 300px;
+        height: 50px;
+    }
+
+    input[placeholder='Messages'] {
+        width: 300px;
+        height: 100px;
     }
 
     footer {
-        padding: 50px 0;
-        display: block;
         width: 100%;
-        height: auto;
+        display: block;
         text-align: center;
     }
 
     footer ul {
-        display: inline-block;
-        margin: 50px 20px;
-        gap: 50px;
+        margin: 50px 0;
     }
 }
-
-@media(min-width:568px) and (max-width:768px) {
+@media  only screen and (min-width:568px) and (max-width:768px) {
 
     #section-1 h1 {
         padding: 0 10px;
@@ -702,171 +758,113 @@ footer ul li a {
     }
 }
 
-@media(max-width:568px) {
-    nav ul li a {
-        display: none;
-    }
-
-    .bars {
-        display: block;
-    }
-
-    #section-1 h1 {
-        font-size: 45px;
-    }
-
-    #section-1 p {
-        line-height: 40px;
-    }
+@media  only screen and (min-width:768px) and (max-width:1400px) {
 
     .pre {
-        padding: 0;
-    }
-
-    nav ul li:nth-child(5) {
-        display: block;
-        text-align: right;
-        width: 100%;
-    }
-
-    .gift {
-        width: 100%;
-        text-align: center;
-    }
-
-    .gift h1 {
-        font-size: 30px;
+        padding: 80px 40px;
+        line-height: 45px;
+        font-size: 28px;
     }
 
     .section-3 {
         display: block;
         text-align: center;
-        padding: 50px 30px;
+        padding: 30px;
     }
 
-    .section-3 img {
+    .menu-text P {
         width: 100%;
     }
 
+    .section-3 img {
+        width: 60%;
+    }
+
     .best {
+        text-align: center;
         width: 100%;
     }
 
     .best h1 {
         font-size: 50px;
+        padding-top: 10px;
+
     }
 
     .best p {
-        font-size: 20px;
         width: 100%;
-    }
-
-    .menu-text p {
-        width: 100%;
-        font-size: 20px;
-
-    }
-
-    .content h1 {
-        font-size: 20px;
-    }
-
-    .menu {
-        padding: 30px;
     }
 
     .section-4 {
         display: block;
-        padding: 20px;
-
+        padding: 0;
     }
 
     .sec1 {
         width: 100%;
-        display: block;
+        margin: 0;
+        margin: 30px 0;
         text-align: center;
-        margin: 20px 0;
+        align-items: center;
+        justify-content: center;
     }
 
-    .sec1 img {
-        width: 100%;
-    }
-
-    .content {
-        width: 100%;
-    }
-
-    .store {
-        padding: 0 20px;
+    .secstore {
+        padding-bottom: 8px;
     }
 
     .sec2 {
+        padding: 50px;
+    }
+
+    .sec2-content {
+        border: 2px solid black;
+    }
+
+    .company {
         width: 100%;
     }
 
-    .sec2 img {
-        width: 100%;
-    }
-
-    .sec2 p {
-        width: 50%;
-    }
-
-    .profile-section {
+    .cpro {
         width: 100%;
         text-align: center;
-        padding: 30px;
-    }
-
-    .fa-solid {
-        width: 100%;
     }
 
     .cpro p {
+        margin: 40px 0;
         width: 100%;
     }
 
-    .cpro h1 {
-        font-size: 30px;
-    }
-
-    .social-icon i {
-        font-size: 25px;
-        margin-right: 10px;
-        border: 2px solid white;
-        padding: 8px;
-    }
-
-    .map img {
+    .map {
+        display: block;
         width: 100%;
+        text-align: center;
+        margin-top: 30px;
     }
 
     .contect-us {
         width: 100%;
+    }
+
+    .btn button {
         text-align: center;
     }
 
-    .contect-us h1 {
-        font-size: 40px;
-    }
-
-    input {
-        width: 300px;
-        height: 50px;
-    }
-
-    input[placeholder='Messages'] {
-        width: 300px;
-        height: 100px;
+    .btn {
+        padding: 0;
     }
 
     footer {
-        width: 100%;
+        padding: 50px 0;
         display: block;
+        width: 100%;
+        height: auto;
         text-align: center;
     }
 
     footer ul {
-        margin: 50px 0;
+        display: inline-block;
+        margin: 50px 20px;
+        gap: 50px;
     }
 }
