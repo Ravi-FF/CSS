@@ -2,31 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .flex{
     display: flex;
     align-items: center;
 }
 .container{
-    background-color: lightgoldenrodyellow;
+    background: linear-gradient(180deg ,#002244 ,rgb(51,71,110));
     height: 100vh;
     justify-content: center;
 }
 .form{
     width: 30%;
-    box-shadow: 0 0 5px 5px gray;
-    background-color: lightgray;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 5px 10px gray;
+     color: antiquewhite;
+     background: linear-gradient(to top ,#002244 ,rgb(51,71,110));
+  
 }
 .img{
-    background: url(./lion.webp) no-repeat center/cover;
     height: 250px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
 }
 .top, .buttom{
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
     margin-bottom: 20px;
+}
+.top h1:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: .9s;
+    color: orangered;
 }
 form{
     width: 80%;
@@ -35,48 +46,64 @@ form{
     position: relative;
 
 }
-span i{
-    border: 1px solid gray;
-    padding: 10px;
-    color: gray;
-    background-color: white;
-    font-size: 20px;
+.icon i{
+    width: 40px;
     border-radius: 50%;
-    cursor: pointer;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+    color: gray;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid orangered;
+    background-color: white;
     box-shadow: 0 0 2px 2px white;
 }
-span i:hover{
-    font-size: 21px;
+.icon i:hover{
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(.9);
 }
 input[type=password],input[type=text],button{
     width: 100%;
     padding: 15px;
     font-size: 15px;
-    border: 1px solid gray;
+    border: none;
     margin: 10px;
     border-radius: 10px;
     outline: none;
 }
-input[type=password]{
+input[type=password]:hover{
+    transform: scale(1.01);
+    outline:1px solid orangered;
+    transition: .5s;
+
 }
+input[type=text]:hover{
+    transform: scale(1.01);
+    outline:1px solid orangered;
+    transition: .5s;
+}
+
 .fa-eye{
     position: absolute;
-    top: 160px;
+    top: 163px;
     right: 20px;
     cursor: pointer;
     color: gray;
 }
  button{
     cursor: pointer;
-    background-color: green;
+    background-color: orangered;
     color: white;
 }
 button:hover{
     opacity: 0.8;
+    transition: .5s;
 }
 a{
     text-decoration: none;
-    color: green;
+    color: orangered;
 }
 @media only screen and (max-width: 992px){
     .form{
