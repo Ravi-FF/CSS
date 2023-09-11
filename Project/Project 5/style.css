@@ -174,7 +174,7 @@ nav {
 .section-third {
     background-color: rgba(40, 40, 45, 1);
     position: relative;
-    padding: 99px 0;
+    padding: 50px 0;
     overflow: hidden;
 
 }
@@ -183,26 +183,27 @@ nav {
     width: 100%;
 }
 
-.shape {
-    background: url(./images/Shape.png) center/cover;
-    height: 200vh;
+.shape img {
     position: relative;
+    top: 0;
+    left: -180px;
+    width: 117%;
 }
 
 .plate-1-img {
     position: absolute;
-    right: -300px;
-    top: 30px;
+    right: -250px;
+    top: 10px;
 
-    width: 700px;
-    height: 700px;
+    width: 560px;
+    height: 560px;
 }
 
 .section-third-text {
     position: absolute;
     width: 500px;
     height: 700px;
-    top: 400px;
+    top: 500px;
     left: 300px;
     color: white;
 }
@@ -217,17 +218,17 @@ nav {
 }
 
 .plate-2-img {
-    width: 750px;
+    width: 650px;
     position: absolute;
-    right: -20px;
-    bottom: 50px;
-    height: 750px;
+    right: -100px;
+    bottom: 200px;
+    height: 650px;
 }
 
 .plate-3-img {
     position: absolute;
     bottom: 50px;
-    left: -80px;
+    left: -100px;
     width: 550px;
     height: 550px;
 }
@@ -337,9 +338,9 @@ nav {
 }
 
 .menu:hover {
-    transform: translateY(-20px);
+    transform: scale(1.05);
     cursor: pointer;
-    transition: 0.5s linear;
+    transition: 0.4s linear;
 }
 
 /* seventh-section  */
@@ -452,6 +453,10 @@ span:hover {
         display: block;
     }
 
+    .section-second-text p {
+        width: 100%;
+    }
+
     .section-second-text,
     .section-second-img {
         text-align: center;
@@ -459,29 +464,59 @@ span:hover {
     }
 
     .plate-1-img {
-        top: 50px;
-        width: 500px;
-        height: 500px;
+        top: 20px;
+        right: -80px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-third img {
+        width: 100%;
+    }
+
+    .section-third {
+        width: 100%;
+    }
+
+    .shape img {
+        top: 0;
+        left: -60px;
+        width: 115%;
     }
 
     .section-third-text {
-        width: 400px;
-        height: 500px;
-        left: 50px;
+        width: 300px;
+        font-size: 20px;
+        height: 300px;
+        left: 20px;
+        top: 150px;
+    }
+
+    .section-third-text p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .section-third-text h1 {
+        font-size: 30px;
     }
 
     .plate-2-img {
-        width: 500px;
-        right: -120px;
+        width: 230px;
+        right: -50px;
         bottom: 100px;
-        height: 500px;
+        height: 230px;
     }
 
     .plate-3-img {
-        bottom: 80px;
-        left: -150px;
-        width: 300px;
-        height: 300px;
+        bottom: 40px;
+        left: -50px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .fourth-section {
+        width: 100%;
     }
 
     .gallery {
@@ -489,12 +524,23 @@ span:hover {
         gap: 50px;
     }
 
+    .gallery img {
+        width: 100%;
+    }
+
     .three-menu {
         width: 100%;
     }
 
+    .fifth-setion,
+    .fifth-section-text {
+        width: 100%;
+        height: auto;
+    }
+
     .six-section {
         width: 100%;
+        padding: 30px 50px;
     }
 
     .menu {
@@ -502,16 +548,19 @@ span:hover {
         padding: 0 50px;
     }
 
+    .seven {
+        height: 800px;
+    }
+
     .seven-img {
-        width: 450px;
+        width: 350px;
         position: absolute;
-        left: 35px;
-        top: -80px;
+        left: 110px;
+        top: -50px;
     }
 
     .seven-text {
-        width: 500px;
         bottom: 150px;
-        right: 0;
+        left: 50px;
     }
 }

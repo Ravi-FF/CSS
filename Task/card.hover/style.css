@@ -4,16 +4,19 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .container {
-    background-color: lightgray;
+    background: linear-gradient(180deg, #002244, rgb(51, 71, 110) 80%);
     gap: 50px;
     height: 100vh;
 }
+
 
 .box {
     flex-basis: 25%;

@@ -15,8 +15,9 @@
 .form{
     width: 30%;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 0 0 5px 10px gray;
+    box-shadow: 0 0 8px 8px gray;
      color: antiquewhite;
+     border: 1px solid orangered;
      background: linear-gradient(to top ,#002244 ,rgb(51,71,110));
   
 }
@@ -68,20 +69,17 @@ input[type=password],input[type=text],button{
     width: 100%;
     padding: 15px;
     font-size: 15px;
-    border: none;
+    border: none;    
     margin: 10px;
     border-radius: 10px;
-    outline: none;
+    transition: .5s;
 }
 input[type=password]:hover{
-    transform: scale(1.01);
-    outline:1px solid orangered;
+    transform: scale(1.03);
     transition: .5s;
-
 }
 input[type=text]:hover{
-    transform: scale(1.01);
-    outline:1px solid orangered;
+    transform: scale(1.03);
     transition: .5s;
 }
 
