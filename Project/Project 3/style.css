@@ -60,11 +60,8 @@ button:hover {
     background-color: #3d2514;
 }
 .second-nav ul li a:hover::after {
-    /* font-size: 19px; */
     width: 100%;
     transition: .5s;
-    /* opacity: 0.8; */
-    /* transition: 0.1s; */
 }
 
 .express p {
@@ -129,6 +126,7 @@ button:hover {
 }
 
 .glass {
+    right: 0;
     z-index: 2;
 }
 
