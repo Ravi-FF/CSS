@@ -576,7 +576,7 @@ input[type*="email"] {
     }
 }
 
-@media only screen and (min-width:769px) and (max-width:1400px) {
+@media (min-width:769px) and (max-width:1400px) {
     nav ul {
         gap: 40px;
     }
