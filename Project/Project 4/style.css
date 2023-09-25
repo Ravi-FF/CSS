@@ -284,10 +284,7 @@ nav ul li a {
 
 #sixth-section {
     background: url(./Image/Header\ Background.png) no-repeat center/cover;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    position: relative;
+     position: relative;
     height: 100vh;
 }
 
