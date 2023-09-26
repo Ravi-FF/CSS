@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
     box-sizing: border-box;
 }
 
@@ -496,11 +495,10 @@ input[type*="email"] {
 .icon i:hover {
     cursor: pointer;
 }
-@media only screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     nav ul {
         gap: 5px;
     }
-
     .first-center {
         text-align: center;
         flex-direction: column-reverse;
@@ -575,7 +573,6 @@ input[type*="email"] {
     .fourth-section {
         width: 100%;
         gap: 0;
-        justify-content: inherit;
         text-align: center;
     }
 
@@ -659,13 +656,7 @@ input[type*="email"] {
     #sixth-section{
         height: auto;
     }
-    .pizza-image {
-      display: none;
-    }
-    .small-bite{
-        display: none;
-    }
-    .leaf-2{
+    .small-bite,.leaf-2,.pizza-image,.leaf{
         display: none;
     }
 }
@@ -674,7 +665,6 @@ input[type*="email"] {
     nav ul {
         gap: 40px;
     }
-
     .first-center {
         justify-content: center;
         text-align: center;
@@ -714,11 +704,16 @@ input[type*="email"] {
         margin-top: 0;
         font-size: 40px;
     }
-
+    .six-pragraph{
+        padding: 70px 0;
+    }
     .lorem-one {
         flex-basis: 30%;
     }
-
+    .lorem-three{
+        justify-content: space-between;
+        padding: 0 10px;
+    }
     .lorem-one h1 {
         font-size: 40px;
     }
@@ -751,13 +746,7 @@ input[type*="email"] {
     #sixth-section{
         height: auto;
     }
-    .pizza-image {
-      display: none;
-    }
-    .small-bite{
-        display: none;
-    }
-    .leaf-2{
+    .small-bite,.leaf-2,.pizza-image,.leaf{
         display: none;
     }
 }

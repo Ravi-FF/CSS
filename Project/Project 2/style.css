@@ -8,6 +8,7 @@
 header {
     background: url(./Images/background.png) no-repeat center/cover;
     height: 100vh;
+    position: relative;
 }
 
 .flex {
@@ -23,33 +24,38 @@ header {
     width: 100%;
 }
 
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
 nav {
     background-color: #4a1831;
-
 }
-
+/* header-section  */
 nav ul {
     padding: 20px 40px;
     justify-content: space-between;
-    list-style: none;
 }
 
 nav ul li a {
-    text-decoration: none;
     text-transform: uppercase;
     color: #ffd7ad;
     font-size: 18px;
 }
 
 .logo-text {
-    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
     color: #ffd7ad;
 }
 
 .logo-text h1 {
     font-size: 90px;
 }
-
 .logo-text p {
     font-size: 20px;
     width: 500px;
@@ -74,7 +80,7 @@ button:hover {
     opacity: 0.8;
     cursor: pointer;
 }
-
+/* second-section  */
 .second-section {
     background-color: #ffd7ad;
     text-align: center;
@@ -102,7 +108,7 @@ button:hover {
 .image img {
     width: 100%;
 }
-
+/* third/about-section  */
 .about {
     background-color: #ffd7ad;
     flex-wrap: wrap;
@@ -126,7 +132,7 @@ button:hover {
     background-color: #4a1831;
     font-size: 25px;
 }
-
+/* fourth/discount-section  */
 .discount {
     justify-content: flex-end;
     width: 100%;
@@ -156,7 +162,7 @@ button:hover {
     font-size: 120px;
     color: #6cc5ac;
 }
-
+/* fifth/offer section */
 .offer-section {
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -182,7 +188,7 @@ button:hover {
     color: #4a1831;
     font-size: 20px;
 }
-
+/* six-section */
 .six-section {
     background: rgba(0, 0, 0, 0.5) url(./Images/six\ section.png) no-repeat center/cover;
     background-blend-mode: darken;
@@ -199,7 +205,7 @@ button:hover {
 .six-section h4 {
     font-size: 50px;
 }
-
+/* .seventh-section */
 .seventh-section {
     background-color: #ffd7ad;
     justify-content: center;
@@ -239,11 +245,12 @@ input {
     background-color: #4a1831;
     text-transform: uppercase;
 }
-
+/* footer-section  */
 footer {
     justify-content: space-around;
     background-color: #4a1831;
-    height: 80vh;
+    padding: 80px 0;
+    flex-wrap: wrap;
     color: #ffd7ad;
     font-size: 24px;
 }
@@ -272,17 +279,13 @@ footer {
 
 .right-footer {
     width: 55%;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
 
-.right-footer ul {
-    list-style: none;
-}
-
 .right-footer li a {
     line-height: 42px;
-    text-decoration: none;
     color: #ffd7ad;
     font-size: 24px;
 }
@@ -291,38 +294,56 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-@media  only screen and (max-width:576px) {
+@media only screen and (max-width:576px) {
     .logo-text {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
-        top: 250px;
-        padding: 0 40px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    .bars{
+
+    .about-text,
+    .offer-section,
+    .left-footer,
+    .right-footer,
+    .logo-text,
+    .logo-text p,
+    .discount img,
+    .seventh-section,
+    .six-section {
+        width: 100%;
+    }
+
+    .bars {
         display: block;
     }
-    nav ul li{
+
+    nav ul li {
         display: none;
     }
+
     .logo-text p {
+        line-height: 30px;
         width: 100%;
-        line-height: 35px;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
     }
-    button{
+
+    .logo-text h1 {
+        font-size: 40px;
+    }
+
+    button {
         padding: 20px;
         font-size: 10px;
     }
+
     .text {
         padding: 0 40px;
     }
 
     .text h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .about {
@@ -341,10 +362,6 @@ ul li a:hover {
 
     .discount {
         padding: 0;
-    }
-
-    .discount img {
-        width: 100%;
     }
 
     .discount h1 {
@@ -377,14 +394,25 @@ ul li a:hover {
 
     .six-section {
         padding: 40px;
+        width: 100%;
     }
 
     .six-section p {
-        font-size: 30px;
+        font-size: 22px;
+    }
+
+    .seventh-section {
+        padding: 20px;
     }
 
     .seventh-section h1 {
         font-size: 40px;
+    }
+
+    .seventh-section p {
+        font-size: 20px;
+        margin: 30px 0;
+        line-height: 30px;
     }
 
     .seventh-section input {
@@ -395,7 +423,7 @@ ul li a:hover {
     .email button {
         position: static;
         padding: 10px;
-        margin-top: 50px;
+        margin-top: 20px;
         font-size: 15px;
     }
 
@@ -409,42 +437,53 @@ ul li a:hover {
         font-size: 30px;
     }
 
-    .left-footer {
-        width: 100%;
-    }
-
     .left-footer p {
         font-size: 18px;
+        line-height: 30px;
     }
 
-    .left-footer p {
-        width: 100%;
-    }
-    .right-footer{
+    .right-footer {
         display: block;
         text-align: center;
     }
-    .right-footer li a{
+
+    .right-footer li a {
         font-size: 18px;
+    }
+
+    footer {
+        height: auto;
     }
 }
 
-@media  only screen and (min-width:577px) and (max-width:768px) {
+@media (min-width:577px) and (max-width:768px) {
     .logo-text {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about-text,
+    .offer-section,
+    .left-footer,
+    .right-footer,
+    .logo-text,
+    .logo-text p,
+    .discount img,
+    input,
+    .seventh-section {
         width: 100%;
-        position: relative;
-        top: 250px;
-        padding: 0 40px;
     }
 
     .logo-text p {
-        width: 100%;
-        line-height: 35px;
-        font-size: 25px;
-        text-align: center;
+        line-height: 50px;
+        font-size: 40px;
+        margin: 50px 0;
+    }
+
+    .logo-text h1 {
+        font-size: 100px;
     }
 
     .text {
@@ -462,10 +501,6 @@ ul li a:hover {
 
     .discount {
         padding: 0;
-    }
-
-    .discount img {
-        width: 100%;
     }
 
     .discount h1 {
@@ -484,54 +519,60 @@ ul li a:hover {
         left: 30px;
     }
 
-    input {
-        width: 100%;
-    }
-
     .email button {
         position: static;
         margin-top: 30px;
     }
 
     .left-footer {
-        width: 100%;
         text-align: center;
     }
 
     footer {
         flex-direction: column;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .seventh-section {
         padding: 20px;
+    }
+
+    .seventh-section h1 {
+        font-size: 70px;
+    }
+
+    .seventh-section p {
+        font-size: 35px;
+        margin: 30px 0;
+        line-height: 50px;
     }
 
     .right-footer {
         text-align: start;
-        width: 100%;
     }
-    .right-footer{
-        display: block;
-        text-align: center;
-    }
-    .right-footer li a{
+
+    .right-footer li a {
         font-size: 18px;
     }
 }
 
-@media  only screen and (min-width:768px) and (max-width:992px) {
+@media (min-width:769px) and (max-width:992px) {
     .logo-text {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
-        top: 250px;
-        padding: 0 40px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .logo-text p {
-        width: 100%;
-        line-height: 35px;
-        font-size: 25px;
-        text-align: center;
+        line-height: 45px;
+        font-size: 40px;
+        margin: 50px 0;
+    }
+
+    .logo-text h1 {
+        font-size: 100px;
     }
 
     .text {
@@ -551,6 +592,12 @@ ul li a:hover {
         padding: 0;
     }
 
+    .about-text,
+    .offer-section,
+    .left-footer,
+    .right-footer,
+    .logo-text,
+    .logo-text p,
     .discount img {
         width: 100%;
     }
@@ -577,36 +624,40 @@ ul li a:hover {
     }
 
     .left-footer {
-        width: 80%;
         text-align: center;
+    }
+
+    .left-footer p {
+        line-height: 40px;
     }
 
     footer {
         flex-direction: column;
-        padding: 20px;
+        padding: 50px;
     }
 
     .right-footer {
         text-align: start;
-        width: 100%;
     }
 }
 
-@media  only screen and (min-width:992px) and (max-width:1400px) {
+@media (min-width:993px) and (max-width:1400px) {
     .logo-text {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
-        top: 200px;
-        padding: 0 40px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .logo-text p {
-        text-align: left;
-        line-height: 35px;
-        font-size: 25px;
+        padding: 0 80px;
+        line-height: 80px;
+        margin: 50px 0;
+        font-size: 60px;
+    }
+
+    .logo-text h1 {
+        font-size: 100px;
     }
 
     .text {
@@ -619,5 +670,33 @@ ul li a:hover {
 
     .email button {
         right: 250px;
+    }
+
+    .about-text,
+    .offer-section,
+    .right-footer,
+    .left-footer,
+    .logo-text,
+    .logo-text p {
+        width: 100%;
+    }
+
+    .about-text h1,
+    .offer-section h1 {
+        font-size: 100px;
+        margin: 30px 0;
+    }
+
+    .about-text p,
+    .offer-section p {
+        font-size: 40px;
+    }
+
+    .left-footer {
+        text-align: center;
+    }
+
+    .right-footer {
+        margin-top: 30px;
     }
 }
