@@ -1,0 +1,110 @@
+@media screen and (max-width:1400px) {
+
+    .small-bite,
+    .leaf-2,
+    .pizza-image,
+    .leaf {
+        display: none;
+    }
+
+    #sixth-section {
+        height: auto;
+        padding: 80px 0;
+
+    }
+
+    .fourth-section {
+        width: 100%;
+        gap: 0;
+        text-align: center;
+    }
+
+    .fourth-section {
+        width: 100%;
+        padding: 0px 20px;
+        margin: 50px 0;
+    }
+
+    .fourth-section img {
+        width: 80%;
+    }
+
+    .last-left {
+        flex-basis: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .last-left p {
+        width: 100%;
+    }
+
+    .last-right {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .first-center {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .change {
+        display: none;
+    }
+
+    .image-one {
+        flex-basis: 100%;
+        margin: 20px 0;
+    }
+    input[type*="email"] {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .eight p {
+        width: 100%;
+    }
+    
+    nav ul li a {
+        display: none;
+    }
+    
+    .bars {
+        display: block;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    .first-left,.first-left p{
+        width: 100%;
+    }
+    .first-right img{
+        width: 100%;
+    }
+    .lorem-one{
+        flex-basis: 100%;
+    }
+    .lorem h1{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width:576px) {
+    .third-left,.third-right{
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .plate-content,.plate-content p{
+        width: 100%;
+    }
+    .plate-content h1{
+        font-size: 40px;
+    }
+    .lorem h1{
+        font-size: 50px;
+    }
+}

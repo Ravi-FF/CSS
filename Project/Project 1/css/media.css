@@ -1,0 +1,114 @@
+@media screen and (max-width:1400px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .cpro {
+        text-align: center;
+    }
+
+    .sec1 {
+        width: 52%;
+        margin: 10px 0;
+    }
+
+    .section-4 {
+        padding: 0;
+    }
+
+    .menu {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .section-3 {
+        justify-content: center;
+    }
+
+    .sec2 {
+        margin: 50px 22px;
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+    .sec1 {
+        justify-content: center;
+    }
+
+    .map {
+        padding: 10px 20px;
+    }
+
+    .contect-us {
+        width: 100%;
+    }
+
+    .contect-us h1,
+    .btn {
+        text-align: center;
+    }
+
+    form input[type=text] {
+        width: 100%;
+    }
+
+    .menu-text p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    nav ul li a {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .gift {
+        width: 90%;
+        text-align: center;
+    }
+
+    .section-3 img {
+        width: 100%;
+    }
+
+    .best {
+        width: 100%;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .best h1 {
+        font-size: 50px;
+    }
+
+    .best p {
+        width: 100%;
+    }
+
+    .section-3 {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .left-footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .sec1 {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}

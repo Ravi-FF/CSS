@@ -1,0 +1,98 @@
+@media screen and (max-width:1400px) {
+    .logo-text {
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .discount {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .discount img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .discount h1 {
+        font-size: 80px;
+    }
+
+    .discount h2 {
+        font-size: 60px;
+    }
+
+    .discount h3 {
+        font-size: 60px;
+    }
+
+    .email button {
+        margin: 20px 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    footer {
+        gap: 50px;
+    }
+
+    .left-footer,
+    .right-footer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .right-footer {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .about-footer,
+    .service-footer {
+        width: 90%;
+    }
+
+    .about-img img,
+    .offer-section img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .bars {
+        display: block;
+    }
+
+    .logo-text,
+    .logo-text p {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .discount {
+        padding-left: 0;
+    }
+
+    .discount-text {
+        left: 20px;
+    }
+
+    .seventh-section {
+        padding: 40px;
+    }
+
+    .seventh-section h1 {
+        font-size: 50px;
+    }
+}

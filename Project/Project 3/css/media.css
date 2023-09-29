@@ -1,0 +1,162 @@
+@media screen and (max-width:1400px) {
+    .first-right {
+        display: none;
+    }
+
+    .first-center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-left {
+        margin: 50px 0;
+        bottom: 0;
+    }
+
+    .contect img {
+        display: none;
+    }
+
+    .text {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .text {
+        padding: 10px;
+    }
+
+    .image,
+    .text {
+        flex-basis: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .image {
+        text-align: center;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .teen-burgur {
+        justify-content: center;
+    }
+
+    .burger-one {
+        grid-column: 1/4;
+        grid-row: auto;
+    }
+
+    .burger-three {
+        grid-column: 1/4;
+
+    }
+
+    .burger-two {
+        grid-column: 1/4;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .content p {
+        width: 100%;
+    }
+
+    .first-img {
+        flex-basis: 100%;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        row-gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    input {
+        width: 100%;
+        height: 25px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .last-one {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .second-nav ul {
+        justify-content: space-between;
+    }
+
+    .rigth {
+        width: 100%;
+    }
+
+    .first-left {
+        text-align: center;
+    }
+
+    .first-left h1 {
+        font-size: 60px;
+    }
+
+    .first-left p {
+        text-align: center;
+    }
+
+    .first-left h2 {
+        font-size: 30px;
+    }
+
+    .last-footer {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .last-footer img {
+        width: 100%;
+    }
+
+    .last-two {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+}

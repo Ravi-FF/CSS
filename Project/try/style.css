@@ -418,7 +418,6 @@ i {
 }
 
 .item-1-image button:hover::before {
-    position: absolute;
     top: -8px;
     left: -8px;
     right: -8px;
