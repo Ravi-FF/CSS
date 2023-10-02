@@ -333,12 +333,12 @@ i {
 
 .item-5-image {
     z-index: 4;
-    animation-delay: 23s;
+    animation-delay: 22s;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(./image/banner5.jpg);
 }
 
 @keyframes slider {
-    0% {
+    0%,100%{
         transform: translateX(0);
     }
 
@@ -763,8 +763,6 @@ i {
     transition: 0.5s ease-in-out;
     padding: 10px 0;
     position: relative;
-    /* z-index: 2; */
-    /* margin-bottom: 10px; */
     width: 25%;
 }
 .top-name-bar ul .active::after{
