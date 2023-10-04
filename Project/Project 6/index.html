@@ -4,62 +4,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 6</title>
-    <!-- css link here  -->
+    <!-- external css link here  -->
     <link rel="stylesheet" href="style.css">
-    <!-- google-font link here  -->
+    <!-- google font link here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <!-- font-awesome link here  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Project-6</title>
 </head>
 
 <body>
-    <header id="header-section">
-        <nav class="navbar flex">
-            <img src="./image/logo.png" alt="loading">
-            <ul class="flex">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">course</a></li>
-                <li><a href="#">blog</a></li>
+    <!-- header-section start  -->
+    <header id="header-wrapper">
+        <nav>
+            <ul>
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">service</a></li>
+                <li> <a href="#">PORTFOLIO</a></li>
+                <li> <a href="#"><img src="./image/Logo.png" alt=""></a></li>
+                <li> <a href="#">about</a></li>
+                <li> <a href="#">blog</a></li>
+                <li> <a href="#">contect us</a></li>
             </ul>
-            <div class="right">
-
-                <button class="sing-in-button">sing in</button>
-                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
-            </div>
         </nav>
-        <div class="center-part">
-            <div class="circle"></div>
-            <div class="men-img">
-                <img src="./image/men-img.png" alt="loading">
+        <div class="header-center">
+            <p>Hello,we are <span>Molly</span>,and we create</p>
+            <h1>BRANDS</h1>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+            <button class="btn">GET STARTED</button>
+        </div>
+    </header>
+    <!-- header-section end  -->
+
+    <!-- service-section start  -->
+    <section class="service-section">
+        <h1>SERVICES</h1>
+        <img src="./image/Composite Path.png" alt="">
+        <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+            lectus. Quisque velit nisi <br>, pretium ut lacinia in, elementum id enim.</p>
+        <div class="service-img-wrapper">
+            <div class="first-box">
+                <div class="img-box">
+                    <img src="./image/web logo.png" alt="">
+                </div>
+                <h3>WEB DESIGN</h3>
+                <p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
             </div>
-            <div class="right-small-text">
-                <p>edition <br>2022</p>
+            <div class="first-box">
+                <div class="img-box">
+                    <img src="./image/graphic logo.png" alt="">
+                </div>
+                <h3>GRAPHIC DESIGN</h3>
+                <p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
             </div>
-            <div class="left-small-text">
-                <span class="box"></span>
-                <p>become a <br>
-                    pro-designer</p>
+            <div class="first-box">
+                <div class="img-box">
+                    <img src="./image/camera logo.png" alt="">
+                </div>
+                <h3>PHOTOGRAPHY</h3>
+                <p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
             </div>
-            <div class="left-side-text">
-                <h4>BEGINNER′s</h4>
+            <div class="first-box">
+                <div class="img-box">
+                    <img src="./image/phone logo.png" alt="">
+                </div>
+                <h3>DEVELOPING</h3>
+                <p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
             </div>
-            <div class="ui">
-                <h1>UI <span>.</span></h1>
+        </div>
+    </section>
+    <!-- service-section start  -->
+
+    <!-- mobile-section start  -->
+    <section id="mobile-section">
+        <div class="mobile-wrapper">
+            <div class="mobile-img">
+                <img src="./image/Phones.png" alt="">
             </div>
-            <div class="other-text">
-                <h3>Start guide for beginner
-                    designers</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .
+            <div class="mobile-text">
+                <h3>WE MAKE WEB DESIGN</h3>
+                <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis
+                    ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Curabitur non nulla sit amet
+                    nisl tempus convallis quis ac lectus. </p>
+
+                <div class="mobile-text-2">
+                    <p><i class="fa-solid fa-circle-plus"></i>CLEAN AND MODERN DESIGN</p>
+                    <p><i class="fa-solid fa-circle-plus"></i>FULLY RESPONSIVE</p>
+                    <p><i class="fa-solid fa-circle-plus"></i>SINGLEPAGE & MULTIPAGE</p>
+                    <p><i class="fa-solid fa-circle-plus"></i>GREAT FOR ANY BUSINESS</p>
+                </div>
+            </div>
+        </div>
+        <div class="yellow-part">
+            <button class="btn">GET STARTED</button>
+        </div>
+    </section>
+    <!-- mobile-section end  -->
+
+    <!-- PORTFOLIO -section start -->
+    <section id="portfolio-section" class="service-section">
+        <h1>PORTFOLIO</h1>
+        <img src="./image/Composite Path.png" alt="">
+        <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+            lectus. Quisque velit nisi <br>, pretium ut lacinia in, elementum id enim.</p>
+        <div class="portfolio-text">
+            <ul>
+                <li><a href="#" class="active">all</a></li>
+                <li><a href="#">web design</a></li>
+                <li><a href="#">graphic design</a></li>
+                <li><a href="#">PHOTOGRAPHY</a></li>
+                <li><a href="#">app</a></li>
+            </ul>
+        </div>
+
+        <div class="gallery-wrapper">
+            <div class="first-item"><img src="./image/gallery-1.jpeg" alt=""></div>
+            <div class="first-item"><img src="./image/gallery-2.jpeg" alt=""></div>
+            <div class="first-item"><img src="./image/gallery-3.jpeg" alt=""></div>
+            <div class="first-item"><img src="./image/gallery-4.jpeg" alt=""></div>
+            <div class="first-item"><img src="./image/gallery-5.jpeg" alt=""></div>
+            <div class="first-item"><img src="./image/gallery-6.jpeg" alt=""></div>
+            <div class="first-item"><img src="./image/gallery-7.jpeg" alt=""></div>
+            <div class="first-item"><img src="./image/gallery-8.jpeg" alt=""></div>
+            <div class="first-item"><img src="./image/gallery-9.jpeg" alt=""></div>
+        </div>
+        <div class="show"><button class="btn show-btn">SHOW MORE</button></div>
+    </section>
+    <!-- PORTFOLIO -section end -->
+
+    <!-- viedo-section started here  -->
+    <section id="viedo-section">
+        <div class="viedo-item">
+            <video src="./image/elk_animal_forest_chewing_eating_700.mp4" controls loop autoplay></video>
+        </div>
+        <div class="viedo-text">
+            <h4>LOREM IPSUM VIDEO HERE</h4>
+            <h5>Quisque velit nisi, pretium ut lacinia in, elementum id enim.</h5>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Curabitur non nulla sit amet nisl
+                tempus convallis quis ac lectus. </p>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Quisque velit nisi, pretium ut lacinia in.</p>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Curabitur non nulla sit amet nisl
+                tempus convallis quis ac lectus. </p>
+            <button class="btn">READ MORE</button>
+        </div>
+    </section>
+    <!-- viedo-section end  -->
+
+    <!-- oder-section started here  -->
+    <section id="oder-section">
+        <h3>MOLLY IS GREAT FOR ANY BUSSINES</h3>
+        <p>Yes Mentum is fully responsive,and look’s great on any device.</p>
+        <button class="btn oder-btn">READ MORE</button>
+        <div class="oder-img">
+            <img src="./image/Browsers.png" alt="">
+        </div>
+    </section>
+    <!-- oder-section end here  -->
+
+    <!-- about-section started here  -->
+    <section id="about-section" class="service-section">
+        <h1>ABOUT US</h1>
+        <img src="./image/Composite Path.png" alt="">
+        <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+            lectus. Quisque velit nisi <br>, pretium ut lacinia in, elementum id enim.</p>
+        <div class="about-wrapper">
+            <div class="about-left">
+                <img src="./image/gallery-1.jpeg" alt="">
+            </div>
+            <div class="about-text">
+                <h3>John Doe</h3>
+                <h4>CREATIVE DIRECTOR</h4>
+                <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id
+                    enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
+                    porta. </p>
+                <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id
+                    enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
                 </p>
-                <button class="start-button">Let's start</button>
-                <a href="#">Read more</a>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-futbol"></i>
+                </div>
+            </div>
+            <div class="about-left">
+                <img src="./image/gallery-4.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- about-section end  -->
+
+    <!-- skill-section started here  -->
+    <section id="skill-section">
+
+        <div class="skill-wrapper">
+            <h3>SKILL</h3>
+            <div class="skill-item">
+                <p>HTML&CSS</p>
+                <div class="line">
+                    <span></span>
+                </div>
+                <p>AI&PS</p>
+                <div class="line">
+                    <span></span>
+                </div>
+                <p>JS&PHP</p>
+                <div class="line">
+                    <span></span>
+                </div>
+                <p>PHOTOGRAPHY</p>
+                <div class="line">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="about-company-wrapper">
+            <h3>ABOUT COMPANY</h3>
+            <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id
+                enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
+                porta. </p>
+            <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id
+                enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+        </div>
+    </section>
+    <!-- skill-section end here  -->
+
+    <!-- blog-section started-here  -->
+    <section id="blog-section" class="service-section">
+        <h1>BLOG</h1>
+        <img src="./image/Composite Path.png" alt="">
+        <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+            lectus. Quisque velit nisi <br>, pretium ut lacinia in, elementum id enim.</p>
+        <div class="blog-wrapper-1">
+            <div class="blog-first">
+                <div class="blog-item-1">
+                    <div class="blog-img">
+                        <img src="./image/gallery-4.jpeg" alt="">
+                    </div>
+                    <div class="blog-item-text">
+                        <h3>Sample Blog Title</h3>
+                        <h5>November ,2013 by <span>John Doe</span></h5>
+                        <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in,
+                            elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam.Cras
+                            ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in,
+                            elementum id enim. Pellentesque in ipsum id orci.</p>
+                        <p>READ MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-item-1">
+                <div class="blog-img">
+                    <img src="./image/gallery-5.jpeg" alt="">
+                </div>
+                <div class="blog-item-text">
+                    <h3>Sample Blog Title</h3>
+                    <h5>November ,2013 by <span>John Doe</span></h5>
+                    <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in,
+                        elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam.Cras
+                        ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id
+                        enim. Pellentesque in ipsum id orci.</p>
+                    <p>READ MORE</p>
+                </div>
             </div>
         </div>
 
-    </header>
+        <div class="blog-wrapper-1">
+            <div class="blog-first">
+                <div class="blog-item-1">
+                    <div class="blog-img">
+                        <img src="./image/gallery-6.jpeg" alt="">
+                    </div>
+                    <div class="blog-item-text">
+                        <h3>Sample Blog Title</h3>
+                        <h5>November ,2013 by <span>John Doe</span></h5>
+                        <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in,
+                            elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam.Cras
+                            ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in,
+                            elementum id enim. Pellentesque in ipsum id orci.</p>
+                        <p>READ MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-item-1">
+                <div class="blog-img">
+                    <img src="./image/gallery-8.jpeg" alt="">
+                </div>
+                <div class="blog-item-text">
+                    <h3>Sample Blog Title</h3>
+                    <h5>November ,2013 by <span>John Doe</span></h5>
+                    <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in,
+                        elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam.Cras
+                        ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id
+                        enim. Pellentesque in ipsum id orci.</p>
+                    <p>READ MORE</p>
+                </div>
+            </div>
+            <div class="blog-item-1">
+                <div class="blog-img">
+                    <img src="./image/gallery-3.jpeg" alt="">
+                </div>
+                <div class="blog-item-text">
+                    <h3>Sample Blog Title</h3>
+                    <h5>November ,2013 by <span>John Doe</span></h5>
+                    <p>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in,
+                        elementum id enim. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam.Cras
+                        ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id
+                        enim. Pellentesque in ipsum id orci.</p>
+                    <p>READ MORE</p>
+                </div>
+            </div>
+        </div>
+        <div class="show"><button class="btn show-btn">SHOW MORE</button></div>
+    </section>
+    <!-- blog-section end-here  -->
+
+    <!-- subscribe-section started-here  -->
+    <section id="subscribe-section">
+        <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <input type="email" placeholder="Your Email">
+        <button class="sub-btn">SUBSCRIBE</button>
+    </section>
+    <!-- subscribe-section end -here  -->
+
+    <!-- contect-us section started-here -->
+    <section id="contect-us" class="service-section">
+        <h1>CONTECT US</h1>
+        <img src="./image/Composite Path.png" alt="">
+        <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac
+            lectus. Quisque velit nisi <br>, pretium ut lacinia in, elementum id enim.</p>
+        <form action="">
+            <div class="form-wrapper">
+                <div class="input-item">
+                    <input type="text" name="" id="text" placeholder="Your Name">
+                    <input type="email" name="" id="text" placeholder="Your Email">
+                    <input type="text" name="" id="text" placeholder="Subject">
+                </div>
+                <div class="text-area">
+                    <textarea placeholder="Enter Your Message Here"></textarea>
+                </div>
+            </div>
+            <button class="btn">SEND MESSAGE</button>
+        </form>
+    </section>
+    <!-- contect-us section end-here -->
+
+    <!-- footer-started here  -->
+    <footer id="footer-secton">
+        <p>awesomemail@ourmail.com</p>
+        <p>(0) 123-456-789-00</p>
+        <div class="footer-icon">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span> <i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-solid fa-futbol"></i></span>
+            <span><i class="fa-solid fa-wifi"></i></span>
+            <span><i class="fa-brands fa-google-plus-g"></i></span>
+            <span><i class="fa-brands fa-skype"></i></span>
+            <span><i class="fa-solid fa-cloud-rain"></i></span>
+        </div>
+        <p>© Copyright 2013 <span>Molly.</span> All Rights Reserved.</p>
+    </footer>
+    <!-- footer-end here  -->
 </body>
 
 </html>
