@@ -8,10 +8,13 @@
 ul li {
     list-style: none;
 }
-button:hover,i:hover{
+
+button:hover,
+i:hover {
     opacity: 0.7;
     cursor: pointer;
 }
+
 #header-wrapper {
     background-color: #324651;
     height: 100vh;
@@ -22,6 +25,11 @@ a {
     text-transform: uppercase;
     font-size: 15px;
     color: #334752;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #ffe600;
 }
 
 nav {
@@ -45,7 +53,9 @@ nav ul {
 nav ul li:nth-child(4) {
     margin: 0 40px;
 }
-
+.bars{
+    display: none;
+}
 .header-center {
     position: absolute;
     top: 50%;
@@ -116,7 +126,7 @@ nav ul li:nth-child(4) {
     position: absolute;
     top: 21%;
     right: -150px;
-    z-index: -1;
+    z-index: -5;
 }
 
 .first-box h3 {
@@ -129,6 +139,7 @@ nav ul li:nth-child(4) {
     height: 112px;
     position: relative;
     background: linear-gradient(62deg, #ffe600 50%, rgba(255, 230, 0, 0.6) 50%);
+    z-index: 5;
 }
 
 .img-box img {
@@ -141,6 +152,7 @@ nav ul li:nth-child(4) {
 .service-img-wrapper {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -165,6 +177,7 @@ nav ul li:nth-child(4) {
     gap: 80px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .mobile-text {
@@ -269,6 +282,8 @@ nav ul li:nth-child(4) {
 #viedo-section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: #ffe600;
     padding: 50px 0;
     gap: 50px;
@@ -346,6 +361,7 @@ nav ul li:nth-child(4) {
 .about-wrapper {
     display: flex;
     padding: 70px 0;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -384,6 +400,7 @@ nav ul li:nth-child(4) {
     justify-content: center;
     background-color: #324651;
     gap: 50px;
+    flex-wrap: wrap;
     padding: 50px 0;
 }
 
@@ -555,23 +572,28 @@ form input,
     padding: 10px;
     margin-bottom: 20px;
 }
-#footer-secton{
+
+#footer-secton {
     text-align: center;
     padding: 40px 0;
     background-color: #182227;
     color: white;
 }
-#footer-secton p+p{
+
+#footer-secton p+p {
     margin: 10px 0;
 }
-.footer-icon{
+
+.footer-icon {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     margin: 20px 0;
     color: #182227;
 }
-.footer-icon span{
+
+.footer-icon span {
     width: 40px;
     height: 40px;
     text-align: center;
@@ -580,6 +602,7 @@ form input,
     border-radius: 50%;
     background-color: white;
 }
-.footer-icon +p span{
-color: #ffe600;
+
+.footer-icon+p span {
+    color: #ffe600;
 }

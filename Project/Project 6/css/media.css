@@ -1,0 +1,139 @@
+@media screen and (max-width:1400px) {
+
+    .first-box:nth-child(2n+1)::after,
+    .first-box:nth-child(2)::after {
+        display: none;
+    }
+
+    .about-text {
+        flex-basis: 28%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .gallery-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 20px;
+    }
+
+    .about-text {
+        flex-basis: 50%;
+    }
+
+    .mobile-text {
+        flex-basis: 50%;
+    }
+
+    .viedo-text {
+        flex-basis: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .oder-img {
+        width: 95%;
+    }
+
+    .about-text {
+        flex-basis: 90%;
+        text-align: center;
+    }
+
+    .skill-wrapper,
+    .about-company-wrapper {
+        flex-basis: 90%;
+    }
+
+    .mobile-text {
+        flex-basis: 90%;
+        text-align: center;
+    }
+
+    .mobile-text-2 {
+        text-align: left;
+    }
+
+    .header-center h1 {
+        font-size: 80px;
+    }
+
+    .header-center {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .service-section h1 {
+        font-size: 50px;
+    }
+
+    .service-section p {
+        font-size: 13px;
+    }
+
+    .input-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-item input {
+        width: 100%;
+    }
+
+    .portfolio-text ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    nav ul {
+        justify-content: space-between;
+        padding: 5px 20px;
+    }
+
+    .viedo-item {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    #subscribe-section input {
+        width: 90%;
+    }
+
+    .about-left,
+    .viedo-item,
+    .first-item {
+        width: 90%;
+    }
+
+    .service-img-wrapper {
+        gap: 10px;
+    }
+
+    #viedo-section {
+        gap: 10px;
+    }
+
+    .blog-first {
+        width: 90%;
+    }
+
+    .blog-item-1,
+    .blog-img {
+        width: 100%;
+    }
+}
