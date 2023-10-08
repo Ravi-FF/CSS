@@ -138,7 +138,7 @@ nav ul li:nth-child(4) {
     width: 126px;
     height: 112px;
     position: relative;
-    background: linear-gradient(62deg, #ffe600 50%, rgba(255, 230, 0, 0.6) 50%);
+    background: linear-gradient(62deg, #ffe600 50%, rgba(255, 230, 0, 0.5) 50%);
     z-index: 5;
 }
 
@@ -436,7 +436,7 @@ nav ul li:nth-child(4) {
 
 .line span {
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: 100%;
     background-color: #ffe600;
     border-radius: 8px;
