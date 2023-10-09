@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project 7</title>
     <!-- fontawesome link here  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css link here  -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <!-- google font link here  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,8 +30,8 @@
                     <li><a href="#"><i class="fa-regular fa-envelope"></i>info@example.com</a></li>
                 </ul>
             </div>
-            <div class="center-nav">
-                <div class="center-nav-left">
+            <div class="center-nav flex">
+                <div class="center-nav-left flex">
                     <input type="text" name="" id="center-nav-input" placeholder="Search here...">
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
@@ -39,7 +39,7 @@
                     <p>Elite Shoppy</p>
                     <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i>
                 </div>
-                <div class="center-nav-right">
+                <div class="center-nav-right flex">
                     <span>Share on :</span>
                     <div class="box">
                         <div class="front facebook"><i class="fa-brands fa-facebook-f"></i></div>
@@ -131,7 +131,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="fixed-part">
+        <div class="fixed-part flex">
             <div class="icon-top">
                 <i class="fa-solid fa-angles-right"></i>
             </div>
@@ -182,7 +182,7 @@
 
     <!-- first-section-strated here  -->
     <section id="first-section">
-        <div class="first-section-wrapper">
+        <div class="first-section-wrapper flex">
             <div class="first-wrapper-box">
                 <img src="./image/bottom1.jpg" alt="">
                 <div class="first-wrapper-box-text">
@@ -211,7 +211,7 @@
                 <h5>SAVE UP TO <span>50%</span> IN THIS WEEK</h5>
                 <p>Suspendisse varius turpis efficitur erat laoreet dapibus. Mauris sollicitudin scelerisque
                     commodo.Nunc dapibus mauris sed metus finibus posuere</p>
-                <div class="center-bottom-wrapper">
+                <div class="center-bottom-wrapper flex">
                     <div class="bottom-center-1">
                         <i class="fa-regular fa-user"></i>
                         <p>CUSTOMERS</p>
@@ -234,7 +234,7 @@
     <!-- second-section-end here  -->
 
     <!-- fourth-section started here  -->
-    <!-- <section id="fourth-section">
+    <section id="fourth-section">
         <h1> <span>WHAT'S </span>TRENDING</h1>
         <div class="fourth-section-wrapper">
             <div class="fourth-item-1">
@@ -259,11 +259,11 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- fourth-section end here  -->
 
     <!-- fifth-section-started here-->
-    <section id="fifth-section">
+    <section id="fifth-section" class="flex">
         <div class="fifth-section-box">
             <div class="fifth-img">
                 <h1>flat <span>50%</span>offer</h1>
@@ -496,10 +496,10 @@
         <div class="footer-top">
             <div class="footer-left-2-part footer-left-2A-part">
                 <h2>Elite Shoppy</h2>
-                <p id="footer-p">Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
+                <p id="footer-p">Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
                     numquam eius modi
                     tempora. </p>
-                <div class="center-nav-right footer-top-end">
+                <div class="center-nav-right footer-top-end flex">
                     <div class="box">
                         <div class="front facebook"><i class="fa-brands fa-facebook-f"></i></div>
                         <div class="top"><i class="fa-brands fa-facebook-f"></i></div>
@@ -544,7 +544,7 @@
                     <p>Broome St, NY 10002,California, USA. </p>
                 </div>
             </div>
-            <div class="footer-left-2-part grid-flex" >
+            <div class="footer-left-2-part grid-flex">
                 <h3><span>FLICKR</span> POSTS </h3>
                 <div class="footer-img">
                     <div class="img-1"><img src="image/t1.jpg" alt=""></div>
@@ -559,10 +559,11 @@
                 </div>
             </div>
         </div>
-        <div class="footer-search">
+        <div class="footer-search flex">
             <h2>SIGN UP FOR NEWSLETTER !</h2>
             <div class="footer-email">
                 <input type="email" placeholder="Enter Your Email...">
+                <!-- <button class="shop-btn">Submit</button> -->
                 <input type="submit">
             </div>
         </div>
