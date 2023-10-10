@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    gap: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #df581e;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+input{
+    outline: none;
+    border: none;
+}
+
+h2{
+    font-family: "Montserrat";
+    color: #df581e;
+}
+.heading{
+    font-size: 50px;
+    color: #12202f;
+    margin: 15px;
+}
+.round{
+    border-radius: 30px;
+    background-color: #faf8ef;
+    box-shadow: 0 0 10px gray;
+}
+p{
+    color: #12202f;
+    font-size: 15px;
+    margin: 20px 0;
+    font-weight: bold;
+    line-height: 25px;
+    font-family: "Montserrat";
+}
+/* header-section stated here  */
+#header-section {
+    height: 100vh;
+    background-color: #ebe3cd;
+    padding: 0 50px;
+}
+
+nav ul li a:hover {
+    color: #6bb99c;
+    transition: 0.3s;
+}
+
+nav {
+    width: 90%;
+    padding: 15px 25px;
+    font-family: "Montserrat";
+    position: fixed;
+    top: 7%;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: space-between;
+    border-radius: 33px;
+    background-color: #12202f;
+}
+
+.sing-up {
+    font-size: 17px;
+    color: #6bb99c;
+    font-weight: 400;
+}
+
+.header-left {
+    position: absolute;
+    top: 20%;
+    width: 650px;
+    color: #12202f;
+}
+
+.header-big-img {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+
+.header-left h1 {
+    font-size: 72px;
+}
+
+.header-big-img {
+    width: 992px;
+    height: 440px;
+}
+
+.plant-img {
+    width: 176px;
+    position: absolute;
+    bottom: 40px;
+    right: 52%;
+    height: 297px;
+}
+
+.header-left p:nth-child(2){
+    color: #6bb99c;
+    font-size: 20px;
+}
+
+.header-left p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.button-ex {
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.button-ex .unactive-btn {
+    background: transparent;
+    color: #12202f;
+    transition: 0.9s;
+}
+
+.button-ex .unactive-btn:hover {
+    color: white;
+    background-color: #df581e;
+}
+
+.book {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: #12202f;
+    font-weight: bold;
+    font-family: "Montserrat";
+}
+
+.book i {
+    margin-left: 15px;
+}
+/* date section started here  */
+#date-section{
+    background-color: #ebe3cd;
+    padding: 50px;
+}
+.date-input label{
+    display: block;
+}
+form{
+    margin: 0px auto;
+    padding: 40px 30px;
+    justify-content: center;
+    gap: 50px;
+}
+.date-wrapper form input{
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 50px;
+    border: 2px solid #12202f;
+    background-color: #ebe3cd;
+}
+.date-wrapper form input[type="submit"]{
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #6bb99c;
+    margin-left: 80px;
+}
+/* three-section card started here  */
+#three-section-card{
+    background-color: #ebe3cd;
+    padding:60px 50px;
+    text-align: center;
+}
+.three-card-wrapper{
+    justify-content: space-between;
+}
+.card-item{
+    flex-basis: 28%;
+    padding: 50px 30px;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-item h1{
+    font-size: 27px;
+    margin-top: 20px;
+}
+.dish-img{
+    width: 189px;
+    height: 189px;
+}
