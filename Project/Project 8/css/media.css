@@ -1,0 +1,92 @@
+@media screen and (max-width:1400px) {
+    .header-left {
+        width: 90%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #date-section {
+        padding: 20px 0;
+    }
+
+    .chif-wrapper {
+        justify-content: end;
+    }
+
+    .fish-wrapper {
+        justify-content: center;
+    }
+
+    .chef-text,
+    .fresh-text {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .card-1 {
+        flex-wrap: wrap;
+    }
+
+    .chammach-img {
+        top: 65%;
+        left: 30%;
+        transform: translateY(-50%);
+    }
+
+    .footer-wrapper,
+    .footer-left {
+        align-items: center;
+        flex-basis: 100%;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .restaurant-text {
+        padding: 10px;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .bottle-img {
+        width: 15%;
+        right: 50%;
+        top: 40%;
+    }
+
+    .mini-plant-img,
+    .table-men-img {
+        right: 3%;
+    }
+
+    .table-men-img {
+        top: 50%;
+        right: 20%;
+    }
+
+    .mini-plant-img {
+        top: 30%;
+        right: 20%;
+    }
+
+    .card-item {
+        flex-basis: 49%;
+    }
+
+    .three-card-wrapper {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .table-img-3 {
+        top: 10%;
+        right: 3%;
+    }
+}

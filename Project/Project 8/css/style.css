@@ -30,6 +30,8 @@ ul {
 a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    font-family: "Montserrat";
 }
 
 img {
@@ -49,7 +51,9 @@ button {
     font-size: 15px;
     font-weight: bold;
 }
-
+button:hover{
+    transform: scale(1.05);
+}
 input {
     outline: none;
     border: none;
@@ -138,15 +142,13 @@ nav {
 }
 
 .header-big-img {
-    width: 992px;
-    height: 440px;
+    width: 65%;
 }
 
 .plant-img {
-    width: 176px;
-    bottom: 40px;
-    right: 52%;
-    height: 297px;
+    bottom: 5%;
+    right: 50%;
+    width: 10%;
 }
 
 .header-left p:nth-child(2) {
@@ -229,6 +231,7 @@ form {
 .three-card-wrapper {
     justify-content: space-between;
     margin: 50px 0;
+    flex-wrap: wrap;
 }
 
 .card-item {
@@ -236,8 +239,12 @@ form {
     padding: 50px 30px;
     justify-content: center;
     flex-direction: column;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
-
+.card-item:hover,.card-1:hover{
+    transform: scale(1.05);
+}
 .card-item h1 {
     font-size: 27px;
     margin-top: 20px;
@@ -263,101 +270,86 @@ form {
 
 .table-img,
 .table-img-2 {
-    width: 348px;
-    height: 290px;
-    right: -115px;
+    width: 20%;
+    right: -5%;
 }
 
 .table-img-2 {
-    top: 0;
-    left: -115px;
+    left: -5%;
 }
 
 .table-img-3,
 .table-img-4 {
-    width: 395px;
-    height: 359px;
+    width: 30%;
 }
 
 .table-img-3 {
-    top: 80px;
-    right: 50px;
+    top: 10%;
+    right: 4%;
 }
 
 .table-img-4 {
     top: 80px;
-    left: 50px;
+    left: 4%;
 }
 
 .covid-people {
     position: relative;
     margin: 80px 0;
-    height: 509px;
+    height: 70vh;
 }
 
 .people-img {
-    width: 604px;
     left: 50%;
+    width: 40%;
     transform: translate(-50%);
     z-index: 10;
-    height: 509px;
 }
 
 /* story-section started here */
 #story-section {
+    border: 2px solid black;
     height: 100vh;
-}
-
-.story-wrapper {
     position: relative;
 }
-
 .restaurant-text {
-    left: 50px;
-    top: 150px;
-    width: 360px;
+    left: 3%;
+    top: 30%;
+    width: 30%;
 }
 
 .bottle-img {
-    width: 257px;
-    right: 500px;
-    top: 70px;
-    height: 137px;
+    right: 40%;
+    width: 15%;
+    top: 10%;
+    /* bottom: 0; */
 }
 
 .table-men-img {
-    width: 663px;
-    right: 80px;
-    height: 548px;
-    top: 180px;
+    width: 40%;
+    right: 5%;
+    top: 25%;
 }
 
 .mini-plant-img {
-    width: 142px;
-    right: 80px;
-    top: 0;
-    height: 181px;
+    width: 10%;
+    right: 5%;
+    top: 1%;
 }
 
 /*fresh-healthy section started here  */
 .fish-wrapper {
     margin: 80px 40px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .fresh-text {
     flex-basis: 40%;
 }
-
-.fish-img {
-    width: 685px;
-    height: 582px;
-}
-
 /* the chef section started here  */
 .chef-img {
-    width: 664px;
-    height: 577px;
+    width: 50%;
 }
 
 .chif-wrapper {
@@ -365,6 +357,7 @@ form {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -373,8 +366,9 @@ form {
 }
 
 .chammach-img {
-    top: 50px;
+    top: 10%;
     left: 50%;
+    width: 20%;
     transform: translate(-50%);
 }
 
@@ -424,6 +418,8 @@ form {
 
 .card-1 {
     padding: 30px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
     gap: 50px;
     flex-basis: 40%;
 }
@@ -492,6 +488,7 @@ textarea {
 .footer-wrapper,
 .footer-left {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-left {
@@ -501,8 +498,6 @@ textarea {
 #footer-section ul li a {
     color: #12202f;
     font-size: 16px;
-    font-family: "Montserrat";
-    font-weight: bold;
 }
 
 #footer-section ul li {
