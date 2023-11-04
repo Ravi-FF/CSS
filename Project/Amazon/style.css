@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/*---------------top-nav started here-------------------- */
+.top-nav {
+    background-color: #131921;
+    padding: 10px 20px;
+}
+
+.top-nav .logo {
+    width: 150px;
+}
+
+.top-nav img {
+    width: 100%;
+}
+
+.top-nav ul {
+    justify-content: space-between;
+}
+
+.top-nav ul li {
+    border: 2px solid white;
+    padding: 10px 8px;
+}
+
+.top-nav a {
+    color: white;
+    text-transform: capitalize;
+}
+
+.update {
+    gap: 10px;
+    align-items: end;
+}
+
+.top-nav-span {
+    font-size: 14px;
+}
+
+.top-nav .top-input {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 49%;
+    height: 45px;
+}
+
+.top-input .input-div {
+    width: 84%;
+}
+.top-input select{
+    /* position: absolute; */
+}
+.top-input .input-div input {
+    height: 45px;
+    padding: 0 10px;
+    width: 100%;
+    outline: none;
+}
+.top-input .input-div input:focus.top-nav .top-input{
+    border:2px solid #febd69;
+}
+.top-input .sec {
+    /* left: 0; */
+    /* position: absolute; */
+    /* height: 100%; */
+}
+
+.top-input .glass {
+    background-color: #febd69;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center;
+}
+
+/*---------------top-nav end here-------------------- */
