@@ -40,6 +40,7 @@ select {
 .top-nav .top-ul-li,
 .second-nav ul li {
     border: 2px solid transparent;
+    display: inline-block;
 }
 
 .top-nav .top-ul-li a,
@@ -191,6 +192,7 @@ nav a {
 .english-ul>ul>li .active:hover {
     color: #0066C0;
 }
+
 .english-ul>ul>li .active {
     color: #0066C0;
     font-size: 15px;
@@ -228,9 +230,9 @@ nav .top-nav .top-ul-li ul li a {
     z-index: 1;
     background-color: white;
     text-align: center;
-    left: -270px;
+    left: -230px;
     text-transform: capitalize;
-    width: 500px;
+    width: 450px;
 }
 
 .account-ul:hover .account-li-wrapper,
@@ -247,7 +249,7 @@ nav .top-nav .top-ul-li ul li a {
     rotate: 45deg;
     z-index: -1;
     top: -5px;
-    right: 105px;
+    right: 95px;
 }
 
 .account-line {
@@ -255,7 +257,7 @@ nav .top-nav .top-ul-li ul li a {
     margin-left: 0;
 }
 
-.account-li-wrapper button {
+.singin-btn {
     padding: 8px 90px;
     font-size: 13px;
     border-radius: 8px;
@@ -315,12 +317,8 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .second-nav .shop-now-img li a {
-    text-align: end;
+    text-align: right;
     padding: 0;
-}
-
-.shop-now-img li a img {
-    width: 100%;
 }
 
 .second-nav ul li a i {
@@ -328,8 +326,187 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .second-nav ul li a {
-    font-size: 14px;
+    font-size: 13px;
+}
+
+.prime-li {
+    position: relative;
+}
+
+.second-nav .prime-img {
+    padding: 15px;
+    top: 115%;
+    display: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13);
+    background-color: white;
+    position: absolute;
+}
+
+.prime-li:hover .prime-img {
+    display: block;
+    z-index: 500;
+}
+
+.second-nav .prime-img img {
+    width: 300px;
 }
 
 /* second-nav end here  */
+
 /*---------------top-nav end here-------------------- */
+
+/* section-first started here  */
+#first-section {
+    text-transform: capitalize;
+    position: relative;
+    padding: 0 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+    line-height: 250px;
+    font-size: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.right {
+    right: 10px;
+}
+
+.left {
+    left: 10px;
+}
+
+.box {
+    padding: 20px;
+    background-color: white;
+}
+
+.first-section-center {
+    background: linear-gradient(-180deg, rgba(234, 237, 237, 0), #E3E6E6);
+}
+
+.box a {
+    color: #007185;
+    display: block;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.box .see-all-a:hover {
+    color: #f08804;
+    text-decoration: underline;
+}
+
+.box h2 {
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.box-item-1 p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #0F1111;
+}
+
+.box .img-item-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 9px 0;
+    gap: 10px;
+}
+
+.box-item-1 img {
+    width: 100%;
+}
+
+.box .img-item-box {
+    height: 275px;
+    margin-bottom: 20px;
+}
+
+.first-section-center {
+    display: grid;
+    padding: 0 30px;
+    position: absolute;
+    left: 0;
+    top: 43%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.box .img-item-box-3 {
+    grid-template-columns: 1fr;
+}
+
+.box .img-item-box-3 .box-item-1 {
+    height: 100%;
+}
+
+.singin-btn-2 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.box .img-item-box-4 {
+    grid-template-columns: 1fr;
+}
+
+.box-4-item-1 {
+    background-color: white;
+}
+
+.first-section-center .row {
+    grid-column: 1/5;
+    position: relative;
+}
+
+.first-section-center .row .icon {
+    top: 50%;
+    transform: translatey(-50%);
+    line-height: normal;
+    font-size: 25px;
+    border: none;
+    color: gray;
+    box-shadow: 0 1px 3px #888;
+    width: auto;
+    padding: 40px 15px;
+}
+
+.first-section-center .row h2 a {
+    margin-left: 20px;
+}
+
+.first-section-center .row .img-item-box {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.first-section-center .row .img-item-box .box-item-1 {
+    height: auto;
+}
+
+.first-section-center .row .img-item-box {
+    height: auto;
+}
+
+.box .img-item-box-height {
+    height: 315px;
+}
+
+.first-section-center .row a {
+    display: inline-block;
+}
+
+.box-4 .box-item-1 {
+    margin: 20px 20px 0 20px;
+}
