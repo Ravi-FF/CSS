@@ -17,6 +17,18 @@ input,
 select {
     border: none;
     outline: none;
+    text-transform: capitalize;
+}
+
+button {
+
+    font-weight: bold;
+}
+
+a {
+    transition: 0.2s ease;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
 .transprant-border {
@@ -56,7 +68,6 @@ select {
 
 nav a {
     color: white;
-    text-transform: capitalize;
 }
 
 .update {
@@ -222,6 +233,7 @@ nav .top-nav .top-ul-li ul li a {
 .flag p {
     font-size: 10px;
     font-weight: bold;
+    color: #0F1111;
 }
 
 .account-li-wrapper {
@@ -358,8 +370,18 @@ nav .top-nav .top-ul-li ul li a {
 /* section-first started here  */
 #first-section {
     text-transform: capitalize;
-    position: relative;
+    /* position: relative; */
     padding: 0 10px;
+}
+
+.slider-img {
+    position: relative;
+    height: 300px;
+}
+
+.first-section-img {
+    position: absolute;
+    z-index: -1;
 }
 
 .icon {
@@ -375,20 +397,16 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .right {
-    right: 10px;
+    right: 0px;
 }
 
 .left {
-    left: 10px;
+    left: 0px;
 }
 
 .box {
     padding: 20px;
     background-color: white;
-}
-
-.first-section-center {
-    background: linear-gradient(-180deg, rgba(234, 237, 237, 0), #E3E6E6);
 }
 
 .box a {
@@ -432,11 +450,10 @@ nav .top-nav .top-ul-li ul li a {
 
 .first-section-center {
     display: grid;
-    padding: 0 30px;
-    position: absolute;
-    left: 0;
-    top: 43%;
+    padding: 25px 30px;
+    background: linear-gradient(-180deg, rgba(234, 237, 237, 0), #E3E6E6);
     grid-template-columns: repeat(4, 1fr);
+
     grid-template-rows: auto;
     gap: 15px;
 }
@@ -509,4 +526,173 @@ nav .top-nav .top-ul-li ul li a {
 
 .box-4 .box-item-1 {
     margin: 20px 20px 0 20px;
+}
+
+#second-section {
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+#second-section button {
+    margin: 10px 0;
+}
+
+#second-section .sing-in-wrapper p {
+    font-size: 13px;
+}
+
+#second-section .sing-in-wrapper p a:hover {
+    color: #f08804;
+}
+
+.sing-in-wrapper button {
+    background: linear-gradient(#febd69, #FFD814);
+}
+
+/* footer-section srated here  */
+#footer-section {
+    margin-top: 30px;
+    color: #DDD;
+}
+
+#footer-section .footer-top a {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 15px 0;
+    background-color: #37475A;
+}
+
+.footer-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-center {
+    background-color: #232F3E;
+    border-bottom: 1px solid #3a4553;
+}
+
+.footer-center-ul {
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+
+.footer-center-ul ul li {
+    padding: 5px 0;
+}
+
+.footer-center h3 {
+    color: white;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.footer-center ul li a {
+    font-size: 14px;
+}
+
+#footer-section a:hover {
+    text-decoration: underline;
+}
+
+#footer-section a {
+    color: #DDD;
+}
+
+.footer-logo {
+    width: 8%;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-ul {
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+#footer-section .english-ul ul li a {
+    color: black;
+    font-size: 13px;
+}
+
+.footer-ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 250px;
+}
+
+.footer-ul li a {
+    padding: 5px 0;
+    display: block;
+}
+
+.footer-ul li a span {
+    margin: 0 10px;
+}
+
+.footer-ul li:nth-child(2) {
+    position: relative;
+    padding: 5px 25px;
+    border: 2px solid #3a4553;
+    border-radius: 5px;
+}
+
+.country-ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.footer-container .country-ul li a {
+    font-size: 13px;
+}
+
+.footer-center-2 {
+    background-color: #232F3E;
+}
+
+.footer-center-3 {
+    background-color: #131A22;
+}
+
+.footer-center-3 .footer-2-ul {
+    display: grid;
+    padding: 40px 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-center-3 li a {
+    font-size: 13px;
+}
+
+.footer-center-3 li a span {
+    color: #999;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.copyright ul {
+    gap: 30px;
+    justify-content: center;
+}
+
+.copyright span {
+    font-size: 13px;
 }
