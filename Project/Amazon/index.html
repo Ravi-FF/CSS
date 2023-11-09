@@ -145,7 +145,7 @@
             <!-- second nav stared here  -->
             <div class="second-nav flex">
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i>all</a></li>
+                    <li><a href="#" onclick="sliderClicke()"><i class="fa-solid fa-bars"></i>all</a></li>
                     <li><a href="#">amazon miniTV</a></li>
                     <li><a href="#">sell</a></li>
                     <li><a href="#">best sellers</a></li>
@@ -166,6 +166,68 @@
                     <li><a href="#"><img src="./img/shopnow img.jpg" alt=""></a></li>
                 </ul>
             </div>
+            <!-- left-slider started here -->
+            <div class="left-slider">
+                <div class="sing-in">
+                    <div class="top-heading flex">
+                        <span><i class="fa-solid fa-circle-user"></i></span>
+                        <h3>Hello,sing in</h3>
+                    </div>
+                    <div class="left-menu">
+                        <ul>
+                            <li class="menu-item">trending</li>
+                            <li><a href="#" class="menu-item">Best Sellers</a></li>
+                            <li><a href="#" class="menu-item">New Releases</a></li>
+                            <li><a href="#" class="menu-item">Movers and Shakers</a></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li class="menu-item">digital content and devices</li>
+                            <li><a href="#" class="menu-item">echo 7 alexa <i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                            <li><a href="#" class="menu-item">fire-TV <i class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="#" class="menu-item">kindle E-readers &ebooks <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="#" class="menu-item">audible audiobooks <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="#" class="menu-item">amazon prime video <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="#" class="menu-item">amazon prime music <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                        </ul>
+                        <ul>
+                            <li class="menu-item">shop by category</li>
+                            <li><a href="#" class="menu-item">mobiles,computers <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="#" class="menu-item">TV, appliances, electronics <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="#" class="menu-item">men's fashion <i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                            <li><a href="#" class="menu-item">women's fashion <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="#" class="menu-item">see All</a></li>
+                        </ul>
+                        <ul>
+                            <li class="menu-item">programs & features</li>
+                            <li><a href="#" class="menu-item">amazon pay</a></li>
+                            <li><a href="#" class="menu-item">gift crads & mobiles reacharges <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a href="#" class="menu-item">amazon launchpad</a></li>
+                            <li><a href="#" class="menu-item">handloom and handicrafts</a></li>
+                            <li><a href="#" class="menu-item">see All</a></li>
+                        </ul>
+                        <ul>
+                            <li class="menu-item">help & setting</li>
+                            <li><a href="#" class="menu-item">your account</a></li>
+                            <li><a href="#" class="menu-item">customer service</a></li>
+                            <li><a href="#" class="menu-item">amazon launchpad</a></li>
+                            <li><a href="#" class="menu-item">sing-in</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="cross" onclick="crossClick()"><i class="fa-solid fa-x"></i></span>
+            </div>
+            <!-- left-slider end here -->
             <!-- second nav end here  -->
         </nav>
     </header>
@@ -195,8 +257,8 @@
             <div class="first-section-img">
                 <img src="./img/bg-img-7.jpg" alt="" width="100%" height="100%">
             </div>
-            <span class="left icon"><i class="fa-solid fa-chevron-left"></i></span>
-            <span class="right icon"><i class="fa-solid fa-chevron-right"></i></span>
+            <button class="left icon" onclick="changeImage(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="right icon" onclick="changeImage(1)"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
         <div class="first-section-center">
             <div class="box">
@@ -899,5 +961,6 @@
         </div>
     </footer>
 </body>
+<script src="./script.js"></script>
 
 </html>

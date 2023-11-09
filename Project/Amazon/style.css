@@ -363,6 +363,79 @@ nav .top-nav .top-ul-li ul li a {
     width: 300px;
 }
 
+/* left-slider started here */
+.left-slider {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.left-slider .sing-in {
+    width: 375px;
+}
+
+.top-heading {
+    color: white;
+    background-color: #232F3E;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.top-heading i {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.left-menu {
+    background-color: white;
+    height: 100vh;
+    color: black;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    overflow-x: hidden;
+}
+
+.left-menu ul li:nth-child(1) {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.left-menu ul li:last-child {
+    border-bottom: 1px solid #d5dbdb;
+    margin: 5px 0;
+}
+
+.left-menu ul .menu-item {
+    color: black;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 20px 13px 36px;
+    font-size: 14px;
+}
+
+.left-menu ul .menu-item:hover {
+    background-color: #eaeded;
+    ;
+}
+
+.left-slider .cross {
+    position: absolute;
+    left: 26%;
+    cursor: pointer;
+    top: 5%;
+    font-size: 18px;
+    color: white;
+}
+
+/* left-slider end here */
 /* second-nav end here  */
 
 /*---------------top-nav end here-------------------- */
@@ -370,7 +443,6 @@ nav .top-nav .top-ul-li ul li a {
 /* section-first started here  */
 #first-section {
     text-transform: capitalize;
-    /* position: relative; */
     padding: 0 10px;
 }
 
@@ -381,6 +453,7 @@ nav .top-nav .top-ul-li ul li a {
 
 .first-section-img {
     position: absolute;
+    display: none;
     z-index: -1;
 }
 
@@ -388,12 +461,20 @@ nav .top-nav .top-ul-li ul li a {
     position: absolute;
     top: 0;
     cursor: pointer;
+    z-index: 100;
+    background-color: transparent;
+    border: 1px solid transparent;
     width: 70px;
+    border-radius: 5px;
     text-align: center;
     line-height: 250px;
     font-size: 40px;
-    border-radius: 5px;
-    border: 2px solid black;
+}
+
+.icon:focus {
+    border-color: seagreen;
+    box-shadow: -2px -2px 2px rgb(230, 227, 277), 2px 2px 2px white;
+    margin: 4px;
 }
 
 .right {
