@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bcci TV</title>
+    <!-- css link here  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome link here  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google-font link here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header-section started here  -->
+    <header id="header-section">
+        <nav>
+            <!-- top-nav started here  -->
+            <div class="top-nav">
+                <ul class="left-ul">
+                    <li>
+                        <a href="#">
+                            <div class="logo-wrapper">
+                                <img src="./image/bcci-logo.svg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#" class="active">international</a></li>
+                    <li><a href="#" class="domestic">domestic</a></li>
+                </ul>
+                <ul class="right-ul">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#" class="logo-wrapper"><img src="./image/wcw.png" alt=""></a></li>
+                    <li><a href="#" class="logo-wrapper"><img src="./image/ipl-logo.svg" alt=""></a></li>
+                    <li><a href="#" class="logo-wrapper"><img src="./image/wpl-logo.svg" alt=""></a></li>
+                    <li><a href="#" class="logo-wrapper"><img src="./image/hamburger-menu.svg" alt=""></a></li>
+                    <li>
+                        <a href="#" class="" id="hide-btn">
+                            <div>
+                                <select name="">
+                                    <option>select language</option>
+                                    <option>hindi</option>
+                                </select>
+                                <span><i class="fa-solid fa-xmark"  onclick="hideClick()"></i></span>
+                            </div>
+                            <a href="#" class="" id="show-btn">
+                                <span>EN <i class="fa-solid fa-angle-down"  onclick="showClick()"></i></span>
+                            </a>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- top-nav end here  -->
+
+            <!-- center-nav started here  -->
+            <div class="center-nav">
+                <ul>
+                    <li><a href="#" class="gender" id="male">male</a></li>
+                    <li><a href="#" class="gender" id="women">women</a></li>
+                    <li><a href="#">viedos</a></li>
+                    <li><a href="#" class="after">fixtures</a></li>
+                    <li><a href="#" class="after">results</a></li>
+                    <li><a href="#" class="after">news</a></li>
+                    <li><a href="#" class="after">players</a></li>
+                    <li><a href="#" class="after">rankings</a></li>
+                    <li><a href="#" class="after">stats</a></li>
+                    <li><a href="#" class="after">series and tournaments</a></li>
+                    <li><a href="#" class="after">archive</a></li>
+                </ul>
+            </div>
+            <!-- center-nav end here  -->
+        </nav>
+    </header>
+    <!-- header-section end here  -->
+</body>
+<script>
+    let show = document.getElementById("show-btn");
+    let hide = document.getElementById("hide-btn");
+    function showClick() {
+        hide.style.display = "block";
+        show.style.display = "none"
+    }
+    function hideClick() {
+        show.style.display = "block";
+        hide.style.display = "none"
+    }
+</script>
+
+</html>

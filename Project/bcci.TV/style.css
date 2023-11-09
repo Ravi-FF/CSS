@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gothic A1', sans-serif;
+    text-transform: capitalize;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+/* top-nav started here  */
+nav .top-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0f235a;
+    align-items: center;
+}
+
+nav .top-nav ul li a {
+    align-items: center;
+    padding: 18px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    height: 60px;
+}
+
+nav .top-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav .left-ul li .domestic {
+    border-bottom: 6px solid transparent;
+    color: rgba(255, 255, 255, .8);
+}
+
+.top-nav .left-ul li .active {
+    border-bottom: 6px solid #c65142;
+    margin-right: 20px;
+}
+
+.top-nav .left-ul li a {
+    font-size: 20px;
+    padding: 0;
+}
+
+.top-nav .left-ul li .logo-wrapper {
+    width: 40px;
+    height: 40px;
+    margin: 0 50px;
+}
+
+.top-nav .left-ul li .logo-wrapper img {
+    width: 100%;
+}
+
+.top-nav .right-ul li a {
+    border-left: 1px solid rgba(255, 255, 255, .1);
+}
+
+#hide-btn {
+    gap: 30px;
+    display: none;
+}
+
+#hide-btn div {
+    display: flex;
+    gap: 20px;
+}
+
+#show-btn {
+    display: block;
+}
+
+#show-btn i {
+    margin-left: 8px;
+}
+
+.top-nav .right-ul li select {
+    background-color: #0f235a;
+    color: white;
+    text-transform: capitalize;
+}
+
+.top-nav .right-ul li select option {
+    background-color: white;
+    color: black;
+}
+
+/* top-nav end here  */
+
+/* center-nav started here  */
+.center-nav ul #male {
+    color: white;
+    background: url(https://www.bcci.tv/img/active.svg) no-repeat center/cover;
+    width: 140px;
+}
+.center-nav ul #women{
+    background: url(https://www.bcci.tv/img/women-inactive.svg);
+    color: black;
+    width: 160px;
+}
+.center-nav ul .gender{
+    padding: 12px 10px 12px 35px;
+    font-size: 16px;
+}
+.center-nav ul{
+    display: flex;
+   box-shadow: 0px 2px 2px 0px rgba(0,0,0,.08);
+}
+.center-nav ul li a{
+    display: block;
+    position: relative;
+    color: rgba(0,0,0,.5);
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    padding: 14px;
+}
+.center-nav ul li .after::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    background: rgba(0,0,0,.1);
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* center-nav end here  */
