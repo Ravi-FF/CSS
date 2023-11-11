@@ -9,6 +9,7 @@
     border: none;
     outline: none;
 }
+
 /* top-nav started here  */
 nav .top-nav {
     display: flex;
@@ -98,35 +99,201 @@ nav .top-nav ul {
     background: url(https://www.bcci.tv/img/active.svg) no-repeat center/cover;
     width: 140px;
 }
-.center-nav ul #women{
+
+.center-nav ul #women {
     background: url(https://www.bcci.tv/img/women-inactive.svg);
     color: black;
     width: 160px;
 }
-.center-nav ul .gender{
+
+.center-nav ul .gender {
     padding: 12px 10px 12px 35px;
     font-size: 16px;
 }
-.center-nav ul{
+
+.center-nav ul {
     display: flex;
-   box-shadow: 0px 2px 2px 0px rgba(0,0,0,.08);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .08);
 }
-.center-nav ul li a{
+
+.center-nav ul li a {
     display: block;
     position: relative;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
+    height: 100%;
     font-size: 14px;
     letter-spacing: 0.8px;
     padding: 14px;
 }
-.center-nav ul li .after::after{
+
+.center-nav ul li .after::after {
     content: "";
     position: absolute;
     width: 1px;
     height: 60%;
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, .1);
     left: 0;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* center-nav end here  */
+
+/* bottom-nav started here */
+
+.bottom-nav ul {
+    display: flex;
+    background-color: #f3f5f9;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 15px;
+}
+
+.bottom-nav ul li a {
+    color: #133f7e;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+.bottom-nav ul li a i {
+    margin-left: 10px;
+    color: #dee2e6;
+}
+
+.bottom-nav ul li:nth-child(1) {
+    color: #133f7e;
+    background-color: #a0c7ff;
+    border-radius: 40px;
+    font-size: 13px;
+    padding: 4px 20px;
+}
+
+/* bottom-nav end here */
+
+/* slider-section started here */
+.slider-wrapper {
+    background-color: #e9ecf4;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slider-wrapper .slider-img {
+    width: 100%;
+    height: 550px;
+}
+
+.slider-wrapper .slider-img img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-position: top;
+    object-fit: cover;
+}
+
+.slider-wrapper .slider-overly {
+    position: absolute;
+    width: 40%;
+    bottom: 15%;
+    left: 5%;
+    border-left: 5px solid #c65142;
+    padding: 0 15px;
+    color: white;
+}
+
+.slider-wrapper .slider-overly .viedo {
+    padding: 6px;
+    background-color: #c65142;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.slider-wrapper .slider-overly h3 {
+    margin: 15px 0;
+    font-size: 30px;
+}
+
+.slider-wrapper .slider-overly .spans span {
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.slider-wrapper .slider-overly .spans span i {
+    margin-right: 10px;
+}
+
+.slider-wrapper .left-right {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 5%;
+    bottom: 13%;
+}
+
+.slider-wrapper .left-right span {
+    cursor: pointer;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    text-align: center;
+
+}
+/* slider-section end here */
+
+/* section-first-started here  */
+.match-section{
+    padding: 0 30px;
+}
+.match-section .match-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.match-section .match-div ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.match-section .match-div ul li a{
+    color: rgba(50, 49, 48, 0.6);
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+.match-section .match-div ul li .active{
+    color:#2255A4;
+    font-size: 18px;
+    position: relative;
+}
+.match-section .match-div ul li .active::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: #2255A4;
+}
+.match-section .match-div ul li h1{
+    font-size: 30px;
+    margin-right: 50px;
+}
+.match-div .see-all{
+    color: rgba(50, 49, 48, 0.6);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+.match-div .see-all .see-right{
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid rgba(50, 49, 48, 0.6);
+    border-radius: 50%;
+    height: 30px;
+}
+/* section-first-end here  */
