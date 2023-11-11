@@ -4,18 +4,30 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Gothic A1', sans-serif;
-    text-transform: capitalize;
     list-style: none;
     border: none;
     outline: none;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
 /* top-nav started here  */
 nav .top-nav {
-    display: flex;
     justify-content: space-between;
     background-color: #0f235a;
-    align-items: center;
+    text-transform: capitalize;
+}
+
+nav .fixed {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    right: 0;
 }
 
 nav .top-nav ul li a {
@@ -28,9 +40,7 @@ nav .top-nav ul li a {
 }
 
 nav .top-nav ul {
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .top-nav .left-ul li .domestic {
@@ -94,6 +104,10 @@ nav .top-nav ul {
 /* top-nav end here  */
 
 /* center-nav started here  */
+.center-nav {
+    text-transform: capitalize;
+}
+
 .center-nav ul #male {
     color: white;
     background: url(https://www.bcci.tv/img/active.svg) no-repeat center/cover;
@@ -139,28 +153,25 @@ nav .top-nav ul {
 
 /* center-nav end here  */
 
-/* bottom-nav started here */
 
-.bottom-nav ul {
-    display: flex;
+.slider-nav ul {
     background-color: #f3f5f9;
-    align-items: center;
     gap: 15px;
     padding: 5px 15px;
 }
 
-.bottom-nav ul li a {
+.slider-nav ul li a {
     color: #133f7e;
     font-size: 13px;
     letter-spacing: .5px;
 }
 
-.bottom-nav ul li a i {
+.slider-nav ul li a i {
     margin-left: 10px;
     color: #dee2e6;
 }
 
-.bottom-nav ul li:nth-child(1) {
+.slider-nav ul li:nth-child(1) {
     color: #133f7e;
     background-color: #a0c7ff;
     border-radius: 40px;
@@ -168,12 +179,12 @@ nav .top-nav ul {
     padding: 4px 20px;
 }
 
-/* bottom-nav end here */
 
 /* slider-section started here */
 .slider-wrapper {
     background-color: #e9ecf4;
     padding: 15px;
+    margin-top: 92px;
     position: relative;
     margin-bottom: 20px;
 }
@@ -242,33 +253,36 @@ nav .top-nav ul {
     text-align: center;
 
 }
+
 /* slider-section end here */
 
 /* section-first-started here  */
-.match-section{
+.match-section {
     padding: 0 30px;
+    text-transform: capitalize;
 }
-.match-section .match-div{
-    display: flex;
-    align-items: center;
+
+.match-section .match-div {
     justify-content: space-between;
 }
-.match-section .match-div ul{
-    display: flex;
+
+.match-section .match-div ul {
     gap: 30px;
-    align-items: center;
 }
-.match-section .match-div ul li a{
+
+.match-section .match-div ul li a {
     color: rgba(50, 49, 48, 0.6);
     font-size: 18px;
     padding-bottom: 8px;
 }
-.match-section .match-div ul li .active{
-    color:#2255A4;
+
+.match-section .match-div ul li .active {
+    color: #2255A4;
     font-size: 18px;
     position: relative;
 }
-.match-section .match-div ul li .active::before{
+
+.match-section .match-div ul li .active::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -276,19 +290,20 @@ nav .top-nav ul {
     bottom: 0;
     background-color: #2255A4;
 }
-.match-section .match-div ul li h1{
+
+.match-section .match-div ul li h1 {
     font-size: 30px;
     margin-right: 50px;
 }
-.match-div .see-all{
+
+.see-all {
     color: rgba(50, 49, 48, 0.6);
-    display: flex;
     justify-content: center;
     gap: 10px;
     cursor: pointer;
-    align-items: center;
 }
-.match-div .see-all .see-right{
+
+.see-all .see-right {
     width: 30px;
     line-height: 30px;
     text-align: center;
@@ -296,4 +311,271 @@ nav .top-nav ul {
     border-radius: 50%;
     height: 30px;
 }
+
+/* match-card section start */
+.match-card {
+    gap: 25px;
+    overflow: hidden;
+    margin: 40px 0 40px 20px;
+}
+
+.match-card a {
+    background-color: #e9ecf4;
+    color: white;
+}
+
+.match-card a .card-1 {
+    background-color: #262D41;
+    position: relative;
+    padding-left: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-transform: uppercase;
+}
+
+.match-card a .card-1 .top {
+    justify-content: space-between;
+    letter-spacing: 0.96px;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.match-card a .card-1 .top h3 {
+    color: #B0C8E1;
+    font-size: 13px;
+}
+
+.match-card a .card-1 .top h2 {
+    flex-basis: 60%;
+    font-size: 13px;
+}
+
+.match-card a .card-1 .center {
+    border-top: 1px solid #9F9F9F42;
+    border-bottom: 1px solid #9F9F9F42;
+    justify-content: space-between;
+    padding: 10px 20px;
+    justify-content: center;
+    gap: 15px;
+}
+
+a .card-1 .center-part {
+    flex-basis: 50%;
+    gap: 10px;
+}
+
+a .card-1 .center-part .img-div {
+    width: 80px;
+    height: 80px;
+}
+
+a .card-1 .center-part p {
+    font-size: 13px;
+}
+
+a .card-1 .center-part .img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.match-card a .card-1 .date-time {
+    height: 42px;
+    font-size: 12px;
+    opacity: 0.8;
+    justify-content: center;
+    position: relative;
+}
+
+.match-card a .card-1 .bottom {
+    padding: 0 20px;
+    justify-content: space-between;
+    height: 61px;
+    background: rgba(159, 159, 159, 0.2);
+}
+
+.match-card a .card-1 .bottom p {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.match-card a .card-1 .bottom h4 {
+    font-size: 13px;
+}
+
+.match-card .side {
+    position: absolute;
+    transform: rotate(-180deg);
+    letter-spacing: 0.5px;
+    background-color: #B0D5FF;
+    color: #323130;
+    font-size: 13px;
+    text-align: right;
+    padding-bottom: 10px;
+    width: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+}
+
+.match-card .side-1 {
+    background-color: #133F7E;
+    color: white;
+}
+
+.match-card a .card-1 .date-time::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    content: "";
+    background: url(https://scores.bcci.tv/matchcentre/homewidgetv3/images/card-pattern.png) center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* section-first-end here  */
+
+/* video-section started here  */
+#video-section {
+    text-transform: capitalize;
+    background: url(https://www.bcci.tv/img/latest-Video-BG.png) no-repeat top center;
+    background-size: 100% 415px;
+}
+
+.video-top {
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.video-top ul {
+    gap: 50px;
+}
+
+.video-top ul li h1 {
+    font-size: 35px;
+    margin-right: 60px;
+    color: white;
+}
+
+.video-top ul li .active-late {
+    border-bottom: 3px solid #c65142;
+    padding-bottom: 5px;
+}
+
+.video-top ul li a {
+    color: white;
+    opacity: .7;
+    font-size: 15px;
+}
+
+.video-top .left-right {
+    gap: 15px;
+    color: rgba(255, 255, 255, .5)
+}
+
+.video-see {
+    gap: 25px;
+    color: rgba(255, 255, 255, .5);
+    transition: 0.3s linear;
+}
+
+.video-see {
+    gap: 15px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.video-see .see-right {
+    border: 2px solid rgba(255, 255, 255, .5);
+    transition: 0.3s linear;
+}
+
+.video-see:hover {
+    color: #fff;
+}
+
+.video-see:hover .see-right {
+    background-color: white;
+    color: black;
+}
+
+/* four-video section-started*/
+.four-video {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+}
+
+.four-video .video-box {
+    background-color: #133f7e;
+    flex-basis: 33%;
+    border-radius: 16px;
+}
+
+.four-video .video-box a .video-img {
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
+
+.four-video .video-box a .video-img .play-btn {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 45px;
+}
+
+.four-video .video-box a .video-img img {
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.four-video .video-box .video-text {
+    background-color: #133f7e;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.video-text .video-text-top {
+    padding: 10px;
+}
+
+.video-text .video-text-top .date {
+    letter-spacing: .56px;
+    color: rgba(255, 255, 255, .6);
+    font-size: 14px;
+}
+
+.video-text .video-text-top p+p {
+    color: rgba(255, 255, 255, .8);
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.video-text-last .video-text-bottom span {
+    margin-right: 10px;
+}
+
+.video-text-last .video-text-bottom span i {
+    margin-right: 10px;
+}
+
+.video-text-last {
+    justify-content: space-between;
+    color: #B0C8E1;
+    border-top: 1px solid #a0c7ff;
+    padding: 10px;
+}
+
+/* video-section end here  */
