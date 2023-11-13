@@ -19,6 +19,7 @@ nav .top-nav {
     justify-content: space-between;
     background-color: #0f235a;
     text-transform: capitalize;
+    /* width: 100%; */
 }
 
 nav .fixed {
@@ -106,8 +107,34 @@ nav .top-nav ul {
 /* center-nav started here  */
 .center-nav {
     text-transform: capitalize;
+    /* height: 45px; */
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .08);
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    display:flex;
+    /* width: 100%; */
+    /* align-items: center; */
 }
-
+.center-nav ul{
+    display: flex;
+}
+.center-nav ul:nth-child(2){
+    overflow-x: auto;
+    align-items: center;
+    /* flex-wrap: wrap; */
+/* display: inline-block; */
+display: flex;
+    width: 100%;
+    padding-right: 100px;
+    border: 2px solid black;
+}
+.center-nav ul:nth-child(2) li{
+    /* width: 100%; */
+    /* width: auto; */
+}
+.other-div ul{
+    /* width: 100%; */
+}
 .center-nav ul #male {
     color: white;
     background: url(https://www.bcci.tv/img/active.svg) no-repeat center/cover;
@@ -125,21 +152,28 @@ nav .top-nav ul {
     font-size: 16px;
 }
 
-.center-nav ul {
-    display: flex;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .08);
+.center-nav ul:nth-child(1) {
+    /* display: flex; */
+    align-items: center;
+    /* height: 100%; */
+    /* width: 100%; */
 }
 
 .center-nav ul li a {
     display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
     position: relative;
     color: rgba(0, 0, 0, .5);
     height: 100%;
+    /* width: 100%; */
     font-size: 14px;
     letter-spacing: 0.8px;
-    padding: 14px;
+    padding: 10px 15px;
 }
-
+.center-nav ul li .after{
+    width: 100%;
+}
 .center-nav ul li .after::after {
     content: "";
     position: absolute;
@@ -191,12 +225,13 @@ nav .top-nav ul {
 
 .slider-wrapper .slider-img {
     width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
     height: 550px;
 }
 
 .slider-wrapper .slider-img img {
     width: 100%;
-    border-radius: 10px;
     height: 100%;
     object-position: top;
     object-fit: cover;
@@ -788,6 +823,7 @@ a .card-1 .center-part .img-div img {
     background-size: 100% 345px;
     padding-top: 60px;
     padding-left: 70px;
+    padding-right: 20px;
     color: white;
 }
 
@@ -798,15 +834,17 @@ a .card-1 .center-part .img-div img {
 
 .cup-container .tropis-wrapper {
     display: flex;
+    width: 100%;
+    border: 2px solid red;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .cup-container .tropis-wrapper .cup-box {
     position: relative;
     border-radius: 8px;
+    width: 30%;
     border: 1px solid #728ed9;
-    padding: 0 40px;
     background: #293b6a;
     height: 300px;
 }
@@ -903,7 +941,7 @@ a .card-1 .center-part .img-div img {
 }
 
 .gallery-wrapper .match-gallery a .gallery-box-1 {
-    width: 480px;
+    /* width: 480px; */
     position: relative;
     height: 220px;
 }
@@ -1024,6 +1062,7 @@ a .card-1 .center-part .img-div img {
 .footer-ul {
     padding: 40px 20px;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .footer-ul .first-ul li:nth-child(3) {
