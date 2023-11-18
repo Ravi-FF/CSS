@@ -18,17 +18,6 @@
 nav .top-nav {
     justify-content: space-between;
     background-color: #0f235a;
-    text-transform: capitalize;
-    /* width: 100%; */
-}
-
-nav .fixed {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    right: 0;
 }
 
 nav .top-nav ul li a {
@@ -40,9 +29,10 @@ nav .top-nav ul li a {
     height: 60px;
 }
 
+/* 
 nav .top-nav ul {
     justify-content: center;
-}
+} */
 
 .top-nav .left-ul li .domestic {
     border-bottom: 6px solid transparent;
@@ -65,8 +55,12 @@ nav .top-nav ul {
     margin: 0 50px;
 }
 
-.top-nav .left-ul li .logo-wrapper img {
+.top-nav ul li .logo-wrapper img {
     width: 100%;
+}
+
+.top-nav .left-ul .logo {
+    display: none;
 }
 
 .top-nav .right-ul li a {
@@ -107,34 +101,19 @@ nav .top-nav ul {
 /* center-nav started here  */
 .center-nav {
     text-transform: capitalize;
-    /* height: 45px; */
-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .08);
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
-    display:flex;
-    /* width: 100%; */
-    /* align-items: center; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .08);
 }
-.center-nav ul{
+
+.center-nav ul {
     display: flex;
 }
-.center-nav ul:nth-child(2){
+
+.center-nav ul:nth-child(2) {
     overflow-x: auto;
-    align-items: center;
-    /* flex-wrap: wrap; */
-/* display: inline-block; */
-display: flex;
     width: 100%;
     padding-right: 100px;
-    border: 2px solid black;
 }
-.center-nav ul:nth-child(2) li{
-    /* width: 100%; */
-    /* width: auto; */
-}
-.other-div ul{
-    /* width: 100%; */
-}
+
 .center-nav ul #male {
     color: white;
     background: url(https://www.bcci.tv/img/active.svg) no-repeat center/cover;
@@ -145,6 +124,7 @@ display: flex;
     background: url(https://www.bcci.tv/img/women-inactive.svg);
     color: black;
     width: 160px;
+    margin-left: -20px;
 }
 
 .center-nav ul .gender {
@@ -152,28 +132,18 @@ display: flex;
     font-size: 16px;
 }
 
-.center-nav ul:nth-child(1) {
-    /* display: flex; */
-    align-items: center;
-    /* height: 100%; */
-    /* width: 100%; */
-}
-
 .center-nav ul li a {
     display: block;
-    /* justify-content: center; */
-    /* align-items: center; */
-    position: relative;
     color: rgba(0, 0, 0, .5);
-    height: 100%;
-    /* width: 100%; */
     font-size: 14px;
     letter-spacing: 0.8px;
     padding: 10px 15px;
 }
-.center-nav ul li .after{
-    width: 100%;
+
+.center-nav ul li .after {
+    position: relative;
 }
+
 .center-nav ul li .after::after {
     content: "";
     position: absolute;
@@ -186,12 +156,21 @@ display: flex;
 }
 
 /* center-nav end here  */
+.slider-nav .quick {
+    margin: 0 10px;
+}
 
+.slider-nav {
+    justify-content: space-between;
+    background-color: #f3f5f9;
+}
 
 .slider-nav ul {
-    background-color: #f3f5f9;
     gap: 15px;
+    overflow: auto;
+    display: flex;
     padding: 5px 15px;
+    width: 100%;
 }
 
 .slider-nav ul li a {
@@ -205,7 +184,7 @@ display: flex;
     color: #dee2e6;
 }
 
-.slider-nav ul li:nth-child(1) {
+.slider-nav .quick {
     color: #133f7e;
     background-color: #a0c7ff;
     border-radius: 40px;
@@ -213,16 +192,93 @@ display: flex;
     padding: 4px 20px;
 }
 
+.slider-nav ul li a {
+    width: 100%;
+}
+
+.side-menu ul li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    color: white;
+}
 
 /* slider-section started here */
 .slider-wrapper {
     background-color: #e9ecf4;
     padding: 15px;
-    margin-top: 92px;
     position: relative;
     margin-bottom: 20px;
 }
 
+/* side-menu-bar started here  */
+.side-menu {
+    background-color: #131b33;
+    background-image: url(https://www.bcci.tv/img/side-menu-top-bg.svg);
+    display: none;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.side-menu ul {
+    padding: 10px 0;
+}
+
+.side-menu .top-cross {
+    width: 100%;
+    text-align: right;
+}
+
+.side-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #131b33;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.top-cross span i {
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.hide-button {
+    position: fixed;
+    z-index: 10;
+    bottom: 20%;
+    background-color: #07194b;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    align-items: center;
+    border: 3px solid #a0a5b2;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.hide-button a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.hide-button .int {
+    border-radius: 50px;
+    background-color: #c65142;
+}
+
+/* side-menu-bar end here  */
 .slider-wrapper .slider-img {
     width: 100%;
     border-radius: 10px;
@@ -297,33 +353,35 @@ display: flex;
     text-transform: capitalize;
 }
 
-.match-section .match-div {
+.match-section ul {
     justify-content: space-between;
+    width: 100%;
 }
 
-.match-section .match-div ul {
+.match-section h1 {
+    margin-right: 30px;
+}
+
+.match-div ul {
     gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid red;
 }
 
-.match-section .match-div ul li a {
+.match-section ul li a {
     color: rgba(50, 49, 48, 0.6);
     font-size: 18px;
     padding-bottom: 8px;
+    margin-right: 20px;
 }
 
-.match-section .match-div ul li .active {
+.match-section ul li .active {
     color: #2255A4;
     font-size: 18px;
     position: relative;
-}
-
-.match-section .match-div ul li .active::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    background-color: #2255A4;
+    border-bottom: 3px solid #2255A4;
 }
 
 .match-section .match-div ul li h1 {
@@ -482,13 +540,17 @@ a .card-1 .center-part .img-div img {
 .video-top {
     justify-content: space-between;
     padding: 30px;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .video-top ul {
     gap: 50px;
+    left: 200px;
+    position: absolute;
 }
 
-.video-top ul li h1 {
+.video-top h1 {
     font-size: 35px;
     margin-right: 60px;
     color: white;
@@ -507,7 +569,7 @@ a .card-1 .center-part .img-div img {
 
 .video-top .left-right {
     gap: 15px;
-    color: rgba(255, 255, 255, .5)
+    color: rgba(255, 255, 255, .5);
 }
 
 .video-see {
@@ -537,15 +599,23 @@ a .card-1 .center-part .img-div img {
 
 /* four-video section-started*/
 .four-video {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding: 25px;
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.video-box a {
+    display: block;
 }
 
 .four-video .video-box {
     background-color: #133f7e;
-    flex-basis: 33%;
+    overflow: hidden;
+    width: 319px;
+    margin-top: 20px;
     border-radius: 16px;
 }
 
@@ -554,7 +624,6 @@ a .card-1 .center-part .img-div img {
     height: 270px;
     position: relative;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .four-video .video-box a .video-img .play-btn {
@@ -788,6 +857,12 @@ a .card-1 .center-part .img-div img {
     align-items: flex-start;
     padding: 40px 0;
     gap: 10px;
+    flex-wrap: wrap;
+}
+
+.shop-container .shop-right,
+.shop-container .shop-left {
+    flex-basis: 48%;
 }
 
 .shop-container .shop-right {
@@ -813,7 +888,7 @@ a .card-1 .center-part .img-div img {
     font-size: 18px;
     margin: 20px 0;
     line-height: 36px;
-    width: 56%;
+    width: 70%;
 }
 
 /* shop-section end here  */
@@ -835,15 +910,14 @@ a .card-1 .center-part .img-div img {
 .cup-container .tropis-wrapper {
     display: flex;
     width: 100%;
-    border: 2px solid red;
-    justify-content: center;
+    overflow: auto;
     gap: 20px;
 }
 
 .cup-container .tropis-wrapper .cup-box {
     position: relative;
+    width: 100%;
     border-radius: 8px;
-    width: 30%;
     border: 1px solid #728ed9;
     background: #293b6a;
     height: 300px;
@@ -930,9 +1004,13 @@ a .card-1 .center-part .img-div img {
     padding-left: 10px;
     padding-right: 10px;
     gap: 10px;
-    justify-content: center;
-    width: 100%;
+    overflow: auto;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-wrapper .match-gallery a {
+    display: block;
+    width: 100%;
 }
 
 .gallery-wrapper .match-gallery a .gallery-box-1 .gallery-box-show {
@@ -941,7 +1019,6 @@ a .card-1 .center-part .img-div img {
 }
 
 .gallery-wrapper .match-gallery a .gallery-box-1 {
-    /* width: 480px; */
     position: relative;
     height: 220px;
 }
@@ -1002,15 +1079,17 @@ a .card-1 .center-part .img-div img {
 /* company-section started here  */
 #company-section {
     background-color: black;
+    width: 100%;
     padding: 30px;
 }
 
 .company-wrapper {
-    display: flex;
     border: 2px solid #d2a66c;
     border-radius: 20px;
     padding: 20px 0;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
 }
 
 .company-wrapper a {
@@ -1018,10 +1097,10 @@ a .card-1 .center-part .img-div img {
 }
 
 .company-wrapper a .company-img {
-    display: flex;
+    display: grid;
+    height: 50px;
     justify-content: center;
     align-items: center;
-    height: 50px;
 }
 
 .company-wrapper a p {
@@ -1038,6 +1117,7 @@ a .card-1 .center-part .img-div img {
     background: url(https://www.bcci.tv/img/footer-bg.svg) no-repeat;
     background-color: #0a182e;
     text-transform: capitalize;
+    color: white;
 }
 
 #footer-section .footer-top {
@@ -1046,7 +1126,6 @@ a .card-1 .center-part .img-div img {
 }
 
 .footer-top .footer-icon span {
-    color: white;
     margin-right: 20px;
     font-size: 18px;
 }
@@ -1063,6 +1142,7 @@ a .card-1 .center-part .img-div img {
     padding: 40px 20px;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-ul .first-ul li:nth-child(3) {
@@ -1070,7 +1150,6 @@ a .card-1 .center-part .img-div img {
 }
 
 .footer-ul ul li h2 {
-    color: white;
     font-size: 18px;
 }
 
@@ -1085,7 +1164,6 @@ a .card-1 .center-part .img-div img {
     justify-content: space-between;
     background-color: #0d1c34;
     padding: 30px;
-    color: white;
     font-size: 12px;
 }
 

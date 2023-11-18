@@ -7,6 +7,8 @@
     <title>Bcci TV</title>
     <!-- css link here  -->
     <link rel="stylesheet" href="style.css">
+    <!-- media-query link here  -->
+    <link rel="stylesheet" href="./media.css">
     <!-- font-awesome link here  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -25,6 +27,7 @@
             <div class="fixed">
                 <div class="top-nav flex">
                     <ul class="left-ul flex">
+                        <li class="logo"><a href="#"><img src="./image/hamburger-menu.svg" alt=""></a></li>
                         <li>
                             <a href="#">
                                 <div class="logo-wrapper">
@@ -32,16 +35,16 @@
                                 </div>
                             </a>
                         </li>
-                        <li><a href="#" class="active">international</a></li>
-                        <li><a href="#" class="domestic">domestic</a></li>
+                        <li><a href="#" class="active">International</a></li>
+                        <li><a href="#" class="domestic">Domestic</a></li>
                     </ul>
                     <ul class="right-ul flex">
                         <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li><a href="#" class="logo-wrapper"><img src="./image/wcw.png" alt=""></a></li>
-                        <li><a href="#" class="logo-wrapper"><img src="./image/ipl-logo.svg" alt=""></a></li>
-                        <li><a href="#" class="logo-wrapper"><img src="./image/wpl-logo.svg" alt=""></a></li>
-                        <li><a href="#" class="logo-wrapper"><img src="./image/hamburger-menu.svg" alt=""></a></li>
-                        <li>
+                        <li><a href="#" class="logo-wrapper hide"><img src="./image/ipl-logo.svg" alt=""></a></li>
+                        <li><a href="#" class="logo-wrapper hide"><img src="./image/wpl-logo.svg" alt=""></a></li>
+                        <li><a href="#" class="logo-wrapper hide"><img src="./image/hamburger-menu.svg" alt=""></a></li>
+                        <li class="hide">
                             <a href="#" class="" id="hide-btn">
                                 <div>
                                     <select name="">
@@ -63,7 +66,7 @@
                 <div class="center-nav flex">
                     <ul>
                         <li><a href="#" class="gender" id="male">male</a></li>
-                     <li><a href="#" class="gender" id="women">women</a></li>
+                        <li><a href="#" class="gender" id="women">women</a></li>
                     </ul>
                     <ul class="flex">
                         <li><a href="#">viedos</a></li>
@@ -78,21 +81,46 @@
                     </ul>
                 </div>
                 <!-- center-nav end here  -->
+                <div class="slider-nav flex">
+                    <div class="quick">
+                        <span>Quicklinks</span>
+                    </div>
+                    <ul>
+                        <li><a href="#">DOMESTIC 2023-24 SCHEDULE<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">INTERNATIONAL RESULTS<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">BCCI DOCUMENTATION<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">TENDER AND RFP<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#">JOBS<i class="fa-solid fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-
+        <!-- side-menu-bar started here  -->
+        <div class="side-menu">
+            <div class="top-cross">
+                <span><i class="fa-solid fa-x cross-hide"></i></span>
+            </div>
+            <ul>
+                <li><a href="#">About BCCI <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="#">Reports <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="#">Integrity initiatives<i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="#">BCCI Documentation
+                        <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="#">Gallery<i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="#">Venues<i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="#">Tender & RFP<i class="fa-solid fa-arrow-right"></i></a></li>
+            </ul>
+            <div class="side-bottom">
+                <p>Copyrights BCCI 2023, All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- side-menu-bar end here  -->
+        <div class="hide-button">
+            <a href="#" class="int"><span>International</span></a>
+            <a href="#"><span>Domestic</span></a>
+        </div>
         <!-- slider-section started here  -->
         <div class="slider-wrapper">
-            <div class="slider-nav">
-                <ul class="flex">
-                    <li><span>QuickLinks</span></li>
-                    <li><a href="#">DOMESTIC 2023-24 SCHEDULE <i class="fa-solid fa-angle-right"></i></a></li>
-                    <li><a href="#">INTERNATIONAL RESULTS <i class="fa-solid fa-angle-right"></i></a></li>
-                    <li><a href="#">BCCI DOCUMENTATION <i class="fa-solid fa-angle-right"></i></a></li>
-                    <li><a href="#">TENDER AND RFP <i class="fa-solid fa-angle-right"></i></a></li>
-                    <li><a href="#">JOBS <i class="fa-solid fa-angle-right"></i></a></li>
-                </ul>
-            </div>
             <div class="slider-img">
                 <img src="./image/image.jpg" alt="">
             </div>
@@ -116,21 +144,17 @@
 
     <!-- first-section started here  -->
     <section id="first-section">
-        <div class="match-section">
-            <div class="match-div flex">
-                <ul class="flex">
-                    <li>
-                        <h1>Matches</h1>
-                    </li>
-                    <li><a href="#" class="active">
-                            Fixtures</a></li>
-                    <li><a href="#">results</a></li>
-                </ul>
-                <div class="see-all flex">
+        <div class="match-section flex">
+            <h1>Matches</h1>
+            <ul class="flex">
+                <li><a href="#" class="active">Fixtures</a>
+                    <a href="#">results</a>
+                </li>
+                <li class="see-all flex">
                     <span>see all</span>
                     <span class="see-right"><i class="fa-solid fa-arrow-right"></i></span>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
         <div class="match-card flex">
             <a href="#">
@@ -280,10 +304,8 @@
     <!-- video-section started here  -->
     <section id="video-section">
         <div class="video-top flex">
+            <h1>videos</h1>
             <ul class="flex">
-                <li>
-                    <h1>videos</h1>
-                </li>
                 <li><a href="#" class="active-late">latest</a></li>
                 <li><a href="#">hightlights</a></li>
                 <li><a href="#">featured</a></li>
@@ -502,11 +524,11 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- latest news section end here  -->
 
     <!-- mobile-section .started here  -->
-    <section id="mobile-section">
+     <section id="mobile-section">
         <div class="mobile-container">
             <div class="mobile-left">
                 <h1>Get the Official BCCI App</h1>
@@ -526,15 +548,16 @@
         </div>
     </section>
     <!-- mobile-section end here  -->
+    
     <!-- shop-section started here   -->
-    <section id="shop-section">
+     <section id="shop-section">
         <div class="shop-container flex">
             <div class="shop-left">
                 <img src="https://www.bcci.tv/img/shop-img.png" alt="" width="94%">
             </div>
             <div class="shop-right">
                 <div class="shop-right-img">
-                    <img src="https://www.bcci.tv/img/shop-left-img.png" alt="">
+                    <img src="https://www.bcci.tv/img/shop-left-img.png" alt="" width="90%">
                 </div>
                 <div class="shop-right-text">
                     <p>Show your true colors and support Indian cricket team with our vibrant merchandise</p>
@@ -735,7 +758,7 @@
     </section>
     <!-- company-section end here  -->
     <!-- footer-section started here  -->
-    <footer id="footer-section">
+     <footer id="footer-section">
         <div class="footer-top flex">
             <div class="footer-logo">
                 <img src="./image/bcci-logo.svg" alt="">
@@ -840,6 +863,18 @@
     </footer>
     <!-- footer-section end here  -->
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".logo").click(function () {
+            $(".side-menu").show()
+        })
+        $(".cross-hide").click(function () {
+            $(".side-menu").hide()
+        })
+    })
+</script>
 <script>
     let show = document.getElementById("show-btn");
     let hide = document.getElementById("hide-btn");
