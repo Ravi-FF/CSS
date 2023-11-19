@@ -204,14 +204,6 @@ nav .top-nav ul {
     color: white;
 }
 
-/* slider-section started here */
-.slider-wrapper {
-    background-color: #e9ecf4;
-    padding: 15px;
-    position: relative;
-    margin-bottom: 20px;
-}
-
 /* side-menu-bar started here  */
 .side-menu {
     background-color: #131b33;
@@ -279,21 +271,31 @@ nav .top-nav ul {
 }
 
 /* side-menu-bar end here  */
-.slider-wrapper .slider-img {
+.slider {
+    position: relative;
     width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
     height: 550px;
+    margin-bottom: 20px;
+    background-color: #e9ecf4;
+    padding: 10px 20px;
 }
 
-.slider-wrapper .slider-img img {
+.slider .slider-img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider .slider-img img {
     width: 100%;
     height: 100%;
     object-position: top;
     object-fit: cover;
 }
 
-.slider-wrapper .slider-overly {
+.slider .slider-overly {
     position: absolute;
     width: 40%;
     bottom: 15%;
@@ -303,28 +305,28 @@ nav .top-nav ul {
     color: white;
 }
 
-.slider-wrapper .slider-overly .viedo {
+.slider .slider-overly .viedo {
     padding: 6px;
     background-color: #c65142;
     border-radius: 6px;
     font-size: 15px;
 }
 
-.slider-wrapper .slider-overly h3 {
+.slider .slider-overly h3 {
     margin: 15px 0;
     font-size: 30px;
 }
 
-.slider-wrapper .slider-overly .spans span {
+.slider .slider-overly .spans span {
     font-size: 14px;
     margin-right: 15px;
 }
 
-.slider-wrapper .slider-overly .spans span i {
+.slider .slider-overly .spans span i {
     margin-right: 10px;
 }
 
-.slider-wrapper .left-right {
+.slider .left-right {
     display: flex;
     gap: 20px;
     position: absolute;
@@ -332,7 +334,7 @@ nav .top-nav ul {
     bottom: 13%;
 }
 
-.slider-wrapper .left-right span {
+.slider .left-right span {
     cursor: pointer;
     color: white;
     width: 40px;

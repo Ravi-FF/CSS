@@ -1,27 +1,33 @@
-@media screen and (max-width:1200px){
-    .slider-wrapper .slider-overly{
+@media screen and (max-width:1200px) {
+    .slider .slider-overly {
         width: 90%;
     }
-    .shop-container .shop-right{
+
+    .shop-container .shop-right {
         margin: 0;
     }
-    .shop-right .shop-right-text p{
+
+    .shop-right .shop-right-text p {
         width: 100%;
         line-height: 25px;
         font-size: 16px;
     }
-    .shop-right .shop-right-text{
+
+    .shop-right .shop-right-text {
         margin: 0;
         padding: 0;
     }
-    .shop-right .shop-right-text a button{
+
+    .shop-right .shop-right-text a button {
         width: 60%;
         height: 40px;
     }
-    .gallery-wrapper .match-gallery a .gallery-box-1{
+
+    .gallery-wrapper .match-gallery a .gallery-box-1 {
         width: 400px;
     }
 }
+
 @media screen and (max-width:992px) {
     .top-nav .left-ul li .logo-wrapper {
         margin: 0 20px;
@@ -30,23 +36,29 @@
     .top-nav .left-ul li a {
         font-size: 16px;
     }
-    #latest-section .latest-center{
+
+    #latest-section .latest-center {
         flex-wrap: wrap;
         height: auto;
         width: 100%;
     }
-    .latest-center .latest-center-left,.latest-center .latest-center-right{
+
+    .latest-center .latest-center-left,
+    .latest-center .latest-center-right {
         width: 100%;
         height: 350px;
     }
-    .company-wrapper a p{
+
+    .company-wrapper a p {
         font-size: 10px;
         height: 30px;
     }
-    .footer-ul{
+
+    .footer-ul {
         row-gap: 30px;
     }
-    .footer-ul ul{
+
+    .footer-ul ul {
         width: 50%;
     }
 }
@@ -78,84 +90,111 @@
     }
 
     .top-nav .left-ul li .active,
-    .top-nav .left-ul li .domestic,nav .top-nav ul li .hide,.hide{
+    .top-nav .left-ul li .domestic,
+    nav .top-nav ul li .hide,
+    .hide {
         display: none;
     }
-    nav .top-nav ul{
+
+    nav .top-nav ul {
         flex-direction: row-reverse;
     }
-    .top-nav .left-ul .logo{
+
+    .top-nav .left-ul .logo {
         display: block;
     }
-    .slider-wrapper .slider-img{
+
+    .slider {
         height: 400px;
     }
-    .slider-wrapper .slider-overly h3{
+
+    .slider .slider-overly h3 {
         font-size: 20px;
     }
-    .slider-nav ul{
-        /* width: auto; */
+
+    .slider-nav ul {
         overflow: auto;
     }
-    .hide-button{
+
+    .hide-button {
         visibility: visible;
     }
-    .video-top ul{
+
+    .video-top ul {
         top: 85px;
         left: 30px;
     }
-    .four-video{
+
+    .four-video {
         width: 90%;
     }
-    .four-video .video-box{
+
+    .four-video .video-box {
         width: 281px;
     }
-    .video-text .video-text-top p+p{
+
+    .video-text .video-text-top p+p {
         font-size: 13px;
         line-height: 20px;
     }
-    #mobile-section .mobile-container{
+
+    #mobile-section .mobile-container {
         flex-wrap: wrap;
         gap: 40px;
         margin: 0;
     }
-    .mobile-container .mobile-left, .mobile-container .mobile-right{
+
+    .mobile-container .mobile-left,
+    .mobile-container .mobile-right {
         flex-basis: 100%;
     }
-    .mobile-container .mobile-right{
+
+    .mobile-container .mobile-right {
         text-align: center;
     }
-    .mobile-container .mobile-right img{
+
+    .mobile-container .mobile-right img {
         width: 50%;
     }
-    .shop-container .shop-right, .shop-container .shop-left{
+
+    .shop-container .shop-right,
+    .shop-container .shop-left {
         flex-basis: 100%;
         text-align: center;
     }
-    .shop-right .shop-right-text a button{
+
+    .shop-right .shop-right-text a button {
         width: 40%;
     }
-    .company-wrapper{
-        grid-template-columns: repeat(2,1fr);
+
+    .company-wrapper {
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 50px;
     }
-    .company-wrapper a:nth-child(1),.company-wrapper a:nth-child(4){
+
+    .company-wrapper a:nth-child(1),
+    .company-wrapper a:nth-child(4) {
         grid-column: 1/4;
     }
-    .gallery-wrapper .match-gallery a .gallery-box-1{
+
+    .gallery-wrapper .match-gallery a .gallery-box-1 {
         height: 180px;
         width: 330px;
     }
-    .video-top ul{
+
+    .video-top ul {
         gap: 20px;
     }
 
 }
-@media screen and (max-width:576px){
-    .video-top ul li a{
+
+@media screen and (max-width:576px) {
+    .video-top ul li a {
         font-size: 13px;
     }
-    .match-section,.gallery-wrapper .gallery-top{
+
+    .match-section,
+    .gallery-wrapper .gallery-top {
         flex-wrap: wrap;
         gap: 10px;
     }

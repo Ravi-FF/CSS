@@ -120,22 +120,82 @@
             <a href="#"><span>Domestic</span></a>
         </div>
         <!-- slider-section started here  -->
-        <div class="slider-wrapper">
+        <div class="slider">
             <div class="slider-img">
                 <img src="./image/image.jpg" alt="">
+                <div class="slider-overly">
+                    <span class="viedo">viedo</span>
+                    <h3>On the mic with Virat Kohli | CWC23 | India vs South Africa</h3>
+                    <div class="spans">
+                        <span>6th Nov, 2023</span>
+                        <span><i class="fa-solid fa-eye"></i>126.1k</span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                    </div>
+                </div>
             </div>
-            <div class="slider-overly">
-                <span class="viedo">viedo</span>
-                <h3>On the mic with Virat Kohli | CWC23 | India vs South Africa</h3>
-                <div class="spans">
-                    <span>6th Nov, 2023</span>
-                    <span><i class="fa-solid fa-eye"></i>126.1k</span>
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+            <div class="slider-img">
+                <img src="./image/image (2).jpg" alt="">
+                <div class="slider-overly">
+                    <span class="viedo">viedo</span>
+                    <h3>Raw emotions and pure joy post a special win at Wankhede</h3>
+                    <div class="spans">
+                        <span>6th Nov, 2023</span>
+                        <span><i class="fa-solid fa-eye"></i>126.1k</span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./image/image (3).jpg" alt="">
+                <div class="slider-overly">
+                    <span class="viedo">viedo</span>
+                    <h3>On the mic with David Beckham</h3>
+                    <div class="spans">
+                        <span>6th Nov, 2023</span>
+                        <span><i class="fa-solid fa-eye"></i>126.1k</span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./image/image (4).jpg" alt="">
+                <div class="slider-overly">
+                    <span class="viedo">viedo</span>
+                    <h3>Dressing Room BTS | India vs Netherlands | Fielder of the Match</h3>
+                    <div class="spans">
+                        <span>6th Nov, 2023</span>
+                        <span><i class="fa-solid fa-eye"></i>126.1k</span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./image/image (5).jpg" alt="">
+                <div class="slider-overly">
+                    <span class="viedo">viedo</span>
+                    <h3>On the mic with Virat Kohli | CWC23 | India vs South Africa</h3>
+                    <div class="spans">
+                        <span>6th Nov, 2023</span>
+                        <span><i class="fa-solid fa-eye"></i>126.1k</span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./image/image (6).jpg" alt="">
+                <div class="slider-overly">
+                    <span class="viedo">viedo</span>
+                    <h3>On the mic with Virat Kohli | CWC23 | India vs South Africa</h3>
+                    <div class="spans">
+                        <span>6th Nov, 2023</span>
+                        <span><i class="fa-solid fa-eye"></i>126.1k</span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                    </div>
                 </div>
             </div>
             <div class="left-right">
-                <span><i class="fa-solid fa-angle-left"></i></span>
-                <span><i class="fa-solid fa-angle-right"></i></span>
+                <span onclick="next_back(-1)"><i class="fa-solid fa-angle-left"></i></span>
+                <span onclick="next_back(1)"><i class="fa-solid fa-angle-right"></i></span>
             </div>
         </div>
         <!-- slider-section end here  -->
@@ -524,11 +584,11 @@
                 </a>
             </div>
         </div>
-    </section> 
+    </section>
     <!-- latest news section end here  -->
 
     <!-- mobile-section .started here  -->
-     <section id="mobile-section">
+    <section id="mobile-section">
         <div class="mobile-container">
             <div class="mobile-left">
                 <h1>Get the Official BCCI App</h1>
@@ -548,9 +608,9 @@
         </div>
     </section>
     <!-- mobile-section end here  -->
-    
+
     <!-- shop-section started here   -->
-     <section id="shop-section">
+    <section id="shop-section">
         <div class="shop-container flex">
             <div class="shop-left">
                 <img src="https://www.bcci.tv/img/shop-img.png" alt="" width="94%">
@@ -758,7 +818,7 @@
     </section>
     <!-- company-section end here  -->
     <!-- footer-section started here  -->
-     <footer id="footer-section">
+    <footer id="footer-section">
         <div class="footer-top flex">
             <div class="footer-logo">
                 <img src="./image/bcci-logo.svg" alt="">
@@ -886,6 +946,31 @@
         show.style.display = "block";
         hide.style.display = "none"
     }
+
+    // slider start
+    let x = 0;
+    let slider_images = document.querySelectorAll(".slider-img");
+
+    function next_back(y) {
+        x = x + y
+        sliderStart(x)
+    }
+    sliderStart(x);
+    function sliderStart(num) {
+        if (num == slider_images.length) {
+            num = 0;
+            x = 0;
+        }
+        if (num < 0) {
+            num = slider_images.length - 1
+            x = slider_images.length - 1
+        }
+        for (let i = 0; i < slider_images.length; i++) {
+            slider_images[i].style.display = "none"
+        }
+        slider_images[num].style.display = "block"
+    }
+    // slider ent
 </script>
 
 </html>
