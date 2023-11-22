@@ -38,7 +38,6 @@ a {
 /*---------------top-nav started here-------------------- */
 .top-nav {
     background-color: #131921;
-    position: static;
 }
 
 .top-nav .logo img {
@@ -52,12 +51,11 @@ a {
 .top-nav .top-ul-li,
 .second-nav ul li {
     border: 2px solid transparent;
-    display: inline-block;
 }
 
 .top-nav .top-ul-li a,
 .second-nav ul li a {
-    display: inline-block;
+    display: block;
     padding: 10px 8px;
 }
 
@@ -80,13 +78,12 @@ nav a {
 }
 
 .top-input {
-    margin: 0 10px;
-    justify-content: center;
+    margin: 0 12px;
 }
 
 .top-nav .top-input {
     width: 53%;
-    height: 38px;
+    height: 40px;
 }
 
 .top-input input {
@@ -96,17 +93,19 @@ nav a {
     width: 100%;
 }
 
-.top-input .input-div input:focus.top-nav .top-input {
-    border: 2px solid #febd69;
-}
-
 .top-input select {
     height: 100%;
     text-align: center;
     margin: 0 auto;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    width: 55px;
+    width: 60px;
+    background-color: #D3D3D3;
+}
+
+.top-input select option {
+    background-color: white;
+    padding: 20px;
 }
 
 .top-input .glass {
@@ -121,8 +120,6 @@ nav a {
 }
 
 .flag {
-    display: flex;
-    justify-content: center;
     gap: 5px;
     align-items: end;
 }
@@ -137,7 +134,6 @@ nav a {
 
 .shoping {
     position: relative;
-    display: flex;
     align-items: end;
 }
 
@@ -329,7 +325,6 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .second-nav .shop-now-img li a {
-    text-align: right;
     padding: 0;
 }
 
@@ -394,11 +389,8 @@ nav .top-nav .top-ul-li ul li a {
 
 .left-menu {
     background-color: white;
+    overflow: auto;
     height: 100vh;
-    color: black;
-    overflow-y: scroll;
-    overflow-x: scroll;
-    overflow-x: hidden;
 }
 
 .left-menu ul li:nth-child(1) {
@@ -414,30 +406,28 @@ nav .top-nav .top-ul-li ul li a {
 
 .left-menu ul .menu-item {
     color: black;
-    display: block;
     display: flex;
     justify-content: space-between;
     padding: 13px 20px 13px 36px;
     font-size: 14px;
 }
 
-.left-menu ul .menu-item:hover {
+.left-menu ul .h-active:hover {
     background-color: #eaeded;
-    ;
 }
 
 .left-slider .cross {
     position: absolute;
-    left: 26%;
+    left: 27%;
     cursor: pointer;
-    top: 5%;
+    top: 4%;
     font-size: 18px;
     color: white;
 }
 
 /* left-slider end here */
-/* second-nav end here  */
 
+/* second-nav end here  */
 /*---------------top-nav end here-------------------- */
 
 /* section-first started here  */
@@ -534,8 +524,6 @@ nav .top-nav .top-ul-li ul li a {
     padding: 25px 30px;
     background: linear-gradient(-180deg, rgba(234, 237, 237, 0), #E3E6E6);
     grid-template-columns: repeat(4, 1fr);
-
-    grid-template-rows: auto;
     gap: 15px;
 }
 
@@ -589,20 +577,8 @@ nav .top-nav .top-ul-li ul li a {
     justify-content: space-evenly;
 }
 
-.first-section-center .row .img-item-box .box-item-1 {
-    height: auto;
-}
-
-.first-section-center .row .img-item-box {
-    height: auto;
-}
-
 .box .img-item-box-height {
     height: 315px;
-}
-
-.first-section-center .row a {
-    display: inline-block;
 }
 
 .box-4 .box-item-1 {
