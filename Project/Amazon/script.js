@@ -27,8 +27,18 @@ function firstimageShow(a) {
 
 let left_slider = document.querySelector(".left-slider");
 function sliderClicke() {
-left_slider.style.transform="translateX(0)";
+    left_slider.style.transform = "translateX(0)";
 }
 function crossClick() {
-    left_slider.style.transform="translateX(-100%)"
+    left_slider.style.transform = "translateX(-100%)"
+}
+
+// nav-slide 
+let Nav_ul = document.querySelector("#navMenu")
+function nav_show() {
+    if ( Nav_ul.style.transform === "translateX(-100%)") {
+        Nav_ul.style.transform = "translateX(0)"
+    }else{
+        Nav_ul.style.transform = "translateX(-100%)"
+    }
 }

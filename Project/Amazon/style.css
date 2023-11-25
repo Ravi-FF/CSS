@@ -38,6 +38,9 @@ a {
 /*---------------top-nav started here-------------------- */
 .top-nav {
     background-color: #131921;
+    padding: 10px;
+    position: relative;
+    justify-content: space-between;
 }
 
 .top-nav .logo img {
@@ -45,7 +48,7 @@ a {
 }
 
 .top-nav ul {
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .top-nav .top-ul-li,
@@ -84,6 +87,10 @@ nav a {
 .top-nav .top-input {
     width: 53%;
     height: 40px;
+}
+
+.top-nav>ul {
+    width: 100%;
 }
 
 .top-input input {
@@ -266,7 +273,7 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .singin-btn {
-    padding: 8px 90px;
+    padding: 8px 0;
     font-size: 13px;
     border-radius: 8px;
     cursor: pointer;
@@ -312,6 +319,11 @@ nav .top-nav .top-ul-li ul li a {
     top: 0;
     content: "";
     background-color: #eee;
+}
+
+.top-nav .menu-bar i {
+    color: white;
+    display: none;
 }
 
 /* second-nav started here  */
@@ -371,7 +383,7 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .left-slider .sing-in {
-    width: 375px;
+    width: 380px;
 }
 
 .top-heading {
@@ -417,8 +429,8 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .left-slider .cross {
-    position: absolute;
-    left: 27%;
+    position: fixed;
+    left: 400px;
     cursor: pointer;
     top: 4%;
     font-size: 18px;
@@ -427,7 +439,6 @@ nav .top-nav .top-ul-li ul li a {
 
 /* left-slider end here */
 
-/* second-nav end here  */
 /*---------------top-nav end here-------------------- */
 
 /* section-first started here  */
@@ -437,21 +448,31 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .slider-img {
-    position: relative;
+    position: absolute;
+}
+
+.blank-div {
     height: 300px;
+    position: relative;
+    z-index: -1;
 }
 
 .first-section-img {
-    position: absolute;
+    height: 600px;
     display: none;
-    z-index: -1;
+}
+
+.first-section-img img {
+    width: 100%;
+    object-position: top;
+    object-fit: cover;
+    height: 100%;
 }
 
 .icon {
     position: absolute;
     top: 0;
     cursor: pointer;
-    z-index: 100;
     background-color: transparent;
     border: 1px solid transparent;
     width: 70px;
@@ -477,6 +498,8 @@ nav .top-nav .top-ul-li ul li a {
 
 .box {
     padding: 20px;
+    width: 23%;
+    margin: 10px;
     background-color: white;
 }
 
@@ -493,8 +516,8 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .box h2 {
-    font-size: 21px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .box-item-1 p {
@@ -515,16 +538,16 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .box .img-item-box {
-    height: 275px;
     margin-bottom: 20px;
 }
 
 .first-section-center {
-    display: grid;
-    padding: 25px 30px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 25px;
     background: linear-gradient(-180deg, rgba(234, 237, 237, 0), #E3E6E6);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
 }
 
 .box .img-item-box-3 {
@@ -541,7 +564,7 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .box .img-item-box-4 {
-    grid-template-columns: 1fr;
+    width: 100%;
 }
 
 .box-4-item-1 {
@@ -549,8 +572,9 @@ nav .top-nav .top-ul-li ul li a {
 }
 
 .first-section-center .row {
-    grid-column: 1/5;
     position: relative;
+    overflow: auto;
+    width: 100%;
 }
 
 .first-section-center .row .icon {
@@ -609,6 +633,7 @@ nav .top-nav .top-ul-li ul li a {
 
 .sing-in-wrapper button {
     background: linear-gradient(#febd69, #FFD814);
+    width: 200px;
 }
 
 /* footer-section srated here  */
@@ -640,6 +665,8 @@ nav .top-nav .top-ul-li ul li a {
 .footer-center-ul {
     display: flex;
     padding: 40px 0;
+    gap: 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -665,17 +692,10 @@ nav .top-nav .top-ul-li ul li a {
     color: #DDD;
 }
 
-.footer-logo {
-    width: 8%;
-}
-
-.footer-logo img {
-    width: 100%;
-}
-
 .footer-ul {
     justify-content: space-evenly;
     padding-top: 30px;
+    flex-wrap: wrap;
 }
 
 #footer-section .english-ul ul li a {

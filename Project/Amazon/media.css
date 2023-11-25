@@ -1,0 +1,91 @@
+@media screen and (max-width:1400px) {
+    .top-nav .top-input {
+        width: 43%;
+    }
+
+    .shop-now-img li a img {
+        width: 225px;
+    }
+
+    .second-nav ul li a {
+        padding: 10px 4px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .top-nav>ul {
+        position: absolute;
+        top: 100%;
+        background-color: #131921;
+        left: 0;
+        flex-direction: column;
+        transition: 0.5s;
+        transform: translatex(-100%);
+        align-items: flex-start;
+        z-index: 500;
+    }
+
+    .nav-show {
+        visibility: visible;
+    }
+
+    .top-nav>ul .top-ul-li {
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    .top-nav .top-input {
+        margin: 10px auto;
+    }
+
+    .account-li-wrapper {
+        left: 0;
+    }
+
+    .top-nav .menu-bar i {
+        display: block;
+    }
+
+    .first-section-center .row {
+        overflow: auto;
+    }
+
+    .box {
+        width: 33%;
+    }
+
+    .footer-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .box {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        width: 45%;
+    }
+
+    .box h2 {
+        font-size: 15px;
+    }
+
+    .box-item-1 p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .box {
+        width: 80%;
+    }
+
+    .footer-center-3 .footer-2-ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
