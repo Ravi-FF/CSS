@@ -87,5 +87,8 @@
     .footer-center-3 .footer-2-ul {
         grid-template-columns: repeat(2, 1fr);
     }
+    .top-nav .top-input {
+        width: 90%;
+    }
 
 }
