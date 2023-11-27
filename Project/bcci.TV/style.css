@@ -690,7 +690,7 @@ a .card-1 .center-part .img-div img {
 /* latest-section started here  */
 #latest-section {
     text-transform: capitalize;
-    padding: 20px;
+    padding:40px 20px;
 }
 
 #latest-section a {
@@ -700,6 +700,7 @@ a .card-1 .center-part .img-div img {
 #latest-section .latest-heading {
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 #latest-section .latest-heading h1 {
@@ -708,7 +709,6 @@ a .card-1 .center-part .img-div img {
 
 #latest-section .latest-center {
     height: 500px;
-    margin: 15px 0;
     display: flex;
     gap: 15px;
 }
@@ -717,7 +717,6 @@ a .card-1 .center-part .img-div img {
     width: 58%;
     position: relative;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .latest-center .latest-center-left::after {
@@ -770,7 +769,7 @@ a .card-1 .center-part .img-div img {
 
 .latest-center .latest-center-right {
     width: 42%;
-    overflow: scroll;
+    overflow-y:scroll;
 }
 
 .latest-center-right a .center-right-1 {

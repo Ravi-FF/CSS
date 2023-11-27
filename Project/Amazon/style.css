@@ -38,7 +38,7 @@ a {
 /*---------------top-nav started here-------------------- */
 .top-nav {
     background-color: #131921;
-    padding: 10px;
+    padding:0 10px;
     position: relative;
     justify-content: space-between;
 }
@@ -274,6 +274,7 @@ nav .top-nav .top-ul-li ul li a {
 
 .singin-btn {
     padding: 8px 0;
+    width: 50%;
     font-size: 13px;
     border-radius: 8px;
     cursor: pointer;
