@@ -690,11 +690,7 @@ a .card-1 .center-part .img-div img {
 /* latest-section started here  */
 #latest-section {
     text-transform: capitalize;
-    padding:40px 20px;
-}
-
-#latest-section a {
-    display: block;
+    padding: 40px 20px;
 }
 
 #latest-section .latest-heading {
@@ -716,6 +712,7 @@ a .card-1 .center-part .img-div img {
 .latest-center .latest-center-left {
     width: 58%;
     position: relative;
+    overflow: hidden;
     border-radius: 10px;
 }
 
@@ -769,7 +766,7 @@ a .card-1 .center-part .img-div img {
 
 .latest-center .latest-center-right {
     width: 42%;
-    overflow-y:scroll;
+    overflow-y: scroll;
 }
 
 .latest-center-right a .center-right-1 {
