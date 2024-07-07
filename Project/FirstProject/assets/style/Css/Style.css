@@ -1,0 +1,247 @@
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: black;
+}
+
+:root {
+    --primary-color: #FB8E0B;
+    --effect: 0.5s ease;
+    --pera-color: #383A47;
+    --arvoFont: "Arvo", serif
+}
+
+.btn {
+    width: 167px;
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 32px;
+    color: var(--pera-color);
+    opacity: 0.8;
+}
+
+h1,
+h5 {
+    font-weight: bold;
+    font-family: var(--arvoFont);
+}
+
+.btn:hover,
+.btn:active {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: transparent !important;
+    border: 1px solid var(--primary-color);
+    color: black !important;
+}
+
+/* header-style start */
+nav {
+    z-index: 100;
+    width: 80%;
+    top: 20px;
+    transition: var(--effect);
+    left: 50%;
+    transform: translatex(-50%);
+    position: fixed !important;
+}
+
+.fixed-nav {
+    width: 100% !important;
+    top: 0;
+    padding: 10px 20px !important;
+    box-shadow: 0px 1px 10px #999;
+}
+
+nav .nav-link {
+    font-weight: 600;
+    transition: var(--effect) !important;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+nav .nav-link::after,
+nav .active::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: var(--effect) !important;
+}
+
+nav .nav-link:hover::after,
+nav .active::after {
+    width: 100%;
+}
+
+nav .active,
+nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.offcanvas.offcanvas-top {
+    position: fixed !important;
+    left: 50%;
+    width: 40%;
+    height: fit-content;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+
+.btn-close {
+    right: 10px;
+    top: 10px;
+}
+
+.login-btn,
+.login-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* header-style-end */
+/* hero-wrapper  */
+.hero-wrapper {
+    padding: 100px 0;
+}
+
+.btn-arrow {
+    line-height: 20px !important;
+}
+
+/* feature-section start */
+
+.feature-section .feature-text p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.feature-section .feature-icon span {
+    height: 60px;
+    display: block;
+    border-radius: 100%;
+    line-height: 60px;
+    width: 60px;
+    text-align: center;
+}
+
+.feature-icon span i {
+    font-size: 20px;
+}
+
+.feature-section .scroll-data::-webkit-scrollbar,
+.testimonial .row::-webkit-scrollbar,
+.feature-section .scroll-data::-webkit-scrollbar-thumb,
+.testimonial .row::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* feature-section end */
+
+/* lefft-right-section start  */
+.left-right-first {
+    background-color: #F8F8FA;
+}
+
+/* lefft-right-section end */
+
+/* testimonial-start */
+.testimonial {
+    padding: 80px 0;
+    background: var(--primary-color);
+}
+
+.testimonial h1 {
+    font-family: sans-serif;
+}
+
+.testimonial-card h5 {
+    color: var(--primary-color);
+}
+
+.testimonial-card p {
+    font-size: 17px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+.arrow {
+    background-color: white;
+    display: block;
+    transform: rotate(45deg) translate(-25px);
+    left: 50%;
+    position: relative;
+    z-index: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.shapes {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* testimonial-end */
+/* footer-start  */
+.footer-top {
+    padding: 80px 0;
+}
+
+.copy-right a,
+.copy-right p {
+    font-size: 14px;
+    transition: var(--effect);
+    color: var(--pera-color);
+}
+
+.copy-right a:hover,
+.copy-right p:hover,
+.footer-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-nav .nav-link {
+    transition: var(--effect);
+    font-weight: 500;
+}
+
+/* footer-end */
+
+@media screen and (max-width:992px) {
+    .nav-link {
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .feature-box {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
