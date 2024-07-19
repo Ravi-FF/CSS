@@ -54,10 +54,10 @@ h1 {
     transform-style: preserve-3d;
 }
 .container:hover .card {
-    transform: rotateX(180deg);
+    transform: rotatey(180deg);
 }
 .back {
-    transform: rotateX(180deg);
+    transform: rotatey(180deg);
     background-color: cornflowerblue;
 }
 
